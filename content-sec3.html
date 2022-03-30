@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #sec3 {
+            width: 85%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+
+            /* position:absolute; */
+        }
+
+        p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        .price {
+            display: flex;
+        }
+
+        #chemDiv,
+        #dairyDiv,#snackDiv {
+            display: flex;
+            overflow-x: hidden;
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="sec3">
+
+        <div style="display: flex;justify-content: space-between;">
+            <div>
+                <h3>chemist store</h3>
+                <p>get pain relievers, dettol and more</p>
+            </div>
+            <div id="scrol">
+                <a href="">see more</a>
+                <div>
+                    <button id="right" type="button">
+                        < </button>
+                            <button id="left" type="button"> > </button>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <div id="chemDiv">
+                <script type="module">
+                    import display from '/index.js';
+                    let chem = document.getElementById("chemDiv")
+                    var chemit = JSON.parse(localStorage.getItem("chemist")) || [];
+                    display(chemit, chem)
+                    // console.log(chemit)
+                </script>
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="sec3">
+        <div style="display: flex;justify-content: space-between;">
+            <div>
+                <h3>breakfast & dairy</h3>
+                <p>butter, cheese, milk, curd and more</p>
+            </div>
+            <div style="display: flex;">
+                <a href="">see more</a>
+                <div>
+                    <button id="righ" type="button"><</button>
+                            <button id="lef" type="button"> > </button>
+                </div>
+            </div>
+        </div>
+        <div id="dairyDiv">
+            <script type="module">
+                import display from '/index.js';
+                let dairy = document.getElementById("dairyDiv")
+                var dair = JSON.parse(localStorage.getItem("dairy")) || [];
+                display(dair, dairy)
+            </script>
+        </div>
+    </div>
+
+    <div id="sec3">
+        <div style="display: flex;justify-content: space-between;">
+            <div>
+                <h3>biscuits, snacks & chocolates</h3>
+                <p>namkeen, biscuits, chips and more</p>
+            </div>
+            <div>
+                <a href="">see more</a>
+                <button>
+                    < </button>
+                        <button>></button>
+            </div>
+        </div>
+        <div id="snackDiv">
+            <script type="module">
+                import display from '/index.js';
+                let snack = document.getElementById("snackDiv")
+                var snak = JSON.parse(localStorage.getItem("snacks")) || [];
+                display(snak, snack)
+                // display(chemit,chem)
+                console.log(snak)
+
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="/data.js"></script>
+
+<script>
+    const right = document.getElementById("right");
+    const left = document.getElementById("left");
+
+    left.onclick = () => {
+        document.getElementById("chemDiv").scrollLeft += 220;
+    }
+    right.onclick = () => {
+        document.getElementById("chemDiv").scrollLeft -= 220;
+    }
+
+    const righ = document.getElementById("righ");
+    const lef = document.getElementById("lef");
+    lef.onclick = () => {
+        document.getElementById("dairyDiv").scrollLeft += 250;
+    }
+    righ.onclick = () => {
+        document.getElementById("dairyDiv").scrollLeft -= 250;
+    }
+</script>
