@@ -1,63 +1,63 @@
 var chemit = [
   {
        "product_name": "BPL Pulse Oximeter",
-       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/app/images/products/normal/pro_479304.jpg?ts=1640492227",
+       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_479304.jpg?ts=1640492227",
        "qty": "1 unit",
        "price": "1300",
        "strikeprice": "2300"
   },
   {
-       "product_name": "Nestle Ceregrow ",
-       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/app/images/products/normal/pro_309634.jpg?ts=1646806090",
+       "product_name": "Nestle Ceregrow Multigrain Baby Cereal (With Milk & Fruits, 2-5 years)",
+       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_309634.jpg?ts=1646806090",
        "qty": "300 g",
        "price": "283",
        "strikeprice": "297"
   },
   {
        "product_name": "Nestle Lactogrow Nutritious Health Drink",
-       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/app/images/products/normal/pro_429438.jpg?ts=1645512938",
+       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_429438.jpg?ts=1645512938",
        "qty": "400 g",
        "price": "342",
        "strikeprice": "360"
   },
   {
        "product_name": "Krishna PPE Kit",
-       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/app/images/products/normal/pro_479305.jpg?ts=1641301819",
+       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_479305.jpg?ts=1641301819",
        "qty": "1 unit",
        "price": "280",
        "strikeprice": "799"
   },
   {
        "product_name": "Dettol Surface Disinfection & ",
-       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/app/images/products/normal/pro_387434.jpg?ts=1594280126",
+       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_387434.jpg?ts=1594280126",
        "qty": "1 l",
        "price": "331",
        "strikeprice": "335"
   },
   {
        "product_name": "Dettol Original Instant Hand ",
-       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/app/images/products/normal/pro_417399.jpg?ts=1584429908",
+       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_417399.jpg?ts=1584429908",
        "qty": "6 ml",
        "price": "28",
        "strikeprice": "30"
   },
   {
        "product_name": "3M 9513 Respirator KN95 Face Mask",
-       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/app/images/products/normal/pro_477244.jpg?ts=1637905574",
+       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_477244.jpg?ts=1637905574",
        "qty": "1 unit",
        "price": "91",
        "strikeprice": "110"
   },
   {
        "product_name": "Friends Classic Dry Adult Diaper (Large)",
-       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/app/images/products/normal/pro_477209.jpg?ts=1636781254",
+       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_477209.jpg?ts=1636781254",
        "qty": "10 units",
        "price": "468",
        "strikeprice": "550"
   },
   {
        "product_name": "Durex Air Ultra Thin Condom",
-       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=90/app/images/products/normal/pro_382664.jpg?ts=1633496536",
+       "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_382664.jpg?ts=1633496536",
        "qty": "10 units",
        "price": "215",
        "strikeprice": "220"
