@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: #fafafa;
+        }
+
+        #sec3 {
+            width: 85.5%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            background-color: #fafafa;
+        }
+
+        #head>h3 {
+            margin: 8px 0;
+        }
+
+        #head>p {
+            margin: 0px;
+            margin-bottom: 10px;
+            color: rgb(102, 102, 102);
+        }
+
+        #scrol {
+            display: flex;
+            margin-top: 18px;
+            gap: 20px;
+        }
+
+        p {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+        }
+
+        img {
+            width: 90%;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            border-radius: 5px;
+        }
+
+        #chemDiv,
+        #dairyDiv,
+        #snackDiv {
+            display: grid;
+            grid-template-columns: repeat(14, 1fr);
+            overflow-x: hidden;
+        }
+
+        #cont {
+            width: 145px;
+        }
+
+        .info>p {
+            margin: 5px 0px;
+            padding: 0px 6px;
+            line-height: normal;
+        }
+
+        .info>p+p {
+            color: rgb(102, 102, 102);
+        }
+
+        .price {
+            display: flex;
+            gap: 15px;
+        }
+
+        .price>span {
+            font-weight: bold;
+        }
+
+        .price>span+span {
+            font-weight: normal;
+            text-decoration: line-through;
+            color: rgb(102, 102, 102);
+        }
+    </style>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div id="sec3">
+
+        <div style="display: flex;justify-content: space-between;margin-top: 25px;">
+            <div id="head">
+                <h3>chemist store</h3>
+                <p>get pain relievers, dettol and more</p>
+            </div>
+            <div id="scrol">
+                <a href="">see more</a>
+                <div>
+                    <button id="right" type="button">< </button>
+                            <button id="left" type="button"> > </button>
+                </div>
+            </div>
+        </div>
+        <div id="chemDiv">
+            <script type="module">
+                import display from '/index.js';
+                let chem = document.getElementById("chemDiv")
+                var chemit = JSON.parse(localStorage.getItem("chemist")) || [];
+                display(chemit, chem)
+                    // console.log(chemit)
+            </script>
+        </div>
+    </div>
+
+
+    <div id="sec3">
+        <div style="display: flex;justify-content: space-between;margin-top: 25px;">
+            <div id="head">
+                <h3>breakfast & dairy</h3>
+                <p>butter, cheese, milk, curd and more</p>
+            </div>
+            <div id="scrol">
+                <a href="">see more</a>
+                <div>
+                    <button id="righ" type="button">< </button>
+                    <button id="lef" type="button"> > </button>
+                </div>
+            </div>
+        </div>
+        <div id="dairyDiv">
+            <script type="module">
+                import display from '/index.js';
+                let dairy = document.getElementById("dairyDiv")
+                var dair = JSON.parse(localStorage.getItem("dairy")) || [];
+                display(dair, dairy)
+            </script>
+        </div>
+    </div>
+
+    <div id="sec3">
+        <div style="display: flex;justify-content: space-between;margin-top: 25px;">
+            <div id="head">
+                <h3>biscuits, snacks & chocolates</h3>
+                <p>namkeen, biscuits, chips and more</p>
+            </div>
+            <div id="scrol">
+                <a href="">see more</a>
+                <div>
+                    <button id="sright" type="button">< </button>
+                    <button id="sleft" type="button">></button>
+                </div>
+            </div>
+        </div>
+        <div id="snackDiv">
+            <script type="module">
+                import display from '/index.js';
+                let snack = document.getElementById("snackDiv")
+                var snak = JSON.parse(localStorage.getItem("snacks")) || [];
+                display(snak, snack)
+                // display(chemit,chem)
+                console.log(snak)
+
+            </script>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="/data.js"></script>
+
+<script>
+    const right = document.getElementById("right");
+    const left = document.getElementById("left");
+
+    left.onclick = () => {
+        document.getElementById("chemDiv").scrollLeft += 750;
+    }
+    right.onclick = () => {
+        document.getElementById("chemDiv").scrollLeft -= 750;
+    }
+
+    const righ = document.getElementById("righ");
+    const lef = document.getElementById("lef");
+    lef.onclick = () => {
+        document.getElementById("dairyDiv").scrollLeft += 750;
+    }
+    righ.onclick = () => {
+        document.getElementById("dairyDiv").scrollLeft -= 750;
+    }
+
+    const sright = document.getElementById("sright");
+    const sleft = document.getElementById("sleft");
+    sleft.onclick = () => {
+        document.getElementById("snackDiv").scrollLeft += 750;
+    }
+    sright.onclick = () => {
+        document.getElementById("snackDiv").scrollLeft -= 750;
+    }
+</script>
