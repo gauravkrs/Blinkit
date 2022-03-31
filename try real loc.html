@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try real location</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&v=weekly"
+
+// let url=`https://maps.googleapis.com/maps/api/streetview?location=41.403609,2.174448&size=456x456&key=AIzaSyCy9AbflVbVWsTsK68yI8W2bZ3-4BSO0C4`
+async function out(){
+  let rel = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?fields=name,lat,lon%2Crating%2C&key=AIzaSyCy9AbflVbVWsTsK68yI8W2bZ3-4BSO0C4`)
+  let data = await rel.json();
+  console.log(data)
+}
+out()
+</script>

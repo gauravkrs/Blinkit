@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="trymap">
+        <input type="search" id="search" oninput="" placeholder="Enter your location"/>
+    </div>
+    <button onclick="mapp()">click me</button>
+</body>
+</html>
+<script>
+    
+    // var mapp=async ()=>{
+    async function mapp(){
+        try{
+            let mapinput = document.querySelector("#search").value;
+            // let rel = await fetch(`https://maps.google.com/maps?q=${mapinput}`)
+            let rel = await fetch(`https://maps.googleapis.com/maps/api/js?key=AIzaSyBjhPsI-v93A47EBi6OLXjLFLSJPbMsxVw&region=GB&callback=initMap`);
+            let data = await rel.json();
+            console.log("dataaaa",data)
+        }
+        catch(er)
+        {
+            console.log("mapp me error hai",er)
+        }
+    }
+    mapp()
+</script>
+
+
+<!-- ${mapinput} -->
+
+<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.6810209925!2d73.72288001547804!3d18.524890419794303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1648581600906!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
