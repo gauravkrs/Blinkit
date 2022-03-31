@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="./CSS/getTheApp.css">
+  
+</head>
+<body>
+    <div class="store">
+        <div class="storeLeft">
+              <img src="https://blinkit.com/careers/sites/default/files/2022-03/blinkit.png" alt="blikit site"/>
+        </div>
+        <div class="storeright">
+              <div>
+                   <h3>get the blinkit app</h3>
+              </div>
+             <div>
+                  <p>We will send you a link, open it on your phone to download the app</p>
+             </div>
+             <div class="emailphone">
+                  <form>
+                 <div>
+                    <div>
+                        <label for="email">
+                            <input type="radio" name="radioSelection" id="radioemail" onchange="call()" checked  />
+                            <span class="spanMobile">email</span>
+                        </label>
+                     </div>
+                     <div>
+                        <label for="phone">
+                            <input type="radio" name="radioSelection" id="radiophone" onchange="call()" />
+                            <span class="spanPhone">phone</span>
+                        </label>                     
+                     </div>
+             </div>
+             <div class="inputbutton" >
+                 <div>
+                     <input type="text" placeholder="" id="inputfield" value="">
+                 </div>
+                 <div>
+                     <button onclick="sharelink()">share app link</button>
+                 </div>
+             </div>
+                  </form>
+             </div>
+             <div>
+                  <p>Download app form</p>
+             </div>
+             <div class="playStores">
+                  <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/appstore.png" alt="AppleStore" onclick="window.location.href=`https://apps.apple.com/us/app/grofers-local-shopping/id960335206`" /> </div>
+                  <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/playstore.png" alt="playstore" onclick="window.location.href=`https://play.google.com/store/apps/details?id=com.grofers.customerapp`" /> </div>
+             </div>
+         
+        </div>
+    </div>
+
+
+<script>
+      let phone = document.querySelector("#radiophone")
+      let email = document.querySelector("#radioemail")
+
+     email.defaultChecked;
+     document.querySelector("#inputfield").placeholder="Email"
+  
+
+
+
+function call(){
+    if(email.checked){
+        // console.log("email")
+        document.querySelector("#inputfield").placeholder="Email"
+  }
+  else{
+    //   console.log("phone")
+      document.querySelector("#inputfield").placeholder="phone"
+  }
+ 
+}
+
+const sharelink = ()=>{
+    let inpt=document.querySelector("#inputfield").value
+     if(inpt==""){
+        alert('this field is required')
+     }else{
+        if(email.checked && inpt!="" ){
+      if(inpt.includes('@gmail.com')){
+          alert('App link shared to E-mail account')
+      }else{
+          alert('enter a valid email')
+      }
+  }
+  else if(phone.checked && inpt!="" ){
+      inpt=""+inpt
+      if(inpt.length==10){
+          alert('App link shared to Mobile number')
+      }else{
+          alert('enter a valid phone no.')
+      }
+  }
+     }
+
+}
+
+</script>
+<!-- get -->

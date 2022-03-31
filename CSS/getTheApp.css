@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,800&family=Roboto&family=Source+Serif+4:wght@200;300;400&display=swap');
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.store{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    height: auto;
+    margin: auto;
+    max-height: 650px;
+    margin-top: 120px;
+    width: 65%;
+   
+}
+.storeLeft>img{
+    height: 100%;
+}
+.storeright>div>h3{
+    margin-top: 100px;
+    font-weight: bolder;
+    font-size: 40px;
+}
+.storeright>div>p{
+    font-weight:500 ;   
+    margin-right:20px; 
+
+}
+
+[type="checkbox"], [type="radio"] {
+height:20px; 
+width:20px;
+background-color: green;
+margin-top: 20px;
+}
+form>div{
+    display: flex;
+    margin-bottom: 50px;
+}
+.emailphone>form >div{
+    display: flex;
+}
+.emailphone+div>p{
+    font-size: 15px;
+}
+
+.inputbutton{
+    display: flex;
+    gap: 15px;
+}
+
+.inputbutton>div:nth-child(1){
+height:40px;
+width:85%;
+border-radius: 15px;
+}
+.inputbutton>div:nth-child(2){
+    height:52px;
+    width:30%;
+    min-width: 150px;
+    }
+
+.inputbutton>div>input,.inputbutton>div>button{
+    width: 100%;
+    height:100%;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: start;
+}
+.inputbutton>div>button{
+    color: white;
+    background-color: #318616;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+
+}
+.playStores{
+    display: flex;
+    gap: 20px;
+}
+
+.playStores>div>img{
+height:40.97px ;
+width: 140px;
+}
+
+#inputfield{
+    font-size: 20px;
+
+    border: 1px solid #ccc;
+-webkit-transition: 0.5s;
+transition: 0.5s;
+outline: none;
+}
+
+#inputfield:focus{
+    
+    border: none;
+  border: 2px solid #318616;
+
+}
+
+
+
+
+
+
+@media(max-width:767px){
+    .store{
+        margin-top: 0px;
+        justify-content: center;
+        
+    }
+    .storeLeft>img{
+       display: none;
+    }
+    .storeright>div>h3{
+        margin-top: 50px;
+    }
+    .inputbutton{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+
+    
+}

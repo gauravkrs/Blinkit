@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/login.css"/>
+    <style>
+       
+        </style>
+   
+</head>
+<body>
+   
+    <div id="LOgin">
+        <button class="back" onclick="window.location.href='login.html'"> < back</button>
+        <div class="PHoneVErHeading">
+            <h2>
+                Phone Number Verification
+            </h2>
+        </div>
+        <div class="LOginDEtails">
+            <div align="center">
+                <p style="width: 60%;max-width: 400px;">
+                    
+                </p>
+            </div>
+            <div class="LOginDEtailsF" >
+                <form align="center">
+                    <div class="LOginInput" style="display: flex; justify-content: center; column-gap: 30px;" >
+                        <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                        <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                        <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                        <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                    </div>
+                    <div class="NExtBUtton">
+                        <!-- <button onclick="submitOTP()">Next</button> -->
+                        <button id="letsgo" type="submit">Next</button>
+                        <a class="resendCode" onclick="resendCode()"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="./scripts/login.otp.js"></script>
+<!-- end -->
+
