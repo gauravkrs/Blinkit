@@ -1,0 +1,49 @@
+#pan_corner{
+    height: 220px;
+    width: 85%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+img{
+    height:95%;
+    width:95%;
+    padding-left: 30px;
+    
+}
+#welcom{
+    height:200px;
+    width:85%;
+    margin:auto;
+    border-radius: 10px;
+}
+#explore{
+    height:250px;
+    width:85%;
+    margin: auto;
+}
+#explore{
+    display: grid;
+    grid-template-columns: repeat(4,4fr);
+    grid-template-rows: 220px;
+    gap:10px
+}
+#explore>div{
+    border-radius: 20px;
+}
+#groserry{
+    height:350px;
+    width:85%;
+    margin: auto;
+}
+#groserry{
+    display: grid;
+    grid-template-columns: repeat(10,105px);
+    grid-template-rows: repeat(2,150px);
+    gap: 20px;
+}
+#groserry>div{
+    height:100%;
+    width:100%;
+    padding-left: 30px;
+}
