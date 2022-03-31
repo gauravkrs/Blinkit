@@ -1,0 +1,58 @@
+
+    #Body{
+        height:4500px;
+        width:85%;
+        border:5px solid whitesmoke;
+        margin: auto;
+        display: flex;
+    }
+    .sidenavbar{
+        height:5300px;
+        width:25%;
+       
+    }
+    .sidenavbar2{
+        height:5300px;
+        width:75%;
+
+    }
+    .sidenavbar>div{
+        height:60px;
+        width:100%;
+        border:2px solid whitesmoke
+    }
+    .Top{
+        height:60px;
+        width:100%;
+        border:2px solid whitesmoke
+        
+    }
+    .sidenavbar3{
+        height:5240px;
+        width:100%;
+       
+    }
+    .sidenavbar3{
+        display: grid;
+        grid-template-columns: repeat(4,210px);
+        grid-template-rows: repeat(9,400px);
+        gap:25px;
+        padding-left: 5px;
+    }
+    .flex{
+        display: flex;
+    }
+    button{
+        height:20px;
+        margin-top: 18px;
+        margin-left: 30px;
+        background-color: yellow;
+        border-radius: 20px;
+    }
+    h5{
+        font-size: large;
+        padding-left: 5px;
+    }
+    h3{
+        padding-left: 10px;
+    }
