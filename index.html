@@ -4,14 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>header</title>
+    <link rel="stylesheet" href="./css/header.css"/>
 </head>
-<body>
-    <h2>
-        welcome to index page
-    </h2>
+<body id="body1">
+    <div id="fixnavbar"></div>
+    
 </body>
 </html>
-<script>
+<script src="https://kit.fontawesome.com/cb83d10ce2.js" crossorigin="anonymous"></script>
+<script src="./script/place.js"></script>
+<script type="module">
+    import navbar from "./script/header.js";
+    document.querySelector("#fixnavbar").innerHTML=navbar();
+
+
+
+    //random delivary time
+    var randomNumber=Math.floor(Math.random()*(45-10)+9);
+    document.querySelector("#randomDelivery").innerHTML=`delivery in ${randomNumber} minutes`;
+
+
+
+    //city search
+    let body = document.querySelector("#body1");
+    var popmap=document.querySelector("#locationPopM");
+    var mainblurpop=document.querySelector("#blurpopM");
+    document.querySelector("#mapL").addEventListener("click",()=>{
+        popmap.style.visibility="visible";
+        popmap.style.opacity=1;
+        mainblurpop.style.backgroundColor="rgb(0,0,0,0.5)"
+        // body.style.backgroundColor="transparent";
+        document.querySelector("#randomDelivery").style.color="rgb(209,26,26)"
+    })
+
+
+    // LOCATION DETECTION
+    navigator.geolocation.getCurrentPosition(function(position) {
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+    out(lat,lng)
+    });
+
+    let addressM=document.querySelector("#mapM");
+    async function out(lat,lng){
+        let rel = await fetch(`https://us1.locationiq.com/v1/reverse.php?key=pk.456518217705258731c8c7089e3a45d0&lat=${lat}&lon=${lng}&format=json`)
+        let data = await rel.json();
+        // console.log(data.address);
+        // console.log(data.display_name);
+        console.log("location aa gayi")
+
+        //LOCATION APPEND
+        
+        addressM.innerHTML= `${data.address.suburb},${data.address.city},${data.address.state},${data.address.country},${data.address.postcode}`;
+    }
+
     
+
+
+    //search location
+    let city=JSON.parse(localStorage.getItem("cities"))
+    let inputM = document.querySelector("#locationPopsubM31");
+    let appendM=document.querySelector("#appendCNM")
+    inputM.addEventListener("input", input_change)
+    
+    function input_change(){
+        
+        let z=city.filter(function(e){
+                let result = inputM.value;
+                appendM.innerHTML="";
+                return e.name.includes(result);                
+            })
+            console.log(z)
+            // {id: '2', name: 'Delhi', state: 'Delhi'}
+            z.forEach(({name:n,state:c})=>{
+                let cityname=document.createElement("p")
+                cityname.setAttribute("id","visibleCityM")
+                cityname.addEventListener("click",function(){
+                    addressM.innerText=`${n}, ${c}`;
+                    // console.log(n,c)
+                })
+                cityname.innerText=`${n}, ${c}`;
+                appendM.append(cityname)
+            })        
+    }
+    
+    //Exiting PopUp
+    let cancelPopM = document.querySelector("#crossM");
+    cancelPopM.addEventListener("click", ()=>{
+        popmap.style.visibility="none";
+        popmap.style.opacity=0;
+        mainblurpop.style.backgroundColor="rgb(0,0,0,0)"
+    })
 </script>

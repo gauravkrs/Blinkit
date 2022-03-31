@@ -7,17 +7,7 @@
     <title>header</title>
     <link rel="stylesheet" href="./css/header.css"/>
 </head>
-<body>
-    <!-- <div id="mainheaderM">
-        <div id="logoM"  onclick=" window.location.href='index.html'">
-            <img id="logoimg" style="background-color:rgb(255,225,65);" src="https://blinkit.com/images/header/blinkit-logo-header-05a0b5f.png"/>
-        </div>
-        <div id="mapM"><h2>map</h2></div>
-        <div id="searchM1"><input id="searchM" type="search" placeholder="Search for products" /></div>
-        <div id="profileM"><h2>login</h2></div>
-        <div id="cartM"><h2>cart</h2></div>
-        <div id="getappM"><h2>get the App</h2></div>
-    </div> -->
+<body id="body1">
     <div id="mainheaderM1">
         <ul id="ulM">
             <li id="lM1"><a href="index.html"  id="lM1"><img id="lM" src="https://blinkit.com/images/header/blinkit-logo-header-05a0b5f.png"/></a></li>
@@ -26,18 +16,24 @@
             </li>
             <li id="lM3"><a href="#" style="display: flex;"><i id="searchM1" class="fa-solid fa-magnifying-glass"></i><input id="searchM2" type="search" placeholder="Search for products" /></a></li>
             <li id="lM4"><a href="#">login</a></li>
-            <li id="lM5"><a href="#"><h2>cart</h2></a></li>
-            <li id="lM6"><a href="#">get the App</a></li>
+            <li id="lM5"><a href="#" id="lM5M"><span id="h5CM"><i style="color: white;" class="fa-solid fa-cart-shopping"></i></span><span id="h5CM" >Empty</span><span id="h5CM">₹ 0</span></a></li>
+            <li id="lM6"><a href="#"><i class="fa-solid fa-mobile-screen"></i>  get the App</a></li>
         </ul>
     </div>
-    <div id="locationPopM">
-        <div id="locup"><i id="locup1" class="fa-solid fa-sort-up"></i></div>
-        <div id="locationsubpart">
-            <h3>Change Location</h3>
-            <div id="locationPopsubM">
-                <div id="locationPopsubM1"><p id="locationPopsubM11" >Detect my Location</p></div> --
-                <div id="locationPopsubM2">OR</div>--
-                <div id="locationPopsubM3"><input id="locationPopsubM31" type="search" oninput="findcity()" placeholder="Type your city Name"/></div>
+    <div id="blurpopM">
+        <div id="locationPopM">
+            <div id="locup"><i id="locup1" class="fa-solid fa-sort-up"></i></div>
+            <div id="locationsubpart">
+                <i id="crossM" class="fa-solid fa-xmark"></i>
+                <h3>Change Location</h3>
+                <div id="locationPopsubM">
+                    <div id="locationPopsubM1"><p id="locationPopsubM11" >Detect my Location</p></div> --
+                    <div id="locationPopsubM2">OR</div>--
+                    <div id="locationPopsubM3">
+                        <input id="locationPopsubM31" type="text"  placeholder="Type your city Name"/>
+                    </div>
+                </div>
+                <div id="appendCNM"></div>
             </div>
         </div>
     </div>
@@ -54,11 +50,14 @@
 
 
     //city search
+    let body = document.querySelector("#body1");
     var popmap=document.querySelector("#locationPopM");
+    var mainblurpop=document.querySelector("#blurpopM");
     document.querySelector("#mapL").addEventListener("click",()=>{
         popmap.style.visibility="visible";
         popmap.style.opacity=1;
-        // body.style.backGroundColor="black";
+        mainblurpop.style.backgroundColor="rgb(0,0,0,0.5)"
+        // body.style.backgroundColor="transparent";
         document.querySelector("#randomDelivery").style.color="rgb(209,26,26)"
     })
 
@@ -69,15 +68,55 @@
     const lng = position.coords.longitude;
     out(lat,lng)
     });
+
+    let addressM=document.querySelector("#mapM");
     async function out(lat,lng){
         let rel = await fetch(`https://us1.locationiq.com/v1/reverse.php?key=pk.456518217705258731c8c7089e3a45d0&lat=${lat}&lon=${lng}&format=json`)
         let data = await rel.json();
-        console.log(data.address);
-        console.log(data.display_name);
+        // console.log(data.address);
+        // console.log(data.display_name);
+        console.log("location aa gayi")
 
         //LOCATION APPEND
-        document.querySelector("#mapM").innerHTML= `${data.address.suburb},${data.address.city},${data.address.state},${data.address.country},${data.address.postcode}`;
+        
+        addressM.innerHTML= `${data.address.suburb},${data.address.city},${data.address.state},${data.address.country},${data.address.postcode}`;
     }
 
     
+
+
+    //search location
+    let city=JSON.parse(localStorage.getItem("cities"))
+    let inputM = document.querySelector("#locationPopsubM31");
+    let appendM=document.querySelector("#appendCNM")
+    inputM.addEventListener("input", input_change)
+    
+    function input_change(){
+        
+        let z=city.filter(function(e){
+                let result = inputM.value;
+                appendM.innerHTML="";
+                return e.name.includes(result);                
+            })
+            console.log(z)
+            // {id: '2', name: 'Delhi', state: 'Delhi'}
+            z.forEach(({name:n,state:c})=>{
+                let cityname=document.createElement("p")
+                cityname.setAttribute("id","visibleCityM")
+                cityname.addEventListener("click",function(){
+                    addressM.innerText=`${n}, ${c}`;
+                    // console.log(n,c)
+                })
+                cityname.innerText=`${n}, ${c}`;
+                appendM.append(cityname)
+            })        
+    }
+    
+    //Exiting PopUp
+    let cancelPopM = document.querySelector("#crossM");
+    cancelPopM.addEventListener("click", ()=>{
+        popmap.style.visibility="none";
+        popmap.style.opacity=0;
+        mainblurpop.style.backgroundColor="rgb(0,0,0,0)"
+    })
 </script>
