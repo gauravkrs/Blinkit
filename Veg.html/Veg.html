@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Vegmain.css">
+
+</head>
+<body>
+    <div id="Body">
+        <div class="sidenavbar"><div><h5>Vegetables</h5></div>
+        <div><h5>Fruits</h5></div>
+        <div><h5>Exotics & Premium</h5></div>
+        <div><h5>Freshly Cut & Sprouts</h5></div>
+        <div><h5>Frozen Veg</h5></div>
+        <div><h5>Seasonal</h5></div>
+        <div><h5>Flowers</h5></div>
+    </div>
+        <div class="sidenavbar2">
+            <div class="Top"><h3>Vegetables & Fruits</h3></div>
+            <div class="sidenavbar3"></div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+<script src="vegdata.js"></script>
+<script>
+    let Vegdata=JSON.parse(localStorage.getItem("vegdata"))
+    Vegdata.map(function (elem){
+        var div=document.createElement("div")
+        img=document.createElement("img")
+        img.src=elem.image
+
+        var name=document.createElement("p")
+        name.innerText=elem.name
+
+        var weight=document.createElement("p")
+        weight.innerText=elem.weight
+
+        var price=document.createElement("h3")
+        price.innerText=elem.price
+        var button=document.createElement("button")
+        button.innerText="Add To Cart"
+        var div2=document.createElement("div")
+        div2.setAttribute("class","flex")
+        div2.append(price,button)
+        div.append(img,name,weight,div2)
+        document.querySelector(".sidenavbar3").append(div)
+    })
+</script>
