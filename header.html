@@ -16,7 +16,7 @@
             </li>
             <li id="lM3"><a href="#" style="display: flex;"><i id="searchM1" class="fa-solid fa-magnifying-glass"></i><input id="searchM2" type="search" placeholder="Search for products" /></a></li>
             <li id="lM4"><a href="#">login</a></li>
-            <li id="lM5"><a href="#" id="lM5M"><span id="h5CM"><i style="color: white;" class="fa-solid fa-cart-shopping"></i></span><span id="h5CM" >Empty</span><span id="h5CM">₹ 0</span></a></li>
+            <li id="lM5"><a href="#" id="lM5M"><span id="h5CM"><i style="color: white;" class="fa-solid fa-cart-shopping"></i></span><span id="h5CM" >my cart</span><span id="h5CM"></span></a></li>
             <li id="lM6"><a href="#"><i class="fa-solid fa-mobile-screen"></i>  get the App</a></li>
         </ul>
     </div>
@@ -43,6 +43,7 @@
 <script src="https://kit.fontawesome.com/cb83d10ce2.js" crossorigin="anonymous"></script>
 <script src="./script/place.js"></script>
 <script type="module">
+    //=====================================================================Nav Bar==================================================//
     //random delivary time
     var randomNumber=Math.floor(Math.random()*(45-10)+9);
     document.querySelector("#randomDelivery").innerHTML=`delivery in ${randomNumber} minutes`;
@@ -119,4 +120,17 @@
         popmap.style.opacity=0;
         mainblurpop.style.backgroundColor="rgb(0,0,0,0)"
     })
+
+    //=========================================================================================================================================//
+
+
+
+
+    //------------------------------------------------------------Log In Page------------------------------------------------------------------//
+
+    document.querySelector("#lM4").addEventListener("click",login);
+    function login(){
+        // let maindivLM=document.createEvent("div");
+
+    }
 </script>
