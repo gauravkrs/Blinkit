@@ -1,0 +1,287 @@
+const footer =()=>{
+    return `<!-- --------------------------------------Top of footer-------------------------------- -->
+    <div class="store">
+        <div class="storeLeft">
+              <img src="https://blinkit.com/careers/sites/default/files/2022-03/blinkit.png"  alt="blikit site"/>
+        </div>
+        <div class="storeright">
+              <div>
+                   <h3>get the blinkit app</h3>
+              </div>
+             <div>
+                  <p>We will send you a link, open it on your phone to download the app</p>
+             </div>
+             <div class="emailphone">
+                  <form>
+                 <div>
+                    <div>
+                        <label for="email">
+                        <!--<input type="radio" name="radioSelection" id="radioemail" onchange="call()" checked  />-->
+                            <input type="radio" name="radioSelection" id="radioemail" checked  />
+                            <span class="spanMobile">email</span>
+                        </label>
+                     </div>
+                     <div>
+                        <label for="phone">
+                        <!--<input type="radio" name="radioSelection" id="radiophone" onchange="call()" />-->
+                            <input type="radio" name="radioSelection" id="radiophone"  />
+                            <span class="spanPhone">phone</span>
+                        </label>                     
+                     </div>
+             </div>
+             <div class="inputbutton" >
+                 <div>
+                     <input type="text" placeholder="" id="inputfield" value="">
+                 </div>
+                 <div>
+                 <!--<button onclick="sharelink()">share app link</button>-->
+                     <button id="sharelink">share app link</button>
+                 </div>
+             </div>
+                  </form>
+             </div>
+             <div>
+                  <p>Download app form</p>
+             </div>
+             <div class="playStores">
+                  <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/appstore.png" alt="AppleStore" onclick="window.location.href='https://apps.apple.com/us/app/grofers-local-shopping/id960335206'" /> </div>
+                  <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/playstore.png" alt="playstore" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.grofers.customerapp'" /> </div>
+             </div>
+         
+        </div>
+    </div>
+    <!----------------------------------------base of footer-------------------------------- -->
+    <div class="ft1">
+        <div class="footer-content">
+            <h1>We deliver everything in 10 minutes</h1>
+            <p>blinkit is India’s fastest online shopping platform. Get fresh groceries and much more delivered online
+                instantly.</p>
+            <h2>Single app for all your daily needs</h2>
+            <p>Order thousands of products at just a tap: milk, eggs, bread, cooking oil, ghee, atta, rice, fresh fruits and
+                vegetables, spices, fresh meat, seafood, frozen veg and non-veg food, chocolates, chips, biscuits, maggi,
+                cold drinks, shampoos, soaps, body wash, pet food, diapers, electronics, sanitizers, masks, sanitary
+                napkins, health products, hygiene products, organic products and gourmet products, and much more from your
+                neighbourhood stores.</p>
+    
+    
+        </div>
+        <div class="cities">
+            <h2>Available in following cities</h2>
+            <span>The delivery service is operational in Agra, Ahmedabad, Aligarh, Allahabad, Bengaluru, Bhiwadi, Bijnor,
+                Chandigarh, Chennai, Delhi, Durgapur,
+                Faridabad, Gauriganj, Gonda, Gurugram, Guwahati, Hisar, Hyderabad, Jaipur, Jamshedpur, Kanpur, Kolkata,
+                Kota,
+                Lucknow, Mathura, Meerut, Mohali, Moradabad, Mumbai, Noida, Panchkula, Panipat, Pune, Raebareli, Rohtak,
+                Sonipat, Vadodara, Zirakpur</span>
+        </div>
+        <div class="first-row">
+            <div class="deliver1">
+                <div>
+                    <img class="" alt="express delivery"
+                        src="https://blinkit.com/images/home/express-delivery-icon-93fce76.png">
+    
+    
+                </div>
+                <div>
+                    <div>10 minute grocery now</div>
+                    <div>Get your order delivered to your doorstep at the earliest from dark stores near you.
+    
+                    </div>
+                </div>
+            </div>
+            <div class="deliver1">
+                <div><img class="img-loader__img img-loader__img--shown " alt="best price"
+                        src="https://blinkit.com/images/home/footer-best-price-icon-90b5bd7.png">
+                </div>
+                <div>
+                    <div>Best Prices & Offers</div>
+                    <div>Cheaper prices than your local supermarket, great cashback offers to top it off.</div>
+                </div>
+            </div>
+            <div class="deliver1">
+                <div><img class=" " alt="express delivery"
+                        src="https://blinkit.com/images/home/footer-genuine-products-icon-d2756ce.png">
+                </div>
+                <div>
+                    <div>Wide Assortment</div>
+                    <div>Choose from 5000+ products across food, personal care, household & other categories.</div>
+                </div>
+            </div>
+            <div class="deliver1">
+                <div><img class=" " alt="express delivery"
+                        src="https://blinkit.com/images/home/footer-easy-returns-icon-02b777e.png">
+                </div>
+                <div>
+                    <div>Easy Returns</div>
+                    <div>Not satisfied with a product? Return it at the doorstep & get a refund within hours.
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="second-row">
+            <div class="leftsecond">
+                <div style="color: #000;">Categories</div>
+                <ul>
+                    <li>vegetable & fruits</li>
+                    <li>munchies</li>
+                    <li>breakfast & instant food</li>
+                    <li>cold drinks & juices</li>
+                    <li>atta, rice & dal</li>
+                    <li>sauces & spreads</li>
+                    <li>organic & healthy living</li>
+                    <li>baby care</li>
+                    <li>cleaning essentials</li>
+                    <li>personal care</li>
+                    <li>dairy, bread & eggs</li>
+                    <li>bakery & biscuits</li>
+                    <li>tea, coffee & health drinks</li>
+                    <li>sweet tooth</li>
+                    <li>masala, oil & more</li>
+                    <li>chicken, meat & fish</li>
+                    <li>gourmet & world food</li>
+                    <li>pharma & wellness</li>
+                    <li>home & office</li>
+                    <li>pet care</li>
+                </ul>
+            </div>
+    
+    
+            <div class="rightsecond">
+                <ul>
+                    <li>
+                        <div style="color: #000;">company</div>
+                        <div>
+                            <div>About</div>
+                            <div>Careers</div>
+                            <div>Blog</div>
+                            <div>Press</div>
+                            <div>Lead</div>
+                            <div>Value</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="color: #000;">for Consumers</div>
+                        <div>
+                            <div>Privacy</div>
+                            <div>Terms</div>
+                            <div>FAQs</div>
+                            <div>Security</div>
+                            <div>Mobile</div>
+                            <div>Cantact</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div style="color: #000;">For Partners</div>
+                        <div>
+                            <div>Partner</div>
+                            <div>Express</div>
+                            <div>Local</div>
+                            <div>Spotlight</div>
+                            <div>Warehouse</div>
+                            <div>Deliver</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container_follow">
+            <div class="follow1">
+                <spna>Follow us</spna>
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-twitter-square"></i></li>
+                    <li><i class="fa-brands fa-instagram-square"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-twitter-square"></i>
+                        <span style="display: flex;
+                        justify-content: center;
+                         align-items: center;">@blinkitcares</span>
+                    </li>
+                    <li><i class="fa-brands fa-twitter-square"></i>
+                        <span style="display: flex;
+                        justify-content: center;
+                         align-items: center;">@blinkiteng</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="follow2">
+                <span>Download app</span>
+                <div>
+                    <div><img src="https://blinkit.com/images/home/app-store_1x-b88bb81.png" alt=""></div>
+                    <div><img src="https://blinkit.com/images/home/google-play_1x-9335bb6.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Brands available on blinkit</h3>
+            <ul>
+                <li>grofers Happy Day</li>
+                <li>grofers Happy Home</li>
+                <li>grofers Mother's Choice</li>
+                <li>g Fresh</li>
+                <li>O'range
+                </li>
+                <li>Savemore</li>
+                <li>24 Mantra</li>
+                <li>Aashirvaad
+                </li>
+                <li>Act II</li>
+                <li>Amul</li>
+                <li>Axe</li>
+                <li>Bambino</li>
+                <li>Best Value</li>
+                <li>Bingo</li>
+                <li>Bisleri</li>
+                <li>Boost</li>
+                <li>Bournvita</li>
+                <li>Britannia</li>
+                <li>Brookeband</li>
+                <li>Bru</li>
+                <li>Cadbury</li>
+                <li>Cheetos</li>
+                <li>Cinthol</li>
+                <li>Closeup</li>
+                <li>Coca-Cola</li>
+                <li>Colgate</li>
+                <li>Dabur</li>
+                <li>Danone</li>
+                <li>Del Monte</li>
+                <li>Dettol</li>
+            </ul>
+        </div>
+        <div class="paymentcontainer">
+            <h3>Payment partners</h3>
+            <div class="paymetoption">
+            <div><img src="https://blinkit.com/images/payment/mobikwik-c96e507.png" alt=""></div>
+            <div><img src="	https://blinkit.com/images/payment/paytm-b393728.png" alt=""></div>
+            <div><img src="https://blinkit.com/images/payment/visa-95f2100.png" alt=""></div>
+            <div><img src="https://blinkit.com/images/payment/mastercard-01e540b.png" alt=""></div>
+            <div><img src="	https://blinkit.com/images/payment/maestro-e164fe0.png" alt=""></div>
+            <div><img src="	https://blinkit.com/images/payment/rupay-39478ad.png" alt=""></div>
+            <div><img src="	https://blinkit.com/images/payment/amex-fdda4b1.png" alt=""></div>
+            <div><img src="https://blinkit.com/images/payment/sodexo-82f2019.png" alt=""></div>
+            <span>Net Banking</span>
+            <span>cash on delivery</span>
+            <span>grofers cash</span>
+        </div>
+          
+        </div>
+        <div class="bottom2">
+            <p>"Blinkit " is owned & managed by "Grofers India Private Limited” and is not related, linked or
+                interconnected
+                in whatsoever manner or nature, to “GROFFR.COM” which is a real estate services business operated by
+                “Redstone Consultancy Services Private Limited”.</p>
+        </div>
+        <div class="bottom1">
+            <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and
+                Content
+                Policies. All trademarks are properties of their respective owners. 2016-2022 © Grofers India Pvt Ltd.
+                All
+                rights reserved.</p>
+        </div>
+    
+    </div>`;
+}
+
+export default footer;

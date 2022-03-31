@@ -1,0 +1,239 @@
+/* ==========================================DHYAN SE DEKHIYE ISS KHAUFNAAT PAGE KO======================================== */
+
+/* body {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #fafafa;
+} */
+#wholeHomePageData{
+    margin-top: 60px;
+}
+#sec3 {
+    width: 85.5%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #fafafa; */
+}
+
+#head>h3 {
+    margin: 8px 0;
+}
+
+#head>p {
+    margin: 0px;
+    margin-bottom: 18px;
+    color: rgb(102, 102, 102);
+}
+
+#scrol {
+    display: flex;
+    margin-top: 18px;
+    gap: 30px;
+}
+
+#scrol>a {
+    display: flex;
+    gap: 5px;
+    margin-top: 8px;
+}
+
+#scrol>a>p {
+    margin: 0%;
+    background-color: #F8CB46;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.info>p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.pimg {
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+
+#chemDiv,
+#dairyDiv,
+#snackDiv {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    overflow-x: hidden;
+}
+
+#right,
+#left,
+#righ,
+#lef,
+#sright,
+#sleft {
+    width: 35px;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    background-color: #fff;
+    border: 1px #c1c1c1;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* i {
+    color: #c1c1c1;
+}
+
+i:hover {
+    color: #fff;
+} */
+
+#right:hover,
+#left:hover,
+#righ:hover,
+#lef:hover,
+#sright:hover,
+#sleft:hover {
+    background-color: #318616;
+}
+
+#cont {
+    width: 145px;
+}
+
+.info>p {
+    margin: 5px 0px;
+    padding: 0px 6px;
+    line-height: normal;
+}
+
+.info>p+p {
+    color: rgb(102, 102, 102);
+}
+
+.price {
+    display: flex;
+    gap: 15px;
+}
+
+.price>span {
+    font-weight: bold;
+}
+
+.price>span+span {
+    font-weight: normal;
+    text-decoration: line-through;
+    color: rgb(102, 102, 102);
+}
+        #bankOffers {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: auto;
+            gap: 18px;
+            margin: 15px 0px;
+            overflow-x: hidden;
+        }
+
+        #mainBox {
+            display: flex;
+            height: 87px;
+            width: 315px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            justify-content: space-between;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        .dimg {
+            width: 50%;
+        }
+
+        .text {
+            color: white;
+            width: 50%;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            font-size: 12px;
+        }
+
+        .para2>p {
+            margin: 5px 0;
+            font-size: 10px
+        }
+
+        .dimg>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container1 {
+            margin-left: 10px;
+        }
+
+        #pan_corner {
+            height: 220px;
+            width: 85%;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 50px;
+            background-color: #f3f1f1;
+
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            /* padding-left: 30px; */
+
+        }
+
+        #welcom {
+            height: 200px;
+            width: 85%;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        #explore {
+            height: 250px;
+            width: 85%;
+            margin: auto;
+        }
+
+        #explore {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 220px;
+            gap: 20px;
+        }
+
+        #explore>div {
+            border-radius: 20px;
+        }
+
+        #groserry {
+            height: 350px;
+            width: 85%;
+            margin: auto;
+        }
+
+        #groserry {
+            display: grid;
+            grid-template-columns: repeat(10, 2fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        #groserry>div {
+            height: 100%;
+            width: 100%;
+            /* padding-left:5px; */
+        }
