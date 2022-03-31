@@ -14,6 +14,7 @@ const display = (data, main) => {
         let imgDiv = document.createElement("div");
 
         let img = document.createElement("img");
+        img.setAttribute("class","pimg")
         img.src = el.img_url;
 
         let add = document.createElement("button");
