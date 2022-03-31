@@ -15,7 +15,14 @@ const display = (data, main) => {
 
         let img = document.createElement("img");
         img.src = el.img_url;
-        imgDiv.append(img)
+
+        let add = document.createElement("button");
+        add.innerText="+"
+        add.addEventListener("click",()=>{
+            btn(el)
+        })
+
+        imgDiv.append(img,add)
         let nameDiv = document.createElement("div");
         nameDiv.setAttribute("class", "info")
 
@@ -40,6 +47,10 @@ const display = (data, main) => {
         div.append(imgDiv, nameDiv, priceDiv)
         main.append(div);
     })
+}
+
+const btn = (data)=>{
+    console.log(data)
 }
 
 export default display;
