@@ -4,6 +4,7 @@
 // let dair = JSON.parse(localStorage.getItem("dairy")) || [];
 // console.log(dair)
 
+let cartDB = JSON.parse(localStorage.getItem("cartDB")) || [];
 
 const display = (data, main) => {
     main.innerHTML = null;
@@ -50,9 +51,28 @@ const display = (data, main) => {
     })
 }
 
-const btn = (data)=>{
-    console.log(data)
+const showCartqty = (item)=>{
+    
 }
 
-export default display;
+
+const btn = (data)=>{
+    let newCart  = {
+         name : data.product_name,
+         img : data.img_url,
+         qty : data.qty,
+         price : Number(data.price),
+         sPrice : data.strikeprice
+    }
+    
+
+    cartDB.push(newCart);
+    console.log(cartDB)
+
+    showCartqty(cartDB);
+    localStorage.setItem("cartDB", JSON.stringify(cartDB))
+}
+
+export {display,showCartqty};
+
 // display(dair)

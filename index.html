@@ -15,6 +15,7 @@
     <!--=============================================================Header============================================================================= -->
     <div id="fixnavbar"></div>
     <div id="loginpartnavbar">
+
         <div id="loginpartofthiswebsite">
             <div id="LOgin" align="center">
                 <div class="PHoneVErHeading">
@@ -42,7 +43,39 @@
                 </div>
             </div>
         </div>
-        <div id="otpinpartofthiswebsite"></div>
+
+        <div id="otpinpartofthiswebsite">
+            <div id="LOgin">
+                <button class="back" onclick="window.location.href='login.html'"> < back</button>
+                <div class="PHoneVErHeading">
+                    <h2>
+                        Phone Number Verification
+                    </h2>
+                </div>
+                <div class="LOginDEtails1">
+                    <div align="center">
+                        <p style="width: 60%;max-width: 400px;">
+                            
+                        </p>
+                    </div>
+                    <div class="LOginDEtailsF1" >
+                        <form id="otpform" align="center">
+                            <div class="LOginInput" style="display: flex; justify-content: center; column-gap: 30px;" >
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                            </div>
+                            <div class="NExtBUtton">
+                                <!-- <button onclick="submitOTP()">Next</button> -->
+                                <button id="letsgo" type="submit">Next</button>
+                                <a class="resendCode" onclick="resendCode()"></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--=============================================================Content============================================================================= -->
     <div id="wholeHomePageData">
@@ -134,7 +167,7 @@
         <div id="sec3">
             <h3>bank & wallet offers</h3>
             <div style="display: flex;">
-                <div><button><i class="fa-solid fa-chevron-left"></i></button></div>
+                <div style="margin: 40px 8px 0 35px;z-index: 3"><button id = "bRight" ><i class="fa-solid fa-chevron-left"></i></button></div>
                 <div id="bankOffers">
                     <!-- Box 1-->
                     <div id="mainBox" style="border: 1px solid #1b3280;">
@@ -322,7 +355,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="z-index: 3;text-align: center;"><button><i class="fa-solid fa-angle-right"></i></button></div>
+                <div style="z-index: 3;margin:40px 0 0 5px; "><button id ="bLeft"><i class="fa-solid fa-angle-right"></i></button></div>
             </div>
         </div>
 
@@ -368,7 +401,6 @@
             </div>
         </div>
         </div> -->
-
         <!-- category section start here -->
 
         <div id="sec3">
@@ -393,7 +425,7 @@
             <div>
                 <div id="chemDiv">
                     <script type="module">
-                        import display from './componant/index.js';
+                        import {display,showCartqty} from './componant/index.js';
                         let chem = document.getElementById("chemDiv")
                         var chemit = JSON.parse(localStorage.getItem("chemist")) || [];
                         display(chemit, chem)
@@ -424,7 +456,7 @@
             </div>
             <div id="dairyDiv">
                 <script type="module">
-                    import display from './componant/index.js';
+                    import {display,showCartqty} from './componant/index.js';
                     let dairy = document.getElementById("dairyDiv")
                     var dair = JSON.parse(localStorage.getItem("dairy")) || [];
                     display(dair, dairy)
@@ -451,7 +483,7 @@
             </div>
             <div id="snackDiv">
                 <script type="module">
-                    import display from './componant/index.js';
+                    import {display,showCartqty} from './componant/index.js';
                     let snack = document.getElementById("snackDiv")
                     var snak = JSON.parse(localStorage.getItem("snacks")) || [];
                     display(snak, snack)
@@ -471,6 +503,7 @@
 <script src="https://kit.fontawesome.com/cb83d10ce2.js" crossorigin="anonymous"></script>
 <script src="./script/place.js"></script>
 <script type="module">
+    
     import navbar from "./componant/header.js";
     document.querySelector("#fixnavbar").innerHTML=navbar();
 
@@ -483,7 +516,7 @@
     document.querySelector("#randomDelivery").innerHTML=`delivery in ${randomNumber} minutes`;
 
 
-
+    document.querySelector("#loginandprofile").innerText="Login"
     //city search
     let body = document.querySelector("#body1");
     var popmap=document.querySelector("#locationPopM");
@@ -492,8 +525,8 @@
         popmap.style.visibility="visible";
         popmap.style.opacity=1;
         mainblurpop.style.backgroundColor="rgb(0,0,0,0.5)"
-        // body.style.backgroundColor="transparent";
         document.querySelector("#randomDelivery").style.color="rgb(209,26,26)"
+        mainblurpop.style.zIndex="7"
     })
 
 
@@ -542,7 +575,7 @@
                     addressM.innerText=`${n}, ${c}`;
                     popmap.style.visibility="none";
                     popmap.style.opacity=0;
-                    mainblurpop.style.backgroundColor="rgb(0,0,0,0)"
+                    mainblurpop.style.zIndex="-10"
                     // console.log(n,c)
                 })
                 cityname.innerText=`${n}, ${c}`;
@@ -556,7 +589,7 @@
     cancelPopM.addEventListener("click", ()=>{
         popmap.style.visibility="none";
         popmap.style.opacity=0;
-        mainblurpop.style.backgroundColor="rgb(0,0,0,0)"
+        mainblurpop.style.zIndex="-10"
     })
 
     //=========================================================================================================================================//
@@ -616,7 +649,9 @@
 
 
     //login popup
-    let loogn=document.querySelector("#LOgin");
+    let loogn=document.querySelector("#loginpartofthiswebsite");
+    // let otplogPart=document.querySelector("#otpinpartofthiswebsite");
+    
     document.querySelector("#lM4").addEventListener("click",function(){
         
         loogn.style.visibility="visible";
@@ -656,48 +691,48 @@
     sright.onclick = () => {
         document.getElementById("snackDiv").scrollLeft -= 650;
     }
-
-
-
-
-
-
     
-    
+    const bRight = document.getElementById("bRight");
+    const bLeft = document.getElementById("bLeft");
+
+    bLeft.onclick = () => {
+        document.getElementById("bankOffers").scrollLeft += 650;
+        count = 1;
+    }
+    bRight.onclick = () =>{
+        document.getElementById("bankOffers").scrollLeft -= 650;
+    }
 </script>
-
-
-
-
-
-
-
-
-
 
 <!------------------------------------------------------- Log in Pop Up ---------------------------------------->
 
 <script>
+    let otplogPart=document.querySelector("#otpinpartofthiswebsite");
     
     var mob= document.querySelector("input")
-document.querySelector("form").addEventListener("submit",function(event){
+    document.querySelector("form").addEventListener("submit",function(event){
     event.preventDefault(event)
     mobile = ""+mob.value;
     if(mobile.length==10){
-       location.href = "loginotp.html"
+    //    location.href = "loginotp.html"
        alert('redirecting to otp page')
+    //    console.log(event)
        localStorage.setItem('mobile',JSON.stringify(mobile))
+    //    console.log(otplogPart)
+       document.querySelector("#loginpartofthiswebsite").style.visibility="hidden"
+       otplogPart.style.visibility="visible";
     }
 })
 
 
 function SubmitMyMob(){
-    prevent
+    
     mobile = ""+mob.value;
     if(mobile.length==10){
-       location.href = "loginotp.html"
+    //    location.href = "loginotp.html"
        alert('redirecting to otp page')
        localStorage.setItem('mobile',JSON.stringify(mobile))
+       console.log(mobile)
     }
 }
 
@@ -713,4 +748,98 @@ console.log('hi')
         document.querySelector("button").style.backgroundColor='#ccc';
     } 
 }
+</script>
+
+<script>
+    let mob1=JSON.parse(localStorage.getItem('mobile'))
+    // Appending para of mobile number
+
+    let loginDetails1 = document.querySelector(".LOginDEtails1>div>p")
+
+    loginDetails1.innerText=`Enter 4 digit code sent to your phone +91-${mob1}`
+
+    //    Timer to resend code (otp)
+
+    var resendTimer = document.querySelector(".resendCode")
+
+    const resendCode = ()=>{
+    resendTimer.innerText=""
+    let i=30;
+    let time = setInterval((resendTimer)=>{
+    if(i>0){
+    // console.log(i)
+    document.querySelector(".resendCode").style.color='grey';
+    document.querySelector(".resendCode").innerText = `Resend Code (in ${i} secs)`
+    }
+    else{
+    clearInterval(time);
+    document.querySelector(".resendCode").innerText = "Resend Code";
+    document.querySelector(".resendCode").style.color='#318616';
+    document.querySelector(".resendCode").style.textDecoration = "underline"
+    document.querySelector("button").style.cursor="pointer";
+    }
+    i--;
+    },1000)
+
+    }
+
+    //    call of timer
+    resendCode();
+
+    // button highlighting on complete fillup
+    const checkinput =()=>{
+
+    var otps = document.querySelectorAll("#otp")
+    if(otps[0].value!="" && otps[1].value!="" && otps[2].value!="" && otps[3].value!=""){
+    document.querySelector("#letsgo").style.backgroundColor="#318616"
+    }
+    }
+
+    // form submission
+
+    document.querySelector("#otpform").addEventListener('submit',function(event){
+    event.preventDefault(event)
+    let otps = document.querySelectorAll("#otp")
+
+    if(otps[0].value==1 && otps[1].value==2 && otps[2].value==3 && otps[3].value==4){
+        alert("Logged In Successfully")
+        alert("Redirecting to home page")
+        document.querySelector("#loginandprofile").innerText="Profile"
+        otplogPart.style.visibility="hidden";
+
+    }else{
+
+    otps[0].style.border = "2px solid red";
+    otps[1].style.border = "2px solid red";
+    otps[2].style.border = "2px solid red";
+    otps[3].style.border = "2px solid red";
+    alert("verification failed")
+    event.preventDefault(event)
+    }
+    })
+</script>
+
+<!-- ===============================================Display Cart Data================================================= -->
+<script type="module">
+    let cartDB = JSON.parse(localStorage.getItem("cartDB")) || [];
+    console.log(cartDB)
+    import {display,showCartqty} from './componant/index.js';
+    // document.querySelector(".h5c").innerHTML = "my cart"
+    var sum = 0;
+    for(var i = 0; i < cartDB.length; i++){
+        sum = sum + cartDB[i].price
+    }
+    console.log(sum)
+    var count = cartDB.length;
+    console.log(count)
+    
+    if(count == 0){
+        document.querySelector(".h5c").innerText= "mycart"
+        document.querySelector(".h5m").innerHTML = null;
+    }else{
+        document.querySelector(".h5c").innerHTML =`${count} items`;
+        document.querySelector(".h5m").innerText = `₹ ${sum}`;
+    }
+    showCartqty(cartDB)
+    
 </script>
