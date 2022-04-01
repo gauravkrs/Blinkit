@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/heaDEr.css"/>
+</head>
+<body>
+    <div id="header">
+        <div class="logo">
+            <img src="https://blinkit.com/careers/sites/default/files/blinkit_logo.png" alt="logo"/>
+        </div>
+        <a href="#" class="toggleButton">
+          <div class="dropbtn">
+            <span class=" bar"></span>
+            <span class=" bar"></span>
+            <span class=" bar"></span>
+          </div>
+        </a>
+
+
+        <div class="dropdown">
+            <div id="myDropdown" class="dropdown-content">
+             <a href="https://blinkit.com/partner">Partner</a> 
+             <a href="https://blinkit.com/leadership">Lead</a> 
+             <a href="https://blinkit.com/leadership">Values</a> 
+             <a href="https://blinkit.com/press">Press</a> 
+             <a href="https://blinkit.com/security">Security</a> 
+             <a href="https://blinkit.com/privacy">Privacy</a> 
+             <a href="https://blinkit.com/terms">Terms</a> 
+             <a href="https://blinkit.com/faq">FAQs</a> 
+             <a href="https://blinkit.com/mobile">Mobile</a> 
+             <a href="https://blinkit.com/contact">Contact</a> 
+             <a href="https://blinkit.com/express">Express</a> 
+             <a href="https://blinkit.com/local/">Local</a> 
+             <a href="https://blinkit.com/spotlight">SpotLight</a> 
+             <a href="https://blinkit.com/warehouse-partner">Warehouse</a> 
+             <a href="https://blinkit.com/delivery">Deliver</a> 
+            </div>
+          </div>
+
+
+
+
+
+         <div class="right">
+            <ul class="menU">
+
+                <li class="first">
+                    <a href="https://blinkit.com/">Home</a>
+                </li>
+                <li>
+                    <a href="https://blinkit.com/aboutus" >About</a>
+                </li>
+                <li>
+                    <a href="https://blinkit.com/careers">Careers</a>
+                </li>
+                <li>
+                    <a href="https://blinkit.com/partner">Partner</a>
+                </li>
+                <li class="last">
+                    <a href="https://blinkit.com/blog/">Blog</a>
+                </li>
+
+            </ul>
+        </div> 
+    </div>
+</body>
+</html>
+
+<script type="module">
+    import { navbar, rightDropdown} from "./components/headER.js"
+    let header=document.querySelector("#header")
+    // header.innerHTML=navbar()
+    
+    rightDropdown()
+    document.querySelector(".dropbtn").addEventListener(click,()=>{
+        rightDropdown()
+    })
+</script>

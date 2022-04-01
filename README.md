@@ -1,2 +1,2 @@
-# blinkit
-Group Project
+# Blink.com
+ Construct week 3 Project
