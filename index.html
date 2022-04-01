@@ -167,7 +167,10 @@
         <div id="sec3">
             <h3>bank & wallet offers</h3>
             <div style="display: flex;">
-                <div style="margin: 40px 8px 0 35px;z-index: 3"><button id = "bRight" ><i class="fa-solid fa-chevron-left"></i></button></div>
+
+                <div style="margin: 40px 8px 0 35px;z-index: 3">
+                    <button id="bRight" style="width: 40px;height: 40px;border: 1px #c1c1c1;"><i class="fa-solid fa-chevron-left"></i></button></div>
+
                 <div id="bankOffers">
                     <!-- Box 1-->
                     <div id="mainBox" style="border: 1px solid #1b3280;">
@@ -355,7 +358,11 @@
                         </div>
                     </div>
                 </div>
-                <div style="z-index: 3;margin:40px 0 0 5px; "><button id ="bLeft"><i class="fa-solid fa-angle-right"></i></button></div>
+                
+                <div style="z-index: 3;margin:40px 0 0 5px; ">
+                    <button id="bLeft" style="width: 40px;height: 40px;"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
             </div>
         </div>
 
@@ -691,7 +698,6 @@
     sright.onclick = () => {
         document.getElementById("snackDiv").scrollLeft -= 650;
     }
-    
     const bRight = document.getElementById("bRight");
     const bLeft = document.getElementById("bLeft");
 
@@ -702,7 +708,10 @@
     bRight.onclick = () =>{
         document.getElementById("bankOffers").scrollLeft -= 650;
     }
+    
 </script>
+
+
 
 <!------------------------------------------------------- Log in Pop Up ---------------------------------------->
 
