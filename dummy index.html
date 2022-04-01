@@ -42,7 +42,33 @@
                 </div>
             </div>
         </div>
-        <div id="otpinpartofthiswebsite"></div>
+        <div id="otpinpartofthiswebsite">
+            <div id="LOgin" align="center">
+                <div class="PHoneVErHeading">
+                    <h2>
+                        Phone Number Verification
+                    </h2>
+                </div>
+                <div class="LOginDEtails">
+                    <div align="center">
+                        <p style="width: 50%;max-width: 400px;">
+                         Enter your phone number to
+                        Login/Sign up
+                        </p>
+                    </div>
+                    <div class="LOginDEtailsF">
+                        <form align="center">
+                            <div class="LOginInput" >
+                                <input id="otpMob" type="number" placeholder="" value="" oninput="changecolor()"/>
+                            </div>
+                            <div class="NExtBUtton">
+                                <button onclick="SubmitMyMob()">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--=============================================================Content============================================================================= -->
     <div id="wholeHomePageData">
@@ -134,7 +160,7 @@
         <div id="sec3">
             <h3>bank & wallet offers</h3>
             <div style="display: flex;">
-                <div><button><i class="fa-solid fa-chevron-left"></i></button></div>
+                <div><button></button></div>
                 <div id="bankOffers">
                     <!-- Box 1-->
                     <div id="mainBox" style="border: 1px solid #1b3280;">
@@ -322,7 +348,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="z-index: 3;text-align: center;"><button><i class="fa-solid fa-angle-right"></i></button></div>
+                <div style="z-index: 3;text-align: center;"><button></button></div>
             </div>
         </div>
 
@@ -381,7 +407,7 @@
                 <div id="scrol">
                     <a href="">see more <p>
                             <i class="fa-solid fa-angle-right"
-                                style="font-size: 11px;color: black;bottom: 11px;position: relative;"></i>
+                                style="font-size: 8px;color: black;bottom: 5px;position: relative;"></i>
                         </p></a>
                     <div>
                         <button id="right" type="button"><i class="fa-solid fa-chevron-left"></i></button>
@@ -414,7 +440,7 @@
                 <div id="scrol">
                     <a href="">see more <p>
                             <i class="fa-solid fa-angle-right"
-                                style="font-size: 10px;color: black;bottom: 11px;position: relative;"></i>
+                                style="font-size: 8px;color: black;bottom: 5px;position: relative;"></i>
                         </p></a>
                     <div>
                         <button id="righ" type="button"><i class="fa-solid fa-chevron-left"></i></button>
@@ -441,7 +467,7 @@
                 <div id="scrol">
                     <a href="">see more <p>
                             <i class="fa-solid fa-angle-right"
-                                style="font-size: 8px;color: black;bottom: 11px;position: relative;"></i>
+                                style="font-size: 8px;color: black;bottom: 5px;position: relative;"></i>
                         </p></a>
                     <div>
                         <button id="sright" type="button"><i class="fa-solid fa-chevron-left"></i></button>
@@ -616,7 +642,8 @@
 
 
     //login popup
-    let loogn=document.querySelector("#LOgin");
+    let loogn=document.querySelector("#loginpartofthiswebsite");
+    // let otpplog=document/querySelector("#otpinpartofthiswebsite");
     document.querySelector("#lM4").addEventListener("click",function(){
         
         loogn.style.visibility="visible";
@@ -668,35 +695,34 @@
 
 
 
-
-
-
-
-
-
-
 <!------------------------------------------------------- Log in Pop Up ---------------------------------------->
 
 <script>
-    
+    var otpplog=document.querySelector("#otpinpartofthiswebsite");
+    // let loogn1=document.querySelector("#loginpartofthiswebsite");
     var mob= document.querySelector("input")
 document.querySelector("form").addEventListener("submit",function(event){
     event.preventDefault(event)
     mobile = ""+mob.value;
     if(mobile.length==10){
-       location.href = "loginotp.html"
+    //    location.href = "loginotp.html"
        alert('redirecting to otp page')
+    //    loogn1.style.visibility="hidden";
+    //    loogn1.innerHTML="done"
+    //    otpplog.style.visibility="visible";
        localStorage.setItem('mobile',JSON.stringify(mobile))
     }
 })
 
 
 function SubmitMyMob(){
-    prevent
+    // prevent
     mobile = ""+mob.value;
     if(mobile.length==10){
-       location.href = "loginotp.html"
-       alert('redirecting to otp page')
+    //    location.href = "loginotp.html"
+       alert('redirecting to otp page');
+       loogn.style.visibility="hidden";
+       otpplog.style.visibility="visible";
        localStorage.setItem('mobile',JSON.stringify(mobile))
     }
 }
@@ -704,7 +730,6 @@ function SubmitMyMob(){
 
 
 function changecolor(){
-console.log('hi')
     mobile = ""+mob.value;
     if(mobile.length==10){
        document.querySelector("button").style.backgroundColor='#318616';
@@ -713,4 +738,90 @@ console.log('hi')
         document.querySelector("button").style.backgroundColor='#ccc';
     } 
 }
+
+
+// ==================================================OTP==================================================
+
+
+
+
+    let mob1=JSON.parse(localStorage.getItem('mobile'))
+
+
+// Appending para of mobile number
+
+let loginDetails = document.querySelector(".LOginDEtails>div>p")
+
+loginDetails.innerText=`Enter 4 digit code sent to your phone +91-${mob1}`
+
+
+//    Timer to resend code (otp)
+
+
+var resendTimer1 = document.querySelector(".resendCode")
+
+function resendCode(){
+resendTimer1.innerText=""
+let i=30;
+let time = setInterval(function(resendTimer1){
+if(i>0){
+// console.log(i)
+document.querySelector(".resendCode").style.color='grey';
+document.querySelector(".resendCode").innerText = `Resend Code (in ${i} secs)`
+}
+else{
+clearInterval(time);
+document.querySelector(".resendCode").innerText = "Resend Code";
+document.querySelector(".resendCode").style.color='#318616';
+document.querySelector(".resendCode").style.textDecoration = "underline"
+document.querySelector("button").style.cursor="pointer";
+}
+i--;
+},1000)
+
+}
+
+//    call of timer
+resendCode();
+
+// button highlighting on complete fillup
+function checkinput(){
+
+var otps = document.querySelectorAll("#otp")
+if(otps[0].value!="" && otps[1].value!="" && otps[2].value!="" && otps[3].value!=""){
+  document.querySelector("#letsgo").style.backgroundColor="#318616"
+}
+}
+
+
+
+
+
+// form submission
+
+
+
+document.querySelector("form").addEventListener('submit',function(event){
+event.preventDefault(event)
+let otps = document.querySelectorAll("#otp")
+
+if(otps[0].value==1 && otps[1].value==2 && otps[2].value==3 && otps[3].value==4){
+alert("redirecting to home page")
+window.location.href = "index.html"
+
+}else{
+
+otps[0].style.border = "2px solid red";
+otps[1].style.border = "2px solid red";
+otps[2].style.border = "2px solid red";
+otps[3].style.border = "2px solid red";
+alert("verification failed")
+event.preventDefault(event)
+
+
+}
+})
+
+
+
 </script>

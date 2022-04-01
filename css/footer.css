@@ -19,7 +19,7 @@ body{
     display: flex;
     height: auto;
     margin: auto;
-    max-height: 530px;
+    max-height: 600px;
     margin-top: 120px;
     width: 80%;
    
@@ -29,11 +29,11 @@ body{
     justify-content: right; */
 }
 .storeright{
-    margin-left: -120px;
+    margin-left: 20px;
 }
 .storeLeft>img{
-
     height: 100%;
+    width: 85%;
 }
 .storeright>div>h3{
     margin-top: 100px;
