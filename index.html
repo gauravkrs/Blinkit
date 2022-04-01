@@ -9,10 +9,41 @@
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/header.css"/>
         <link rel="stylesheet" href="./css/index.css"/>
+        <link rel="stylesheet" href="./css/loginpop.css"/>
 </head>
 <body id="body1">
     <!--=============================================================Header============================================================================= -->
     <div id="fixnavbar"></div>
+    <div id="loginpartnavbar">
+        <div id="loginpartofthiswebsite">
+            <div id="LOgin" align="center">
+                <div class="PHoneVErHeading">
+                    <h2>
+                        Phone Number Verification
+                    </h2>
+                </div>
+                <div class="LOginDEtails">
+                    <div align="center">
+                        <p style="width: 50%;max-width: 400px;">
+                         Enter your phone number to
+                        Login/Sign up
+                        </p>
+                    </div>
+                    <div class="LOginDEtailsF">
+                        <form align="center">
+                            <div class="LOginInput" >
+                                <input id="otpMob" type="number" placeholder="" value="" oninput="changecolor()"/>
+                            </div>
+                            <div class="NExtBUtton">
+                                <button onclick="SubmitMyMob()">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="otpinpartofthiswebsite"></div>
+    </div>
     <!--=============================================================Content============================================================================= -->
     <div id="wholeHomePageData">
         <div style="background-color: #fff;">
@@ -533,13 +564,7 @@
 
 
 
-    //------------------------------------------------------------Log In Page------------------------------------------------------------------//
-
-    document.querySelector("#lM4").addEventListener("click",login);
-    function login(){
-        // let maindivLM=document.createEvent("div");
-
-    }
+    //------------------------------------------------------------Footer part------------------------------------------------------------------//
 
 
     
@@ -587,8 +612,20 @@
 
     }
 
+
+
+
+    //login popup
+    let loogn=document.querySelector("#LOgin");
+    document.querySelector("#lM4").addEventListener("click",function(){
+        
+        loogn.style.visibility="visible";
+        console.log("hi in login")
+    })
+
 </script>
 
+<!-- ======================================================================================Body Part================================================================================= -->
 <script src="./script/data.js"></script>
 
 <script>
@@ -619,4 +656,61 @@
     sright.onclick = () => {
         document.getElementById("snackDiv").scrollLeft -= 650;
     }
+
+
+
+
+
+
+    
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------- Log in Pop Up ---------------------------------------->
+
+<script>
+    
+    var mob= document.querySelector("input")
+document.querySelector("form").addEventListener("submit",function(event){
+    event.preventDefault(event)
+    mobile = ""+mob.value;
+    if(mobile.length==10){
+       location.href = "loginotp.html"
+       alert('redirecting to otp page')
+       localStorage.setItem('mobile',JSON.stringify(mobile))
+    }
+})
+
+
+function SubmitMyMob(){
+    prevent
+    mobile = ""+mob.value;
+    if(mobile.length==10){
+       location.href = "loginotp.html"
+       alert('redirecting to otp page')
+       localStorage.setItem('mobile',JSON.stringify(mobile))
+    }
+}
+
+
+
+function changecolor(){
+console.log('hi')
+    mobile = ""+mob.value;
+    if(mobile.length==10){
+       document.querySelector("button").style.backgroundColor='#318616';
+       document.querySelector("button").style.cursor="pointer";
+    }else{
+        document.querySelector("button").style.backgroundColor='#ccc';
+    } 
+}
 </script>

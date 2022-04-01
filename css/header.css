@@ -116,7 +116,7 @@ html{
     font-size: 13px;
     background-color: rgba(252, 252, 252, 0.885);;
     margin-left: 90px;
-    margin-top: -50px;
+    /* margin-top: -50px; */
     /* backdrop-filter: blur(10px); */    
 }
 #locationPopsubM{

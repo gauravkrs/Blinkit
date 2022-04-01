@@ -27,6 +27,8 @@ return `<div id="mainheaderM1">
         <div id="appendCNM"></div>
     </div>
 </div>
-</div>`;
+</div>
+
+    `;
 }
 export default navbar;
