@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./card.css">
+</head>
+<body>
+    <div id="card_div">
+        <p>Card Number</p>
+        <input id="input_btn" type="number" placeholder="Card Number" min="0000000000000000" max="999999999999999999">
+
+        <p>Valid Through</p>
+        <div id="card_ex">
+            <div id="date" >
+                <input id="input_btn" type="text" placeholder="MM">
+                <input id="input_btn" type="number" placeholder="YY" min="2022" max="2030">
+            </div>
+            <input id="input_btn2" type="text" placeholder="CVV"> 
+        </div>
+        <div class="checkbox">
+            <div><input style="margin-top: 18px;margin-right: 20px;" type="checkbox" ></div>
+             <div>
+                <p class="p1">Save this card for future use</p>
+                <p class="p2">It's perfectly secure</p> 
+             </div>
+            
+        </div>
+        <button id="payBtn">Pay Now</button>
+        
+
+
+    </div>
+</body>
+</html>

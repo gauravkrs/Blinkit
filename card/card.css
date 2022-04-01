@@ -1,0 +1,47 @@
+#card_div{
+    width: 40%;
+    margin-left:250px ;
+    margin-top: 50px;
+    padding-top: 10px;
+}
+#payBtn{
+width: 100%; 
+text-align: center;
+font-size: 20px;
+margin-top: 20px;
+height: 30px;
+background-color: #cccccc;
+border: none;
+cursor: pointer;
+color: #f4fdf8;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#input_btn
+{
+    height: 25px;
+    width: 100%;
+    font-size: 16px;
+}
+#card_ex{
+    display: flex;
+    justify-content: space-between;
+}
+#date{
+    display: flex;
+}
+#input_btn2{
+    height: 25px;
+    font-size: 16px;
+}
+.checkbox{
+    display: flex; 
+    margin-top: 30px;
+}
+.p1{
+    font-size: 18px;
+}
+.p2{
+    font-size: 14px;
+}
