@@ -134,7 +134,7 @@
         <div id="sec3">
             <h3>bank & wallet offers</h3>
             <div style="display: flex;">
-                <div><button><i class="fa-solid fa-chevron-left"></i></button></div>
+                <div><button id="bRight"><i class="fa-solid fa-chevron-left"></i></button></div>
                 <div id="bankOffers">
                     <!-- Box 1-->
                     <div id="mainBox" style="border: 1px solid #1b3280;">
@@ -322,7 +322,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="z-index: 3;text-align: center;"><button><i class="fa-solid fa-angle-right"></i></button></div>
+                <div style="z-index: 3;text-align: center;"><button id="bLeft"><i class="fa-solid fa-angle-right"></i></button></div>
             </div>
         </div>
 
@@ -657,12 +657,16 @@
         document.getElementById("snackDiv").scrollLeft -= 650;
     }
 
+    const bRight = document.getElementById("bRight");
+    const bLeft = document.getElementById("bLeft");
 
-
-
-
-
-    
+    bLeft.onclick = () => {
+        document.getElementById("bankOffers").scrollLeft += 650;
+        count = 1;
+    }
+    bRight.onclick = () =>{
+        document.getElementById("bankOffers").scrollLeft -= 650;
+    }
     
 </script>
 
