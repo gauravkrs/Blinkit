@@ -218,169 +218,169 @@ let Veg=[{
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/217614a.jpg",
     weight:"1 Piece",
     name:"Bottle Gourd (lauki)",
-    price:"₹58"
+    price:"58"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/467673a.jpg",
     name:"Garlic-Peeled",
-    price:"₹43",
+    price:"43",
     weight:"200g"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/469737a.jpg",
     name:"Red Potato",
-    price:"₹32",
+    price:"32",
     weight:"1Kg"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/39395a.jpg",
     name:"Yellow Capsicum",
-    price:"₹49",
+    price:"49",
     weight:"1 Piece"
 
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/199435a.jpg",
     name:"Potato",
-    price:"₹18", 
+    price:"18", 
     weight:"1Kg"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/428608a.jpg",
     name:"Amla",
-    price:"₹52",
+    price:"52",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/145447a.jpg",
     name:"Sambhar Onion",
-    price:"₹11",
+    price:"11",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/23379a.jpg",
     name:"Sweet Corn-Packet",
-    price:"₹44",
+    price:"44",
     weight:"180gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/118917a.jpg",
     name:"Chandramukhi Potato",
-    price:"₹34",
+    price:"34",
     weight:"1Kg"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/4926a.jpg",
     name:"Baby Potato",
-    price:"₹10",
+    price:"10",
     weight:"500gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3885a.jpg",
     name:"Colocasia",
-    price:"₹17",
+    price:"17",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/326343a.jpg",
     name:"Yam",
-    price:"₹29",
+    price:"29",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/16405a.jpg",
     name:"Raw Banana",
-    price:"₹52",
+    price:"52",
     weight:"6 Piece"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/137816a.jpg",
     name:"Baby Corn-Packet",
-    price:"₹33",
+    price:"33",
     weight:""
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/4927a.jpg",
     name:"Bitter Gourd(Karela)",
-    price:"₹17",
+    price:"17",
     weight:"200gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/363887a.jpg",
     name:"American Sweet Corn",
-    price:"₹51",
+    price:"51",
     weight:"2 Piece"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/339152a.jpg",
     name:"Cabbage",
-    price:"₹19",
+    price:"19",
     weight:"1 Piece"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/189833a.jpg",
     name:"Red Cabbage",
-    price:"₹42",
+    price:"42",
     weight:"1 Piece"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3952a.jpg",
     name:"Sweet Potato",
-    price:"₹35",
+    price:"35",
     weight:"500gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/203822a.jpg",
     name:"Raw Turmeric",
-    price:"₹11",
+    price:"11",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/440230a.jpg",
     name:"Basil Leaves",
-    price:"₹16",
+    price:"16",
     weight:"50gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/23343a.jpg",
     name:"English Cucumber",
-    price:"₹71",
+    price:"71",
     weight:"500gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/39394a.jpg",
     name:"Red Capsicum",
-    price:"₹49",
+    price:"49",
     weight:"1 Piece"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/15220a.jpg",
     name:"Raw Mango",
-    price:"₹45",
+    price:"45",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/271992a.jpg",
     name:"Broccoli",
-    price:"₹50",
+    price:"50",
     weight:"1 Piece"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/440229a.jpg",
     name:"Cherry Tomato",
-    price:"₹58",
+    price:"58",
     weight:"200gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3881a.jpg",
     name:"Hybrid Tomato",
-    price:"₹14",
+    price:"14",
     weight:"500gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/446707a.jpg",
     name:"Mint Leaves",
-    price:"₹10",
+    price:"10",
     weight:"500gm"
 },
 {
@@ -392,68 +392,68 @@ let Veg=[{
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/10088a.jpg",
     name:"Cucumber",
-    price:"₹33",
+    price:"33",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/391306a.jpg",
     name:"Onion 1Kg",
-    price:"₹35",
+    price:"35",
     weight:"500gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/3888a.jpg",
     name:"Green Capsicum",
-    price:"₹42",
+    price:"42",
     weight:"1Kg"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/327916a.jpg",
     name:"Orange Carrot",
-    price:"₹19",
+    price:"19",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/336305a.jpg",
     name:"Drumstick",
-    price:"₹44",
+    price:"44",
     weight:"500gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/17643a.jpg",
     name:"Curry Leaves",
-    price:"₹23",
+    price:"23",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/17643a.jpg",
     name:"Green Chhilli",
-    price:"₹16",
+    price:"16",
     weight:"100gm"
     
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/438489a.jpg",
     name:"Picardo Chilli",
-    price:"₹30",
+    price:"30",
     weight:"100gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/421744a.jpg",
     name:"Spring Onion",
-    price:"₹25",
+    price:"25",
     weight:"250gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/439699a.jpg",
     name:"Lemon",
-    price:"₹55",
+    price:"55",
     weight:"150gm"
 },
 {
     image:"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=85,metadata=none,w=250,h=250/app/images/products/sliding_image/421742a.jpg",
     name:"Sanke Gourd",
-    price:"₹25",
+    price:"25",
     weight:"250gm"
 }]
 localStorage.setItem("vegdata",JSON.stringify(Veg))
