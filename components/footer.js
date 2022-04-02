@@ -17,14 +17,14 @@ const footer =()=>{
                     <div>
                         <label for="email">
                         <!--<input type="radio" name="radioSelection" id="radioemail" onchange="call()" checked  />-->
-                            <input type="radio" name="radioSelection" id="radioemail" checked  />
+                            <input type="radio" name="radioSelection" class="radiooo" id="radioemail"  checked  />
                             <span class="spanMobile">email</span>
                         </label>
                      </div>
                      <div>
                         <label for="phone">
                         <!--<input type="radio" name="radioSelection" id="radiophone" onchange="call()" />-->
-                            <input type="radio" name="radioSelection" id="radiophone"  />
+                            <input type="radio" name="radioSelection" class="radiooo" id="radiophone"  />
                             <span class="spanPhone">phone</span>
                         </label>                     
                      </div>

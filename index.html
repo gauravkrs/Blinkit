@@ -638,12 +638,27 @@
 
    document.querySelector("#radioemail").addEventListener("change",call)
     function call(){
+        console.log("inside call function")
     if(email.checked){
-        // console.log("email")
+        console.log("email")
         document.querySelector("#inputfield").placeholder="Email"
     }
     else{
-    //   console.log("phone")
+        console.log("phone")
+        document.querySelector("#inputfield").placeholder="phone"
+    }
+
+    }
+
+    document.querySelector("#radiophone").addEventListener("change",call1)
+    function call1(){
+        console.log("inside call function")
+    if(email.checked){
+        console.log("email")
+        document.querySelector("#inputfield").placeholder="Email"
+    }
+    else{
+        console.log("phone")
         document.querySelector("#inputfield").placeholder="phone"
     }
 
@@ -752,7 +767,7 @@
 
 
 
-<!------------------------------------------------------- Log in Pop Up ---------------------------------------->
+<!-------------------------------------------------------------------------------------- Log in Pop Up -------------------------------------------------------------------->
 
 <script>
     let otplogPart=document.querySelector("#otpinpartofthiswebsite");
@@ -893,7 +908,7 @@ console.log('hi')
     })
 </script>
 
-<!-- ===============================================Display Cart Data================================================= -->
+<!-- ===================================================================================Display Cart Data================================================================= -->
 <script type="module">
     let cartDB = JSON.parse(localStorage.getItem("cartDB")) || [];
     console.log(cartDB)
