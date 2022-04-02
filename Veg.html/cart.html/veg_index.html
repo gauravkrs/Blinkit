@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<style>
+    #Cart{
+        width:400px;
+       /* border:1px solid red; */
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin:auto;
+        gap: 10px;
+        padding: 10px;
+    }
+    .flex{
+        display: flex;
+    }
+    .below_cart{
+        /* display: flex; */
+        width:400px;
+        /* border:1px solid red; */
+        margin:auto;
+        justify-content: center;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px;
+        
+    }
+    .sum{
+        /* width: 100px; */
+        height: 20px;
+        background-color: green;
+        border: 1px solid green;
+        margin: auto;
+        justify-content: space-around;
+        display: flex;
+        margin-left: 90px;
+        font-size: 20px;
+        padding: 15px;
+        border-radius: 6px;
+        margin: auto;
+        /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    }
+    #Cart+div{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  
+   
+</style>
+<body>
+  
+    <div id="Cart"> 
+        <h2>my cart</h2>
+        <h3>delivery in 36 minutes</h3>
+            <p>from Super Store-Kolkata Park Street ES31</p>
+            
+        </div>
+        <div class="below_cart">
+            <h3>Befor Checkout</h3>
+            <div class="flex">
+            <div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,h=180/app/images/products/sliding_image/286009a.jpg?ts=1632900154" alt="">
+            <p>₹88</p>
+        </div>
+        <div>
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,h=180/app/images/products/sliding_image/286009a.jpg?ts=1632900154" alt="">
+            <p>₹88</p>
+        </div>
+        </div>
+        <div class="sum">
+            <div class="length"></div>
+            <div class="total"></div>
+            <div class="proceed">Proceed ></div>
+        </div>
+        </div>
+    
+</body>
+</html>
+<script src="./cart.js"></script>
