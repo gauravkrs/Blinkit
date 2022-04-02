@@ -1,0 +1,183 @@
+.sbody{
+    width: 98vw;
+
+    height: 96vh;
+    background-image: url(Screenshot\ .png);
+    background-size: 100%,100%;
+background-size: cover;
+background-position-y: -110px;
+}
+
+
+.rlink-account{
+    background-color: #fcfcfc;
+border-bottom: 1px solid #eee;
+border-radius: 0;
+border-top: 1px solid #eee;
+font-size: 20px;
+font-weight: 300;
+margin-top: 20px;
+padding: 16px 20px;
+text-align: center;
+}
+.rlink-body{
+    box-sizing: border-box;
+padding: 0 20px;
+text-align: center
+}
+.rlinkbody-text{
+    box-sizing: border-box;
+padding: 0 20px;
+text-align: center
+}
+.rlogin-fulllength{
+    display: inline-block;
+line-height: normal;
+margin: 24px auto 0;
+position: relative;
+display: flex;
+position: relative;
+border: 1px solid black;
+width: 300px;
+padding: 10px;
+}
+.rlogin-fulllength>div{
+    position: absolute;
+left: 10%;  
+}
+.rlogin-fulllength>input{
+    box-sizing: border-box;
+font-size: 14px;
+width: 75%;
+border: none;
+position: absolute;
+left: 25%;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+top: 2px;
+
+}
+.rlogin-fulllength>input:hover{
+    border: hidden;
+}
+.rlogin-fulllength+button{
+    background-color: #ccc;
+    display: inline-block;
+width: 100%;
+margin-bottom: 32px;
+margin-top: 24px;
+height: 40px;
+
+border: none;
+}
+.rlogin-fulllength+button:hover{
+    background-color: #459220;
+    color: #fff;
+}
+.rcard-paytm{
+    width: 400px;
+    height: 400px;
+display: flex;
+flex-direction: column;
+background-color: #fff;
+margin-left: 35%;
+border-radius: 5px;
+margin-top: 3%;
+}
+.rmain-card{
+    background-color: rgba(0,0,0,.7);
+bottom: 0;
+left: 0;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 9999;
+overflow-y: auto;
+
+}
+.rcard-div{
+    background: #fff;
+border-radius: 4px;
+box-shadow: 0 0 14px 0 rgb(0 0 0 / 30%);
+bottom: auto;
+display: inline-block;
+left: 50%;
+top: 55%;
+outline: none;
+position: absolute;
+right: auto;
+transform: translate(-30%);
+}
+.rcard-div{
+    position: relative;
+    width: 410px;
+    height: 410px;
+    margin-top: 5px;
+}
+.rcut-div>button{
+    border: none;
+position: absolute;
+margin-left: 63%;
+cursor: pointer;
+}
+.rback-opt-btn{
+color: #459220;
+padding: 10px 0px 0px 15px;
+cursor: pointer;
+}
+input{
+    background: #fff;
+border: 1px solid #ccc;
+border-radius: 3px;
+color: #333;
+cursor: text;
+font-size: 14px;
+outline: 0;
+/* padding: 12px 10px; */
+display: inline-flex;
+width: 45px;
+height: 45px;
+
+}
+.otp__input {
+box-sizing: border-box;
+margin-left: 8px;
+padding: 12px 8px;
+}
+.rinput-formotp{
+margin: 10px;
+padding-top: 30px;
+}
+.rinput-formotp+button{
+width: 330px;
+margin-top: 30px;
+height: 40px;
+border: none;
+}
+.rinput-formotp+button:hover{
+background-color: #459220;
+color: #fff;
+}
+.link-body>div{
+margin-top: 30px;
+}
+.rlink-body+a{
+color: #459220;
+text-align: center;
+cursor: pointer;
+
+}
+.rlink-body>div>div:nth-child(1){
+padding-bottom: 10px;
+font-size: 20px;
+font-weight: 500px;
+}
+.rback-opt-btn>a{
+    text-decoration: none;
+    color: #459220;
+}
+.otp__input :hover{
+    border: #333;
+}

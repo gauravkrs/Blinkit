@@ -1,0 +1,78 @@
+.pbody{
+    width: 98vw;
+
+    height: 96vh;
+    background-image: url(Screenshot\ .png);
+    background-size: 100%,100%;
+background-size: cover;
+background-position-y: -110px;
+}
+ 
+.link-body{
+    box-sizing: border-box;
+padding: 0 20px;
+text-align: center
+}
+
+.card-paytm{
+    width: 400px;
+    height: 400px;
+display: flex;
+flex-direction: column;
+background-color: #fff;
+margin-left: 35%;
+border-radius: 5px;
+margin-top: 3%;
+}
+.main-card{
+    background-color: rgba(0,0,0,.7);
+bottom: 0;
+left: 0;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 9999;
+overflow-y: auto;
+
+}
+.card-div{
+    background: #fff;
+border-radius: 4px;
+box-shadow: 0 0 14px 0 rgb(0 0 0 / 30%);
+bottom: auto;
+display: inline-block;
+left: 50%;
+top: 55%;
+outline: none;
+position: absolute;
+right: auto;
+transform: translate(-30%);
+}
+.card-div{
+    position: relative;
+    width: 410px;
+    height: 410px;
+    margin-top: 5px;
+}
+
+.fontsize>img{
+    width: 200px;
+    height: 200px;
+}
+.fontsize{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+#backtohome{
+    width: 50%;
+    height: 30px;
+    margin-top: 5px;
+}
+#backtohome:hover{
+    background-color: green;
+    color: #fff;
+    border: none;
+}
