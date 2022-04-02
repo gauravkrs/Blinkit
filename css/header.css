@@ -214,3 +214,34 @@ html{
     left: 0;
     background-color: rgba(0, 0, 0, 0.367);
 }
+
+
+
+
+/* ======================================================Cart Part======================================================= */
+#contentttG{
+    display: flex;
+}
+#cartPartAppendingM{
+    position: fixed;
+    z-index: -40; /*--- look here----*/
+    visibility: hidden;
+    height: 100vh;
+    width: 25vw;
+    border: 1px solid black;
+    right:0;
+    top: 0;
+    overflow: scroll;
+    background-color: white;
+}
+#mycartpartM{
+    height: 100px;
+}
+#mycarttop{
+    height: 40px;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 700;
+    /* position: fixed; */
+    background-color: white;
+}

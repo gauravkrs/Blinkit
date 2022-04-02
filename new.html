@@ -9,6 +9,15 @@
         #cont{
             display: flex;
         }
+        #cartPartAppendingM{
+            position: absolute;
+            height: 100vh;
+            width: 25vw;
+            border: 1px solid black;
+            right:0;
+            top: 0;
+            overflow: scroll;
+        }
     </style>
 </head>
 <body>
@@ -30,8 +39,8 @@
         let img = document.createElement("img");
         img.setAttribute("class","pimg")
         img.src = el.img;
-        let add = document.createElement("button");
-        add.setAttribute("id","addcart")
+        // let add = document.createElement("button");
+        // add.setAttribute("id","addcart")
 
         imgDiv.append(img)
 
@@ -71,7 +80,7 @@
             increaseQty(el)
         })
         btnDiv.append(lBtn,qtyL,rBtn)
-        imgDiv.append(img,add)
+        imgDiv.append(img)
 
         priceDiv.append(price, strikePrice);
         nameDiv.append(name,priceDiv, qty);

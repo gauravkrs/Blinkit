@@ -89,6 +89,7 @@ const btn = (data)=>{
 
     showCartqty(cartDB);
     localStorage.setItem("cartDB", JSON.stringify(cartDB))
+    
 }
 
 export {display,showCartqty};

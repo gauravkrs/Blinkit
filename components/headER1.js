@@ -1,6 +1,6 @@
 const navbar = ()=>{
     return ` <div class="logo">
-    <img src="https://blinkit.com/careers/sites/default/files/blinkit_logo.png" alt="logo"/>
+    <img src="https://blinkit.com/careers/sites/default/files/blinkit_logo.png" onclick="window.location.href='index.html'"  alt="logo"/>
 </div>
 <a href="#" class="toggleButton" onclick="calldropdown()">
   <div class="dropbtn">

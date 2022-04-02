@@ -92,6 +92,11 @@
             <div><img id="profileQrM" src="./images/Profile.png"/></div>
         </div>
     </div>
+    <!-- =============================================================Cart=============================================================================== -->
+    
+        <div id="cartPartAppendingM">
+        </div>
+    
     <!--=============================================================Content============================================================================= -->
     <div id="wholeHomePageData">
         <div style="background-color: #fff;">
@@ -931,4 +936,81 @@ console.log('hi')
     }
     showCartqty(cartDB)
     
+</script>
+<script>
+    
+</script>
+<!-- ======================================================================================= Cart Part ================================================================ -->
+<script>
+    let cartDB1 = JSON.parse(localStorage.getItem("cartDB")) || [];
+    console.log(cartDB1)
+    let main = document.getElementById("cartPartAppendingM");
+    let mycarttop = document.createElement("div")
+    mycarttop.innerText="My Cart";
+    mycarttop.setAttribute("id","mycarttop")
+
+    let mycartbottom = document.createElement("div")
+    mycartbottom.setAttribute("id","mycartbottom")
+    const display = (data) => {
+    mycartbottom.innerHTML = null;
+
+    data.forEach((el) => {
+        let div = document.createElement("div");
+        div.setAttribute("id", "contentttG")
+        let imgDiv = document.createElement("div");
+
+        let img = document.createElement("img");
+        img.setAttribute("class","pimg")
+        img.src = el.img;
+        // let add = document.createElement("button");
+        // add.setAttribute("id","addcart")
+
+        imgDiv.append(img)
+
+
+        let nameDiv = document.createElement("div");
+        nameDiv.setAttribute("class", "info")
+
+        let name = document.createElement("p");
+        name.innerText = el.name
+
+        let qty = document.createElement("p");
+        qty.innerText = el.qty
+
+
+
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("class", "price")
+
+        let price = document.createElement("span")
+        price.innerText = `₹${el.price}`;
+
+        let strikePrice = document.createElement("span");
+        strikePrice.innerText = `₹${el.sPrice}`;
+
+        let btnDiv = document.createElement("div")
+        let lBtn = document.createElement("button");
+        lBtn.innerText="-"
+        lBtn.addEventListener("click",()=>{
+            decreaseQty(el)
+        })
+        let qtyL = document.createElement("label");
+        qtyL.innerText="1"
+
+        let rBtn = document.createElement("button");
+        rBtn.innerText="+"
+        rBtn.addEventListener("click",()=>{
+            increaseQty(el)
+        })
+        btnDiv.append(lBtn,qtyL,rBtn)
+        imgDiv.append(img)
+
+        priceDiv.append(price, strikePrice);
+        nameDiv.append(name,priceDiv, qty);
+        div.append(imgDiv, nameDiv,btnDiv)
+        mycartbottom.append(div);
+    })
+    main.append(mycarttop,mycartbottom)
+}
+display(cartDB1)
 </script>
