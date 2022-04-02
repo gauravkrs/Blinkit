@@ -103,47 +103,73 @@ function  decreaseQty(data,index){
     }
    
 }
+// =============================================================================================================================================================
+
+function  decreaseQty(data,index){
+    if(data[index].quantity>0){
+               data[index].quantity--;
+               if(data[index].quantity==0){
+     data.splice([index],1)
+ }
+ localStorage.setItem("cartDB",JSON.stringify(data))
+ totalStrikedP(cartDB1);
+ totalPrice(cartDB1)
+ display(data)
+}
+
+}
 
 function increaseQty(data,index){
-   if(data[index].quantity<3){
-     data[index].quantity++; 
-     localStorage.setItem("cartDB",JSON.stringify(data))
-     display(data)
-   }else{
-       alert("Sorry! you can't add more of this item")
-   }
+if(data[index].quantity<3){
+data[index].quantity++; 
+localStorage.setItem("cartDB",JSON.stringify(data))
+display(data)
+totalStrikedP(cartDB1);
+totalPrice(cartDB1)
+}else{
+alert("Sorry! you can't add more of this item")
+}
 }
 
 
 //    <<<<<<-------function cart value--->
-totalStrikedP();
-totalPrice()
+totalStrikedP(cartDB1);
+totalPrice(cartDB1)
 
 function totalStrikedP(data){
-    let str=data.reduce(function(element,acc){
-        return acc+element.sPrice*element.quqntity
-    },0)
-    let striked = document.querySelector(".sTRIKED");
-    striked.innerText="";
-    striked.innerText=str
+let sum =0;
+for(let i=0;i<data.length;i++){
+ sum += Number(data[i].sPrice)*data[i].quantity
+}
+console.log(sum)
+
+let str= document.querySelector(".sTRIKED")
+str.innerText=sum;
 }
 
 
 function totalPrice(data){
-    let str=data.reduce(function(element,acc){
-        return acc+element.price*element.quqntity
-    },0)
-    let striked = document.querySelector(".pRICE");
-    striked.innerText=""
-    striked.innerText=str;
-}
 
+let sum =0;
+for(let i=0;i<data.length;i++){
+ sum += Number(data[i].price)*data[i].quantity
+}
+console.log(sum)
+let striked = document.querySelector(".pRICE");
+
+
+striked.innerText=`${data.length}items - ${sum}`;
+}
 
 function cartvisibilityhidden(){
     var cartbodyVH=document.querySelector("#cartPartAppendingM");
     cartbodyVH.style.visibility="hidden"
+    cartbodyVH.style.zIndex="-40";
 }
 
-document.querySelector("#lM5").addEventListener("cartPopup",function(){
+document.querySelector("#lM5M").addEventListener("click",function(){
+    var cartbodyVH=document.querySelector("#cartPartAppendingM");
     cartbodyVH.style.visibility="visible"
+    cartbodyVH.style.zIndex="40";
+    console.log("inside the cart")
 })

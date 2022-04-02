@@ -64,9 +64,55 @@ floatright.innerHTML=`₹${sum}`
 
 
 var rand=Math.floor( Math.random()*30)
-console.log(rand)
+// console.log(rand)
 floatright2.innerHTML=`₹${sum+rand}`
 totalitem.innerHTML=data.length+" item"
 }
 
 pricedisplay(cartDB)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+totalStrikedP(cartDB);
+totalPrice(cartDB)
+
+var cardheader1 = document.querySelector("#cardheader1")
+var priceM = document.querySelector("#priceM")
+var strikedPM = document.querySelector("#strikedPM")
+
+
+function totalStrikedP(data){
+let sum =0;
+for(let i=0;i<data.length;i++){
+ sum += Number(data[i].sPrice)*data[i].quantity
+}
+console.log(sum)
+
+let str= document.querySelector("#strikedPM")
+str.innerText=`You have recieved a discount of - ${sum}`;
+}
+
+
+function totalPrice(data){
+
+let sum =0;
+for(let i=0;i<data.length;i++){
+ sum += Number(data[i].price)*data[i].quantity
+}
+console.log(sum)
+let striked = document.querySelector("#priceM")
+
+
+striked.innerText=`Total Price of ${data.length}items - ${sum}`;
+}
