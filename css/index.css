@@ -118,6 +118,17 @@ i:hover {
     color: rgb(102, 102, 102);
 }
 
+.addCart{
+    background-color: rgb(248, 203, 70);
+    margin: 5px 5px;
+    height: 25px;
+    font-size: 15px;
+    border: 1px #c1c1c1;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
 .price {
     display: flex;
     gap: 15px;

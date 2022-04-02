@@ -94,6 +94,7 @@
             <div><img id="profileQrM" src="./images/Profile.png"/></div>
         </div>
     </div>
+    <div id="pMain"></div>
     <div id="mainDiv">
         <div id="pd1">
             <h3>Product Details</h3>
@@ -478,4 +479,91 @@ console.log('hi')
     event.preventDefault(event)
     }
     })
+</script>
+
+<script>
+    let detail = JSON.parse(localStorage.getItem("pDetail")) || [];
+    console.log(detail)
+    let main = document.getElementById("pMain");
+    const display = (data) => {
+    main.innerHTML = null;
+
+    data.forEach((el,index) => {
+        let div = document.createElement("div");
+        div.setAttribute("id", "cont")
+        let imgDiv = document.createElement("div");
+
+        let img = document.createElement("img");
+        img.setAttribute("class","pimg")
+        img.src = el.img;
+        // let add = document.createElement("button");
+        // add.setAttribute("id","addcart")
+
+        imgDiv.append(img)
+
+
+        let nameDiv = document.createElement("div");
+        nameDiv.setAttribute("class", "info")
+
+        let name = document.createElement("p");
+        name.innerText = el.name
+
+        let qty = document.createElement("p");
+        qty.innerText = el.qty
+
+
+
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("class", "price")
+
+        let price = document.createElement("span")
+        price.innerText = `₹${el.price}`;
+
+
+        let btnDiv = document.createElement("div")
+        btnDiv.setAttribute("class","btnDiv")
+        let lBtn = document.createElement("button");
+        lBtn.innerText="-"
+        lBtn.addEventListener("click",()=>{
+            decreaseQty(data,index)
+        })
+        let qtyL = document.createElement("label");
+        qtyL.innerText=el.quantity
+
+        let rBtn = document.createElement("button");
+        rBtn.innerText="+"
+        rBtn.addEventListener("click",()=>{
+            increaseQty(data,index)
+        })
+        btnDiv.append(lBtn,qtyL,rBtn)
+        imgDiv.append(img)
+
+        nameDiv.append(name, qty,price);
+        div.append(imgDiv, nameDiv,btnDiv)
+        main.append(div);
+    })
+}
+display(detail)
+
+function  decreaseQty(data,index){
+           if(data[index].quantity>0){
+                      data[index].quantity--;
+                      if(data[index].quantity==0){
+            
+        }
+        localStorage.setItem("cartDB",JSON.stringify(data))
+        display(data)
+    }
+   
+}
+
+function increaseQty(data,index){
+   if(data[index].quantity<3){
+     data[index].quantity++; 
+     localStorage.setItem("cartDB",JSON.stringify(data))
+     display(data)
+   }else{
+       alert("Sorry! you can't add more of this item")
+   }
+}
 </script>

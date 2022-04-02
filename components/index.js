@@ -30,13 +30,15 @@ const display = (data, main) => {
                 name:name,
                 qty:qty,
                 price:price,
-                sprice:sPrice
+                sprice:sPrice,
+                quantity:1
             }
             pDetail.push(dObj);
             localStorage.setItem("pDetail",JSON.stringify(pDetail));
         })
         let add = document.createElement("button");
-        add.innerText="+"
+        add.setAttribute("class","addCart")
+        add.innerText="add"
         add.addEventListener("click",()=>{
             btn(el)
         })

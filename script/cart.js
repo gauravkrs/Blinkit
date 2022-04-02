@@ -119,7 +119,7 @@ function increaseQty(data,index){
 totalStrikedP();
 totalPrice()
 
-function totalStrikedP(){
+function totalStrikedP(data){
     let str=data.reduce(function(element,acc){
         return acc+element.sPrice*element.quqntity
     },0)
@@ -129,7 +129,7 @@ function totalStrikedP(){
 }
 
 
-function totalPrice(){
+function totalPrice(data){
     let str=data.reduce(function(element,acc){
         return acc+element.price*element.quqntity
     },0)
@@ -138,6 +138,12 @@ function totalPrice(){
     striked.innerText=str;
 }
 
+
 function cartvisibilityhidden(){
-    
+    var cartbodyVH=document.querySelector("#cartPartAppendingM");
+    cartbodyVH.style.visibility="hidden"
 }
+
+document.querySelector("#lM5").addEventListener("cartPopup",function(){
+    cartbodyVH.style.visibility="visible"
+})

@@ -53,3 +53,34 @@ h3{
     font-weight: 400;
     color: #666666;
 }
+#pMain{
+    width: 85%;
+    margin: auto;
+    margin-top: 75px;
+}
+.btnDiv{
+    width: 55%;
+    height: 35px;
+    background-color: rgb(248, 203, 70);
+    margin: 60px 30px;
+    border-radius: 8px;
+}
+.btnDiv>label{
+    font-size:15px;
+    background-color: rgb(248, 203, 70);
+}
+.btnDiv>button{
+    background-color: rgb(248, 203, 70);
+    margin: 5px 5px;
+
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+}
+
+#cont{
+    display: grid;
+    grid-template-columns: 400px 600px 150px;
+}
