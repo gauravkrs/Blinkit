@@ -387,48 +387,45 @@
         </div>
 
         <!-- /////////////////// SLIDER //////////////////// -->
-        <!-- <div>
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Chocolates_Cadbury_994.jpg"
-                                class="d-block w-50" alt="..." style="margin: auto;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Mars_Mars%20INTL_1133.jpg"
-                                class="d-block w-50" alt="..." style="margin: auto;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Nutrichoice_Britannia_1003.jpg"
-                                class="d-block w-50" alt="..." style="margin: auto;">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Pet%20care_Mars_1044.jpg"
-                                class="d-block w-50" alt="..." style="margin: auto;">
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="prev">
-                        <div style="background-color: #cccccc; border-radius: 50%; height: 40px;width: 40px;">
-                            <span class="carousel-control-prev-icon" aria-hidden="true" style="margin: 5px;"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </div>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                        data-bs-slide="next">
-                        <div style="background-color: #cccccc; border-radius: 50%; height: 40px;width: 40px;">
-                            <span class="carousel-control-next-icon" aria-hidden="true" style="margin: 5px;"></span>
-                            <span class="visually-hidden">Next</span>
-                        </div>
+        <div id="sec3">
+        <div id="row">
+            
+        </div>
+        </div>
+        <!-- category section start here -->
 
-                    </button>
+        <div id="sec3">
+
+            <div style="display: flex;justify-content: space-between;margin-top: 25px;">
+                <div id="head">
+                    <h3>fruits & vegetables</h3>
+                    <p>eat fresh, stay healthy</p>
+                </div>
+                <div id="scrol">
+                    <a href="">see more <p>
+                            <i class="fa-solid fa-angle-right"
+                                style="font-size: 11px;color: black;bottom: 11px;position: relative;"></i>
+                        </p></a>
+                    <div>
+                        <button id="fright" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button id="fleft" type="button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
                 </div>
             </div>
+
+            <div>
+                <div id="frutDiv">
+                    <script type="module">
+                        import {display,showCartqty} from './components/index.js';
+                        let fruit = document.getElementById("frutDiv")
+                        var fuit = JSON.parse(localStorage.getItem("fruit")) || [];
+                        display(fuit, fruit)
+                    </script>
+                </div>
+
+            </div>
+
         </div>
-        </div> -->
-        <!-- category section start here -->
 
         <div id="sec3">
 
@@ -529,6 +526,7 @@
 </html>
 <script src="https://kit.fontawesome.com/cb83d10ce2.js" crossorigin="anonymous"></script>
 <script src="./script/place.js"></script>
+<script src="./script/cart.js"></script>
 <script type="module">
     
     import navbar from "./components/header.js";
@@ -730,6 +728,18 @@
 <script src="./script/data.js"></script>
 
 <script>
+    // 1st
+    const fright = document.getElementById("fright");
+    const fleft = document.getElementById("fleft");
+
+    fleft.onclick = () => {
+        document.getElementById("frutDiv").scrollLeft += 650;
+    }
+    fright.onclick = () => {
+        document.getElementById("frutDiv").scrollLeft -= 650;
+    }
+
+    // 2nd
     const right = document.getElementById("right");
     const left = document.getElementById("left");
 
@@ -740,6 +750,7 @@
         document.getElementById("chemDiv").scrollLeft -= 650;
     }
 
+    // 3rd
     const righ = document.getElementById("righ");
     const lef = document.getElementById("lef");
     lef.onclick = () => {
@@ -749,6 +760,7 @@
         document.getElementById("dairyDiv").scrollLeft -= 650;
     }
 
+    // 4th
     const sright = document.getElementById("sright");
     const sleft = document.getElementById("sleft");
     sleft.onclick = () => {
@@ -757,6 +769,8 @@
     sright.onclick = () => {
         document.getElementById("snackDiv").scrollLeft -= 650;
     }
+
+    // bank
     const bRight = document.getElementById("bRight");
     const bLeft = document.getElementById("bLeft");
 
@@ -988,7 +1002,9 @@ console.log('hi')
         let strikePrice = document.createElement("span");
         strikePrice.innerText = `₹${el.sPrice}`;
 
-        let btnDiv = document.createElement("div")
+        let btnDiv = document.createElement("div");
+        btnDiv.setAttribute("id","btndivvv")
+
         let lBtn = document.createElement("button");
         lBtn.innerText="-"
         lBtn.addEventListener("click",()=>{
@@ -1006,11 +1022,39 @@ console.log('hi')
         imgDiv.append(img)
 
         priceDiv.append(price, strikePrice);
-        nameDiv.append(name,priceDiv, qty);
-        div.append(imgDiv, nameDiv,btnDiv)
+        nameDiv.append(name,priceDiv, qty,btnDiv);
+        div.append(imgDiv, nameDiv)
         mycartbottom.append(div);
     })
     main.append(mycarttop,mycartbottom)
 }
 display(cartDB1)
+</script>
+<!-- ===================================================================Sliding Image============================================================================ -->
+<script>
+    let img = [
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Chocolates_Cadbury_994.jpg",
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Mars_Mars%20INTL_1133.jpg",
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Nutrichoice_Britannia_1003.jpg",
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Pet%20care_Mars_1044.jpg"
+    ];
+    console.log(img)
+
+    let slide = document.getElementById("row");
+    let i = 0;
+
+    setInterval(function (){
+        if(i == img.length){
+            i = 0;
+        }
+
+        let image = img[i];
+
+        slide.innerHTML=null;
+        let imgs = document.createElement("img");
+        imgs.src = image;
+
+        slide.append(imgs);
+        i++;
+    },2000)
 </script>

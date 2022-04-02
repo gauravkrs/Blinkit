@@ -308,3 +308,111 @@ var chemit = [
   ]
   
   localStorage.setItem("snacks", JSON.stringify(snack))
+
+
+
+
+
+
+  var fruit =  [
+    {
+         "product_name": "Banganapalli - Mango",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_421721.jpg?ts=1646837997",
+         "qty": "1 kg",
+         "price": "204",
+         "strikeprice": "251"
+    },
+    {
+         "product_name": "Desi Tomato",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_445675.jpg?ts=1648018233",
+         "qty": "500 g",
+         "price": "11",
+         "strikeprice": "13"
+    },
+    {
+         "product_name": "Hybrid Tomato",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_3881.jpg?ts=1647233243",
+         "qty": "500 g",
+         "price": "23",
+         "strikeprice": "28"
+    },
+    {
+         "product_name": "Lady Finger - Bhindi",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_237680.jpg?ts=1639826824",
+         "qty": "500 g",
+         "price": "23",
+         "strikeprice": "28"
+    },
+    {
+         "product_name": "Cabbage",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_339152.jpg?ts=1639904739",
+         "qty": "400 g",
+         "price": "19",
+         "strikeprice": "20"
+    },
+    {
+         "product_name": "Bottle Gourd (Lauki)",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_217614.jpg?ts=1639904739",
+         "qty": "1 piece (400 g)",  
+         "price": "28",
+         "strikeprice": "30"
+    },
+    {
+         "product_name": "Broccoli",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_369742.jpg?ts=1647242897",
+         "qty": "300 g",
+         "price": "36",
+         "strikeprice": "41"
+    },
+    {
+         "product_name": "Small Black Brinjal",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_95781.jpg?ts=1637670077",
+         "qty": "500 g",
+         "price": "35",
+         "strikeprice": "49"
+    },
+    {
+         "product_name": "Beetroot (Chukandar)",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_166848.jpg?ts=1639904740",
+         "qty": "500 g",
+         "price": "17",
+         "strikeprice": "18"
+    },
+    {
+         "product_name": "Red Capsicum",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_440980.jpg?ts=1638168329",
+         "qty": "2 pieces",
+         "price": "105",
+         "strikeprice": "133"
+    },
+    {
+         "product_name": "Green Chilli",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_423735.jpg?ts=1647242898",
+         "qty": "100 g",
+         "price": "16",
+         "strikeprice": "18"
+    },
+    {
+         "product_name": "Ridge Gourd",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_369013.jpg?ts=1639827080",
+         "qty": "500 g",
+         "price": "24",
+         "strikeprice": "28"
+    },
+    {
+         "product_name": "Mushmelon(Kharbuja)",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_365455.jpg?ts=1637669103",
+         "qty": "1 piece",
+         "price": "31",
+         "strikeprice": "35"
+    },
+    {
+         "product_name": "Kiran Watermelon",
+         "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_369752.jpg?ts=1647242897",
+         "qty": "1 piece",
+         "price": "49",
+         "strikeprice": "56"
+    }
+  ]
+  
+  localStorage.setItem("fruit", JSON.stringify(fruit))

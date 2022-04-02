@@ -2,7 +2,7 @@
     width: 98vw;
 
     height: 96vh;
-    background-image: url(Screenshot\ .png);
+    background-image: url("/images/Screenshot\ .png");
     background-size: 100%,100%;
 background-size: cover;
 background-position-y: -110px;

@@ -63,12 +63,14 @@
 
 #chemDiv,
 #dairyDiv,
-#snackDiv {
+#snackDiv,#frutDiv {
     display: grid;
     grid-template-columns: repeat(14, 1fr);
     overflow-x: hidden;
 }
 
+#fright,
+#fleft,
 #right,
 #left,
 #righ,
@@ -91,7 +93,8 @@
 i:hover {
     color: #fff;
 } */
-
+#fright:hover,
+#fleft:hover,
 #right:hover,
 #left:hover,
 #righ:hover,
@@ -237,4 +240,16 @@ i:hover {
             height: 100%;
             width: 100%;
             /* padding-left:5px; */
+        }
+        /* ======================================================Sliding Image====================================================== */
+
+        #row{
+            width: 80%;
+            height: 450px;
+            margin: auto;
+            background-color: black;
+            -webkit-animation-name:fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
         }

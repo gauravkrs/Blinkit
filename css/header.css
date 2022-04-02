@@ -219,13 +219,43 @@ html{
 
 
 /* ======================================================Cart Part======================================================= */
+.nummberOfElement{
+    padding: 5px;
+}
 #contentttG{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 140px;
+    line-height: 2.1;
+    font-size: 16px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    margin: 5px;
+    padding-right: 10px;
+}
+#addremovesetting{
+    background-color:rgb(248,203,70);
+    border-radius: 5px;   
+     
+}
+#pimg{
+    height: 100%;
+}
+#imgDivsizing{
+    height: 100%;
+}
+.qtyandwt{
     display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+#qtyLpadding{
+    padding: 2px;
 }
 #cartPartAppendingM{
     position: fixed;
-    z-index: -40; /*--- look here----*/
-    visibility: hidden;
+    z-index: 40; /*--- look here----*/
+    visibility: visible;
     height: 100vh;
     width: 25vw;
     border: 1px solid black;
@@ -245,3 +275,30 @@ html{
     /* position: fixed; */
     background-color: white;
 }
+#emptycart{
+    text-align: center;
+    margin: auto;
+  }
+  .emptycartimage{
+     margin: auto;
+  }
+  .emptycartimage>img{
+      height: 144px;
+      width: 144px;
+  }
+  .emptycart h3{
+
+  }
+  .emptycart p{
+     color: #333;
+  }
+  #emptycartbutton{
+      background-color: #318616;
+      padding: 15px;
+      margin: auto;
+      color: white;
+      width: 200px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+  }

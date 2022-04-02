@@ -80,14 +80,29 @@ const btn = (data)=>{
          img : data.img_url,
          qty : data.qty,
          price : Number(data.price),
-         sPrice : data.strikeprice
+         sPrice : data.strikeprice,
+         quantity:1
     }
     
 
-    cartDB.push(newCart);
-    console.log(cartDB)
+    var flag = 0;
+    var curr_index = -1;
+    for(var i in cartDB){
+        if(cartDB[i].name == newCart.name){
+            flag = 1;
+            curr_index = i;
+            break;
+        }
+    }
 
+    if(flag){
+        cartDB[curr_index].quantity += 1;
+    }
+    else{
+        cartDB.push(newCart);
+    }
     showCartqty(cartDB);
+    console.log(cartDB)
     localStorage.setItem("cartDB", JSON.stringify(cartDB))
     
 }

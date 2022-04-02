@@ -1,19 +1,23 @@
 var callopts = document.querySelector(".callotp")
 var cutbtn = document.querySelector(".cutbtn")
-var loginphone= document.querySelector(".login-phone")
+
 callopts.addEventListener("click",calloptfunc)
 
+var loginphone= document.querySelector(".login-phone")
+// loginphone.addEventListener("input",cutborder)
+// function cutborder(){
 
-loginphone.addEventListener("click",cutborder)
-function cutborder(){
-let loginphone= document.querySelector(".login-phone")
-loginphone.style.border="none"
-console.log("yes")
-}
+let inputDataM=loginphone.value
+// // console.log(inputDataM)
+// }
 
-
+localStorage.setItem("contactNumberM",JSON.stringify(inputDataM))
 function calloptfunc(){
-window.location.href="./otp.html"
+    loginphone.style.border="none"
+    let inputDataM=loginphone.value
+    console.log(inputDataM)
+    localStorage.setItem("contactNumberM",JSON.stringify(inputDataM))
+    window.location.href="./otp.html"
 //   console.log( alert("Your number is  link with Paytm")) 
 }
 

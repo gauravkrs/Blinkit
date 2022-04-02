@@ -1,3 +1,11 @@
+var contactNumberAppend=JSON.parse(localStorage.getItem("contactNumberM"));
+console.log(contactNumberAppend)
+
+var contactAppendSms=document.querySelector(".rlinkbody-text")
+
+contactAppendSms.innerHTML=`Paytm has sent an SMS with an activation code to: +91${contactNumberAppend}`;
+
+
 var field = document.querySelectorAll("input")
 function allselect() {
     var field = document.querySelectorAll("input")
