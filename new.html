@@ -5,91 +5,79 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./Main.css"> -->
     <style>
-    #pan_corner{
-    height: 220px;
-    width: 85%;
-    margin: auto;
-    border-radius: 10px;
-    margin-top: 50px;
-}
-img{
-    height:95%;
-    width:100%;
-    padding-left: 30px;
-    
-}
-#welcom{
-    height:200px;
-    width:85%;
-    margin:auto;
-    border-radius: 10px;
-}
-#explore{
-    height:250px;
-    width:85%;
-    margin: auto;
-}
-#explore{
-    display: grid;
-    grid-template-columns: repeat(4,4fr);
-    grid-template-rows: 220px;
-    gap:10px
-}
-#explore>div{
-    border-radius: 20px;
-}
-#groserry{
-    height:350px;
-    width:85%;
-    margin: auto;
-}
-#groserry{
-    display: grid;
-    /* margin-left: 40px; */
-    grid-template-columns: repeat(10,2fr);
-    grid-template-rows: repeat(2,1fr);
-    gap: 20px;
-}
-#groserry>div{
-    height:100%;
-    width:100%;
-    /* padding-left:5px; */
-}
+        #cont{
+            display: flex;
+        }
     </style>
 </head>
-
 <body>
-    <div id="pan_corner"><img alt="" draggable="false" src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,h=270/layout-engine/2022-01/Group-33704-3.jpg" class="css-9pa8cd"></div>
-    <div id="welcom"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,h=270/layout-engine/2022-03/new-user.png"></div>
-    <div id="explore">
-        <div><img  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2022-03/Chai-evening-time_0.jpg"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2022-03/Kids_Zone_HomePageBanner_1.jpg"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2022-03/dry-fruits.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2022-03/dry-fruits.png"></div>
-    </div>
-    <div id="groserry">
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-1_0.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-2_0.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-5.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-4_1.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-3_0.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-13.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-6.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-7.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-11.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-12.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-14.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-8.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-10.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-9.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-19.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-20.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-16.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-17.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-15.png"></div>
-        <div><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-18.png"></div>
-    </div>
+    <div id="main"></div>
 </body>
 </html>
+<script>
+    let cartDB = JSON.parse(localStorage.getItem("cartDB")) || [];
+    console.log(cartDB)
+    let main = document.getElementById("main");
+    const display = (data) => {
+    main.innerHTML = null;
+
+    data.forEach((el) => {
+        let div = document.createElement("div");
+        div.setAttribute("id", "cont")
+        let imgDiv = document.createElement("div");
+
+        let img = document.createElement("img");
+        img.setAttribute("class","pimg")
+        img.src = el.img;
+        let add = document.createElement("button");
+        add.setAttribute("id","addcart")
+
+        imgDiv.append(img)
+
+
+        let nameDiv = document.createElement("div");
+        nameDiv.setAttribute("class", "info")
+
+        let name = document.createElement("p");
+        name.innerText = el.name
+
+        let qty = document.createElement("p");
+        qty.innerText = el.qty
+
+
+
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("class", "price")
+
+        let price = document.createElement("span")
+        price.innerText = `₹${el.price}`;
+
+        let strikePrice = document.createElement("span");
+        strikePrice.innerText = `₹${el.sPrice}`;
+
+        let btnDiv = document.createElement("div")
+        let lBtn = document.createElement("button");
+        lBtn.innerText="-"
+        lBtn.addEventListener("click",()=>{
+            decreaseQty(el)
+        })
+        let qtyL = document.createElement("label");
+        qtyL.innerText="1"
+
+        let rBtn = document.createElement("button");
+        rBtn.innerText="+"
+        rBtn.addEventListener("click",()=>{
+            increaseQty(el)
+        })
+        btnDiv.append(lBtn,qtyL,rBtn)
+        imgDiv.append(img,add)
+
+        priceDiv.append(price, strikePrice);
+        nameDiv.append(name,priceDiv, qty);
+        div.append(imgDiv, nameDiv,btnDiv)
+        main.append(div);
+    })
+}
+display(cartDB)
+</script>

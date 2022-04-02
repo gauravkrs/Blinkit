@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./css/header.css"/>
         <link rel="stylesheet" href="./css/index.css"/>
         <link rel="stylesheet" href="./css/loginpop.css"/>
+        <link rel="stylesheet" href="./css/profilepopup.css"/>
 </head>
 <body id="body1">
     <!--=============================================================Header============================================================================= -->
@@ -46,7 +47,7 @@
 
         <div id="otpinpartofthiswebsite">
             <div id="LOgin">
-                <button class="back" onclick="window.location.href='login.html'"> < back</button>
+                <button class="back" onclick=""> < back</button>
                 <div class="PHoneVErHeading">
                     <h2>
                         Phone Number Verification
@@ -75,6 +76,20 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="popupbackground">
+        <div id="ProfilePopupM">
+            <div>
+                <h3>My Account</h3>
+                <p id="profileContactNoM"></p>
+            </div>
+            <div><p id="profileCartM">My Orders</p></div>
+            <div><p id="profileAddress">Saved Address</p></div>
+            <div  style="display: flex; height: 10px; flex-direction: row; align-items: center;justify-content: space-between; padding-right: 20px;"><p id="profileWalletM" >My Wallet</p><h4 style="padding:0 ;margin: 0;">₹ 0</h4></div>
+            <div><p id="profileFaqNoM">Faq's</p></div>
+            <div><p id="profileLogoutM">Log out</p></div>
+            <div><img id="profileQrM" src="./images/Profile.png"/></div>
         </div>
     </div>
     <!--=============================================================Content============================================================================= -->
@@ -168,7 +183,7 @@
             <h3>bank & wallet offers</h3>
             <div style="display: flex;">
 
-                <div style="margin: 40px 8px 0 35px;z-index: 3">
+                <div style="margin: 40px 8px 0 35px;">
                     <button id="bRight" style="width: 40px;height: 40px;border: 1px #c1c1c1;"><i class="fa-solid fa-chevron-left"></i></button></div>
 
                 <div id="bankOffers">
@@ -359,7 +374,7 @@
                     </div>
                 </div>
                 
-                <div style="z-index: 3;margin:40px 0 0 5px; ">
+                <div style="margin:40px 0 0 5px; ">
                     <button id="bLeft" style="width: 40px;height: 40px;"><i class="fa-solid fa-angle-right"></i></button>
                 </div>
 
@@ -432,7 +447,7 @@
             <div>
                 <div id="chemDiv">
                     <script type="module">
-                        import {display,showCartqty} from './componant/index.js';
+                        import {display,showCartqty} from './components/index.js';
                         let chem = document.getElementById("chemDiv")
                         var chemit = JSON.parse(localStorage.getItem("chemist")) || [];
                         display(chemit, chem)
@@ -463,7 +478,7 @@
             </div>
             <div id="dairyDiv">
                 <script type="module">
-                    import {display,showCartqty} from './componant/index.js';
+                    import {display,showCartqty} from './components/index.js';
                     let dairy = document.getElementById("dairyDiv")
                     var dair = JSON.parse(localStorage.getItem("dairy")) || [];
                     display(dair, dairy)
@@ -490,12 +505,12 @@
             </div>
             <div id="snackDiv">
                 <script type="module">
-                    import {display,showCartqty} from './componant/index.js';
+                    import {display,showCartqty} from './components/index.js';
                     let snack = document.getElementById("snackDiv")
                     var snak = JSON.parse(localStorage.getItem("snacks")) || [];
                     display(snak, snack)
                     // display(chemit,chem)
-                    console.log(snak)
+                    // console.log(snak)
 
                 </script>
             </div>
@@ -511,10 +526,10 @@
 <script src="./script/place.js"></script>
 <script type="module">
     
-    import navbar from "./componant/header.js";
+    import navbar from "./components/header.js";
     document.querySelector("#fixnavbar").innerHTML=navbar();
 
-    import footer from "./componant/footer.js";
+    import footer from "./components/footer.js";
     document.querySelector("#footer").innerHTML=footer();
 
     //=====================================================================Nav Bar==================================================//
@@ -523,7 +538,7 @@
     document.querySelector("#randomDelivery").innerHTML=`delivery in ${randomNumber} minutes`;
 
 
-    document.querySelector("#loginandprofile").innerText="Login"
+    // document.querySelector("#loginandprofile").innerText="Login"
     //city search
     let body = document.querySelector("#body1");
     var popmap=document.querySelector("#locationPopM");
@@ -532,8 +547,10 @@
         popmap.style.visibility="visible";
         popmap.style.opacity=1;
         mainblurpop.style.backgroundColor="rgb(0,0,0,0.5)"
+        mainblurpop.style.position="fixed"
         document.querySelector("#randomDelivery").style.color="rgb(209,26,26)"
         mainblurpop.style.zIndex="7"
+        mainblurpop.style.visibility="visible"
     })
 
 
@@ -580,8 +597,11 @@
                 cityname.setAttribute("id","visibleCityM")
                 cityname.addEventListener("click",function(){
                     addressM.innerText=`${n}, ${c}`;
-                    popmap.style.visibility="none";
+                    popmap.style.zIndex="-40"
+                    popmap.style.visibility="hidden";
                     popmap.style.opacity=0;
+                    mainblurpop.style.visibility="hidden"
+                    mainblurpop.style.backgroundColor=""
                     mainblurpop.style.zIndex="-10"
                     // console.log(n,c)
                 })
@@ -594,9 +614,11 @@
 
     let cancelPopM = document.querySelector("#crossM");
     cancelPopM.addEventListener("click", ()=>{
-        popmap.style.visibility="none";
-        popmap.style.opacity=0;
-        mainblurpop.style.zIndex="-10"
+        popmap.style.zIndex="-40"
+        popmap.style.visibility="hidden";
+        popmap.style.opacity=0;        
+        mainblurpop.style.visibility="hidden"
+        // mainblurpop.style.zIndex="-10"
     })
 
     //=========================================================================================================================================//
@@ -658,13 +680,30 @@
     //login popup
     let loogn=document.querySelector("#loginpartofthiswebsite");
     // let otplogPart=document.querySelector("#otpinpartofthiswebsite");
-    
+    let ProfileAppendPartMM=document.querySelector("#loginandprofile1");
     document.querySelector("#lM4").addEventListener("click",function(){
         
         loogn.style.visibility="visible";
-        console.log("hi in login")
+        if(ProfileAppendPartMM.innerText=="Profile")
+        {
+            loogn.style.visibility="hidden";
+            loogn.addEventListener("click",function(){
+                document.querySelector("#popupbackground").style.zIndex="9";
+                document.querySelector("#popupbackground").style.visibility="visible";
+            document.querySelector("#ProfilePopupM").style.visibility="visible";
+            })
+            // console.log("hi appun profile k andar hai")
+        }
+        // console.log("hi in login")
     })
+    let exitProfilepartM=document.querySelector("#popupbackground");
+    exitProfilepartM.addEventListener("click",function(){
+        document.querySelector("#popupbackground").style.zIndex="-39";
+        document.querySelector("#ProfilePopupM").style.zIndex="-30"
+        document.querySelector("#popupbackground").style.visibility="hidden";
+        document.querySelector("#ProfilePopupM").style.visibility="hidden";
 
+    })
 </script>
 
 <!-- ======================================================================================Body Part================================================================================= -->
@@ -729,7 +768,9 @@
        localStorage.setItem('mobile',JSON.stringify(mobile))
     //    console.log(otplogPart)
        document.querySelector("#loginpartofthiswebsite").style.visibility="hidden"
+       document.querySelector("#loginpartofthiswebsite").style.zIndex="-10"
        otplogPart.style.visibility="visible";
+       otplogPart.style.zIndex="22"
     }
 })
 
@@ -739,7 +780,7 @@ function SubmitMyMob(){
     mobile = ""+mob.value;
     if(mobile.length==10){
     //    location.href = "loginotp.html"
-       alert('redirecting to otp page')
+    //    alert('redirecting to otp page')
        localStorage.setItem('mobile',JSON.stringify(mobile))
        console.log(mobile)
     }
@@ -797,7 +838,8 @@ console.log('hi')
 
     // button highlighting on complete fillup
     const checkinput =()=>{
-
+        let flag =false;
+    
     var otps = document.querySelectorAll("#otp")
     if(otps[0].value!="" && otps[1].value!="" && otps[2].value!="" && otps[3].value!=""){
     document.querySelector("#letsgo").style.backgroundColor="#318616"
@@ -810,12 +852,35 @@ console.log('hi')
     event.preventDefault(event)
     let otps = document.querySelectorAll("#otp")
 
-    if(otps[0].value==1 && otps[1].value==2 && otps[2].value==3 && otps[3].value==4){
+    if(otps[0].value==1 && otps[1].value==2 && otps[2].value==3 && otps[3].value==4 ){
         alert("Logged In Successfully")
         alert("Redirecting to home page")
-        document.querySelector("#loginandprofile").innerText="Profile"
-        otplogPart.style.visibility="hidden";
+        // flag=true;
+        // if(flag==true)
+        // {
+            const profilediv=document.createElement("p")
+            profilediv.innerText="Profile"
+            profilediv.setAttribute("id","profilediv")
+            profilediv.addEventListener("click",function(){
+                console.log("This is profile");
+                document.querySelector("#popupbackground").style.zIndex="9";
+                document.querySelector("#ProfilePopupM").style.zIndex="10"
+                document.querySelector("#popupbackground").style.visibility="visible";
+                document.querySelector("#ProfilePopupM").style.visibility="visible";
 
+                let exitProfilepartM=document.querySelector("#popupbackground");
+                exitProfilepartM.addEventListener("click",function(){
+                document.querySelector("#popupbackground").style.zIndex="-39";
+                document.querySelector("#popupbackground").style.visibility="hidden";
+                document.querySelector("#ProfilePopupM").style.visibility="hidden";
+                document.querySelector("#ProfilePopupM").style.zIndex="-30"
+            
+                })
+            })
+            document.querySelector("#loginandprofile").remove();
+            document.querySelector("#loginandprofile1").append(profilediv);
+            otplogPart.style.visibility="hidden";
+        // }
     }else{
 
     otps[0].style.border = "2px solid red";
@@ -832,7 +897,7 @@ console.log('hi')
 <script type="module">
     let cartDB = JSON.parse(localStorage.getItem("cartDB")) || [];
     console.log(cartDB)
-    import {display,showCartqty} from './componant/index.js';
+    import {display,showCartqty} from './components/index.js';
     // document.querySelector(".h5c").innerHTML = "my cart"
     var sum = 0;
     for(var i = 0; i < cartDB.length; i++){

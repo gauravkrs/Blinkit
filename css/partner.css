@@ -1,0 +1,271 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.gradientbackground{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg,#F8CB46 0,#318616 100%);
+    background-repeat: no-repeat;
+    height: 638px;
+    width: 100%;
+    margin-bottom: 55px;
+    
+}
+.imagemain{
+    position: absolute; 
+    /* border: 2px solid red; */
+    width: 100%;
+}
+.imagemain>div{
+   
+    /* border: 2px solid black; */
+    width: 75%;
+    margin: auto;
+}
+.imagemain>div>img{
+    margin-top: 70px;
+    height: 400px;
+    width: 100%;
+}
+.Headin_gunder_image{
+    color: #ffffff;
+    line-height: 37px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 45px;
+    font-weight:bolder
+}
+.field{
+    margin: auto;
+    width: 80%;
+    margin-bottom: 50px;
+    color: #333;
+}
+.field>h4{
+   font-size: 38px;
+   font-weight: 400;
+   margin:0px 0px 16px
+
+}
+.field p{
+    font-size: 18px;
+}
+
+.partnerstore{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+
+}
+.partnerstore>div{
+    border-radius: 10px;
+}
+
+
+
+.field>p{
+    margin-bottom: 25px;
+    color: #1f1f1f;
+    font-family:  sans-serif;
+}
+.field img{
+    width: 100%;
+    height: 450px;
+}
+.field>div>h3{
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+
+}
+.partimg{
+    height: 100px;
+    width: 100%;
+}
+.Headingunderimage{
+   color: white;
+    line-height: 37px;
+   margin-top: 0;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-weight:bolder
+}
+.Headingunderimage+p{
+    color: white;
+     line-height: 25px;
+    
+     text-align: center;
+     box-sizing: border-box;
+     font-size: 20px;
+     font-weight: 400;
+     font-weight:bolder
+ }
+/* .field>div>h3:nth-last-child(){
+    border-top: 1px solid rgb(84, 83, 83);
+    border-bottom: 1px solid #333;
+
+    padding-top: 25px;
+
+} */
+
+.success{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    font-family:  sans-serif;
+    
+}
+.success>div{
+   height: 250px;    
+}
+.success img{
+    width: 100%;
+    height: 100%;
+}
+.contactMe{
+    width: 100%;
+    min-height: 600px;
+    background-image: url("https://blinkit.com/careers/sites/default/files/2022-03/partner-form.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    gap: 30px;
+
+}
+
+.contactMe>div{
+    width: 50%;
+}
+
+.contactMe h2{
+    line-break: 250px;
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: -5 2px;
+}
+.chalnikal{
+    margin:100px 20px 10px 150px;
+}
+.contactMe p{
+    font-size: 24px;
+    font-weight: 400;
+    padding-right:100px;
+    font-family:  sans-serif;
+}
+.recaptchaaamain{
+   margin: auto;
+}
+.buttonsubmit{
+    display: flex;
+}
+/* .recaptc{
+    transform: scale(2);
+} */
+
+.ContactBlinkit{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    height: 80%;
+    width: 70%;
+    margin: auto;
+    padding:20px;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+.ContactBlinkit>div{
+    height: 50px;
+    gap:20px;
+    background-color: #f2f2f2;
+   
+}
+.ContactBlinkit>div>input{
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.buttonsubmit{
+    gap: 20px;
+}
+.buttonsubmit>div{
+    width:50%
+}
+.buttonsubmit>div button{
+    width: 100%;;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background-color: #1f1f1f;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+.buttonsubmit>div input{
+margin-top: 11px;
+}
+.recaptcHA{
+    width: 16px;
+    height: 16px;
+}
+
+.recaptcHA +label{
+    margin-right: 40px;
+    margin-top: -9px;
+}
+.contactMe input{
+    padding-left: 20px;
+}
+
+
+
+@media(max-width:992px){
+    .partnerstore{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .success{
+        grid-template-columns: repeat(2,1fr);   
+    }
+    .contactMe{
+        background-image: none;
+        flex-direction: column;
+    
+    }
+    .contactMe >div{
+        width: 100%;
+        padding: 0;
+    }
+    .contactMe h2{
+        letter-spacing: -5 2px;
+    }
+    .chalnikal{
+        margin:100px 20px 10px 150px;
+    }
+    .contactMe p{
+        font-size: 24px;
+        font-weight: 400;
+        padding-right:100px;
+        font-family:  sans-serif;
+    }
+    .ContactBlinkit{
+        width: 100%;
+    }
+    .contactMe>div{
+        width: 100%;
+    }
+    .chalnikal{
+        margin:5px
+    }
+    .contactMe p{
+        padding-right:0px;
+        font-size: 20px;
+    }
+}

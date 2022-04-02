@@ -95,19 +95,20 @@ html{
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
 }
-/* #blurpopM{
-    z-index: 7;
-    position: absolute;
+#blurpopM{
+    /* background-color: rgb(0,0,0,0.5); */
+    z-index: -7;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     padding: 0;
     margin: 0;
     left: 0;
-} */
+}
 #locationPopM{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position:fixed;
-    z-index: 20;
+    z-index: 5;
     border: 1px solid black;
     width: 450px;
     visibility: hidden;
@@ -193,7 +194,7 @@ html{
     text-align: center;
     font-weight: 600;
 }
-/* #loginpartofthiswebsite{
+#loginpartofthiswebsite{
     z-index: 7;
     position: absolute;
     width: 100vw;
@@ -202,4 +203,14 @@ html{
     margin: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.367);
-} */
+}
+#otpinpartofthiswebsite{
+    z-index: 7;
+    position: absolute;
+    width: 100vw;
+    height: 570vh;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.367);
+}

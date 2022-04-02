@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/45f2a34ad6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="components\calldropdownofNAV.js">
+    <link rel="stylesheet" href="./css/heaDEr1.css"/>
+    <link rel="stylesheet" href="./css\fooTEr1.css"/>
+   
+    <script type="module">
+        import navbar from "./components/headER1.js"
+        let header=document.querySelector("#header")
+    </script>
+
+
+   
+    <link rel="stylesheet" href="./css/getTheApp.css">
+  
+</head>
+<body>
+    <div id="header">
+        <!-- import  -->
+    </div>
+    <div class="store">
+        <div class="storeLeft">
+              <img src="https://blinkit.com/careers/sites/default/files/2022-03/blinkit.png" alt="blikit site"/>
+        </div>
+        <div class="storeright">
+              <div>
+                   <h3>get the blinkit app</h3>
+              </div>
+             <div>
+                  <p>We will send you a link, open it on your phone to download the app</p>
+             </div>
+             <div class="emailphone">
+                  <form>
+                 <div>
+                    <div>
+                        <label for="email">
+                            <input type="radio" name="radioSelection" id="radioemail" onchange="call()" checked  />
+                            <span class="spanMobile">email</span>
+                        </label>
+                     </div>
+                     <div>
+                        <label for="phone">
+                            <input type="radio" name="radioSelection" id="radiophone" onchange="call()" />
+                            <span class="spanPhone">phone</span>
+                        </label>                     
+                     </div>
+             </div>
+             <div class="inputbutton" >
+                 <div>
+                     <input type="text" placeholder="" id="inputfield" value="">
+                 </div>
+                 <div>
+                     <button onclick="sharelink()">share app link</button>
+                 </div>
+             </div>
+                  </form>
+             </div>
+             <div>
+                  <p>Download app form</p>
+             </div>
+             <div class="playStores">
+                  <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/appstore.png" alt="AppleStore" onclick="window.location.href=`https://apps.apple.com/us/app/grofers-local-shopping/id960335206`" /> </div>
+                  <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/playstore.png" alt="playstore" onclick="window.location.href=`https://play.google.com/store/apps/details?id=com.grofers.customerapp`" /> </div>
+             </div>
+         
+        </div>
+    </div>
+                            <!-- footer -->
+                            <div id="fooTER"></div>              
+</body>
+</html>
+<script src="./script/getTheApp.js"></script>
+<script type="module">
+
+    import navbar from "./components/headER1.js"
+        console.log(navbar())
+        let heaDER = document.querySelector("#header")
+        heaDER.innerHTML=navbar();
+    
+        
+    
+        import footer from "./components/footER1.js"
+        let foot = document.querySelector("#fooTER")
+        console.log(footer())
+        foot.innerHTML=footer();
+    
+    
+    
+    
+    </script>
