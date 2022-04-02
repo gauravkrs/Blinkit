@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Veg</title>
     <link rel="stylesheet" href="./Vegmain.css">
 
 </head>
-<body>
+<body id="body1">
+    <div id="mainheaderM1">
+        <ul id="ulM">
+            <li id="lM1"><a href="index.html"  id="lM1"><img id="lM" src="https://blinkit.com/images/header/blinkit-logo-header-05a0b5f.png"/></a></li>
+            <li id="lM2">
+                <a href="#" id="lM2s"><h2 id="randomDelivery"></h2><span id="lM2ss" style="display:grid;grid-template-columns:1.5fr 1fr; text-align: center; flex-flow: row;align-items: center; "><p id="mapM">Pune, Maharashtra</p><i id="mapL" class="fa-solid fa-square-caret-down"></i></span></a>
+            </li>
+            <li id="lM3"><a href="#" style="display: flex;"><i id="searchM1" class="fa-solid fa-magnifying-glass"></i><input id="searchM2" type="search" placeholder="Search for products" /></a></li>
+            <li id="lM4"><a href="#">login</a></li>
+            <li id="lM5"><a href="#" id="lM5M"><span id="h5CM"><i style="color: white;" class="fa-solid fa-cart-shopping"></i></span><span id="h5CM" > my cart 
+            </span><span id="h5CM"></span></a></li>
+            <li id="lM6"><a href="#"><i class="fa-solid fa-mobile-screen"></i>  get the App</a></li>
+        </ul>
+    </div>
+    <div id="blurpopM">
+        <div id="locationPopM">
+            <div id="locup"><i id="locup1" class="fa-solid fa-sort-up"></i></div>
+            <div id="locationsubpart">
+                <i id="crossM" class="fa-solid fa-xmark"></i>
+                <h3>Change Location</h3>
+                <div id="locationPopsubM">
+                    <div id="locationPopsubM1"><p id="locationPopsubM11" >Detect my Location</p></div> --
+                    <div id="locationPopsubM2">OR</div>--
+                    <div id="locationPopsubM3">
+                        <input id="locationPopsubM31" type="text"  placeholder="Type your city Name"/>
+                    </div>
+                </div>
+                <div id="appendCNM"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!-- Ayush Anshu -->
+
     <div id="Body">
         <div class="sidenavbar"><div><h5>Vegetables</h5></div>
         <div><h5>Fruits</h5></div>
@@ -26,9 +64,146 @@
     
     
 </body>
+
+
+<!-- Ayush Anshu -->
 </html>
+
+
+
+<script>
+
+var cartdata=JSON.parse(localStorage.getItem("cart"))
+
+// var total=cart.reduce(function (sum,elem,index,arr){
+//  return sum+Number(elem.price)
+// },0)
+// document.querySelector("#lM5").innerText=`Rs ${total}`
+
+var li=document.querySelector("#lM5")
+
+var length=cartdata.length
+li.innerText=index.total
+</script>
+
+<!-- Text -->
+
+
+
+
+<script src="https://kit.fontawesome.com/cb83d10ce2.js" crossorigin="anonymous"></script>
+<script src="./script/place.js"></script>
+<script type="module">
+    //=====================================================================Nav Bar==================================================//
+    //random delivary time
+    var randomNumber=Math.floor(Math.random()*(45-10)+9);
+    document.querySelector("#randomDelivery").innerHTML=`delivery in ${randomNumber} minutes`;
+
+
+
+    //city search
+    let body = document.querySelector("#body1");
+    var popmap=document.querySelector("#locationPopM");
+    var mainblurpop=document.querySelector("#blurpopM");
+    document.querySelector("#mapL").addEventListener("click",()=>{
+        popmap.style.visibility="visible";
+        popmap.style.opacity=1;
+        mainblurpop.style.backgroundColor="rgb(0,0,0,0.5)"
+        // body.style.backgroundColor="transparent";
+        document.querySelector("#randomDelivery").style.color="rgb(209,26,26)"
+    })
+
+
+    // LOCATION DETECTION
+    navigator.geolocation.getCurrentPosition(function(position) {
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+    out(lat,lng)
+    });
+
+    let addressM=document.querySelector("#mapM");
+    async function out(lat,lng){
+        let rel = await fetch(`https://us1.locationiq.com/v1/reverse.php?key=pk.456518217705258731c8c7089e3a45d0&lat=${lat}&lon=${lng}&format=json`)
+        let data = await rel.json();
+        // console.log(data.address);
+        // console.log(data.display_name);
+        console.log("location aa gayi")
+
+        //LOCATION APPEND
+        
+        addressM.innerHTML= `${data.address.suburb},${data.address.city},${data.address.state},${data.address.country},${data.address.postcode}`;
+    }
+
+    
+
+
+    //search location
+    let city=JSON.parse(localStorage.getItem("cities"))
+    let inputM = document.querySelector("#locationPopsubM31");
+    let appendM=document.querySelector("#appendCNM")
+    inputM.addEventListener("input", input_change)
+    
+    function input_change(){
+        
+        let z=city.filter(function(e){
+                let result = inputM.value;
+                appendM.innerHTML="";
+                return e.name.includes(result);                
+            })
+            console.log(z)
+            // {id: '2', name: 'Delhi', state: 'Delhi'}
+            z.forEach(({name:n,state:c})=>{
+                let cityname=document.createElement("p")
+                cityname.setAttribute("id","visibleCityM")
+                cityname.addEventListener("click",function(){
+                    addressM.innerText=`${n}, ${c}`;
+                    // console.log(n,c)
+                })
+                cityname.innerText=`${n}, ${c}`;
+                appendM.append(cityname)
+            })        
+    }
+    
+    //Exiting PopUp
+    let cancelPopM = document.querySelector("#crossM");
+    cancelPopM.addEventListener("click", ()=>{
+        popmap.style.visibility="none";
+        popmap.style.opacity=0;
+        mainblurpop.style.backgroundColor="rgb(0,0,0,0)"
+    })
+
+    //=========================================================================================================================================//
+
+
+
+
+    //------------------------------------------------------------Log In Page------------------------------------------------------------------//
+
+    document.querySelector("#lM4").addEventListener("click",login);
+    function login(){
+        // let maindivLM=document.createEvent("div");
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Ayush Anshu -->
+
+
 <script src="vegdata.js"></script>
 <script>
+
+    cartdata=[]
     let Vegdata=JSON.parse(localStorage.getItem("vegdata"))
     Vegdata.map(function (elem){
         var div=document.createElement("div")
@@ -45,10 +220,23 @@
         price.innerText=elem.price
         var button=document.createElement("button")
         button.innerText="Add To Cart"
+        button.addEventListener("click", function(){
+
+
+            addtocart(elem)
+        } )
+
         var div2=document.createElement("div")
         div2.setAttribute("class","flex")
         div2.append(price,button)
         div.append(img,name,weight,div2)
         document.querySelector(".sidenavbar3").append(div)
     })
+    function addtocart(elem){
+        cartdata.push(elem)
+        localStorage.setItem("cart",JSON.stringify(cartdata))
+    }
 </script>
+
+
+<!-- Ayush Anshu -->
