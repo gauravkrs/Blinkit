@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./gridTom.css">
+</head>
+<body>
+    <div id="frTop">
+        frequently Bought Together
+    </div>
+    <div id="frContainer">
+
+    </div>
+</body>
+</html>
+<script>
+    let hikcup= document.querySelector("#frContainer");
+    let getData= JSON.parse(localStorage.getItem('fruitData'))
+    console.log(getData);
+
+   
+
+    getData.forEach(function(el)
+    {
+        // console.log(el);
+        let father= document.createElement('div');
+        father.setAttribute('id','father')
+
+        let img= document.createElement('img');
+        img.src=el.image
+        img.width=226
+        img.height=140
+
+        let priceT=document.createElement('div');
+        priceT.setAttribute('id','priceT')
+
+        let price=document.createElement('p');
+        price.setAttribute('class','frprice1')
+        price.innerText=el.frprice
+
+        let strikedPrice=document.createElement('s');
+        strikedPrice.setAttribute('class','frprice2')
+        strikedPrice.innerText=el.strPrice
+        
+        let naam=document.createElement('p');
+        naam.setAttribute('class','naam')
+        naam.innerText=el.name;
+
+        let btn=document.createElement('button')
+        btn.setAttribute('id','frPrice')
+        btn.innerText="add"
+
+        priceT.append(price,strikedPrice)
+        father.append(img,priceT,naam,btn)
+
+        hikcup.append(father);
+    })
+    
+</script>
+
