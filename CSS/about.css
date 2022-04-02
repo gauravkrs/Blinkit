@@ -129,9 +129,10 @@ body{
         margin-left: 20px;
         font-weight: 600;
    }
-@media(max-width:767px){
+@media(max-width:992px){
 
     .blogGrid{
+        width: 90%;
         grid-template-columns: repeat(1,1fr);
     }
     .sharedphilosphy{
@@ -145,7 +146,7 @@ body{
         gap: 35px;
     }
     .people img{
-        height: 500px;
+        height: 800px;
    }
 
 }

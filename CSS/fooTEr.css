@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,800&family=Open+Sans:wght@500&family=Roboto&family=Source+Serif+4:wght@200;300;400&display=swap');
-#footer{
+#fooTER{
     font-family: 'Montserrat', sans-serif;
     border-top:2px solid grey;
-    margin-top: 200px;
-    padding-left: 250px;
-    padding-right: 250px;
+    /* margin-top: 200px; */
+    /* padding-left: 250px;
+    padding-right: 250px; */
     border-top:  1px solid #e4dfdf;
+   
+    width: 75%;
+    margin: auto;
 
 }
 .content{
@@ -26,12 +29,14 @@
 
  .bottomLinks{
     display: grid;
+    /* grid-template-columns: repeat(5,1fr); */
     border-bottom: 1px solid #e4dfdf;
     border-top:  1px solid #e4dfdf;
     grid-template-areas: 
     "a b c d e";
     font-size: 16px;
-    font-weight: bold
+    font-weight: bold;
+    margin: auto;
 }
 .bottomLinks>div:nth-child(1){
     grid-area:a;
@@ -55,12 +60,12 @@
     font-size: 20px;
     color: #1f1f1f;
 }
-li,li>a{
+.bottomLinks li,.bottomLinks li>a{
     list-style: none;
     text-decoration: none;
-    margin-left: -20px;  
+    margin-left: -27px;  
 }
-li>a:hover{
+.bottomLinks li>a:hover{
        text-decoration: underline;
 }
 .FontAw>div{
@@ -71,7 +76,7 @@ li>a:hover{
     margin-bottom: 50px;
     color: #bebdbd;
 }
-a{
+#footer a{
     color: #7a7979;
 }
 .FontAw{
@@ -82,12 +87,14 @@ a{
     font-size: 40px;
     margin-right: 25px;
     margin-bottom: 25px;
+    /* background-color: #7a7979; */
+    color: #7a7979;
 
 }
-li{
-    margin-top: 20px;
+.bottomLinks li{
+    margin-top: -20px;
 }
-li:last-child{
+.bottomLinks li:last-child{
     margin-bottom: 70px;
 }
 img{
@@ -95,26 +102,20 @@ img{
     margin-bottom: 15px;
     cursor: pointer;
 }
-@media(max-width:1300px){
+
+@media(max-width:1200px){
     #footer{
         margin-top: 200px;
         padding-left: 200px;
         padding-right: 200px;
-    
     }
+
     .FontAw>div{
-        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
     }
 }
 @media(max-width:992px){
-    /* #footer{
-        margin-top: 200px;
-        padding-left: 200px;
-        padding-right: 200px;
-    } */
+
     .FontAw>div{
         display: flex;
         flex-direction: column;
@@ -122,35 +123,28 @@ img{
         align-content: center;
     }
     .bottomLinks{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);;
-        border: solid red 2px;
-        /* grid-template-areas: 
-        "a b c"
-        "d e"; */
-    }
-}
-@media(max-width:767px){
-    #footer{
-        margin-top: 200px;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    /* .FontAw>div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    } */
-    .bottomLinks{
-        /* grid-template-columns: repeat(2,1fr); */
-        border-bottom: 1px solid #e4dfdf;
-        border-top:  1px solid #e4dfdf;
-        border: 2px solid red;
-        /* grid-template-areas: 
+        grid-template-areas: 
         "a b"
-        "c"
-        "d"
-        "e"; */
+        "c ."
+        "d ."
+        "e .";
+        justify-content: space-around;
+ 
+    }
+    
+    .FontAw{
+        display: flex;
+        flex-direction: row;
+    }
+    .FontAw>div{
+        flex-direction: row;
+    }
+    .downloadApp>div{
+        display: flex;
+        gap: 30px;
+    }
+    .bottomLinks li:last-child{
+        margin-bottom: -50px;
     }
 }
+

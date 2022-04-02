@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+    <link rel="stylesheet" href="./CSS/getTheApp.css">
+    <!-- <style>
+.store{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    height: auto;
+    margin: auto;
+    max-height: 550px;
+    margin-top: 140px;
+    border: solid red 2px;
+    width: 65%;
+   
+}
+.store>div{
+    border: solid red 2px;
+}
+.storeright{
+    /* justify-content: left;
+    justify-items: left; */
+}
+.storeLeft>img{
+    height: 100%;
+    border: solid 2px teal;
+}
+.storeright>div>h3{
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 47px;
+}
+.storeright>div>p{
+    font-weight:500 ;;
+    font-size: 20px;
+    margin-right:200px; 
+
+}
+[type="checkbox"], [type="radio"] {
+height:20px; 
+width:20px;
+background-color: green;
+}
+form>div{
+    display: flex;
+    margin-bottom: 50px;
+}
+.emailphone{
+    display: flex;
+}
+
+.inputbutton{
+    display: flex;
+}
+
+.playStores{
+    display: flex;
+}
+
+    </style> -->
+</head>
+<body>
+    <!-- <div id="header">
+        <div class="logo">
+            <img src="https://blinkit.com/careers/sites/default/files/blinkit_logo.png" alt="logo"/>
+        </div>
+        <div class="mid">
+            <ul class="menu menu--main nav navbar-nav">
+
+                <li class="first">
+                    <a href="https://blinkit.com/">Home</a>
+                </li>
+                <li>
+                    <a href="https://blinkit.com/aboutus" >About</a>
+                </li>
+                <li>
+                    <a href="https://blinkit.com/careers">Careers</a>
+                </li>
+                <li>
+                    <a href="https://blinkit.com/partner">Partner</a>
+                </li>
+                <li>
+                    <a href="https://blinkit.com/blog/">Blog</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="dropdown"></div>
+    </div> -->
+
+
+    <div class="store">
+        <div class="storeLeft">
+              <img src="https://blinkit.com/careers/sites/default/files/2022-03/blinkit.png" alt="blikit site"/>
+        </div>
+        <div class="storeright">
+              <div>
+                   <h3>get the blinkit app</h3>
+              </div>
+             <div>
+                  <p>We will send you a link, open it on your phone to download the app</p>
+             </div>
+             <div class="emailphone">
+                  <form>
+                 <div>
+                    <div>
+                        <label for="email">
+                            <input type="radio" name="radioSelection" id="radioemail" onchange="call()" checked  />
+                            <span class="spanMobile">email</span>
+                        </label>
+                     </div>
+                     <div>
+                        <label for="phone">
+                            <input type="radio" name="radioSelection" id="radiophone" onchange="call()" />
+                            <span class="spanPhone">phone</span>
+                        </label>                     
+                     </div>
+             </div>
+             <div class="inputbutton" >
+                 <div>
+                     <input type="text" placeholder="" id="inputfield" value="">
+                 </div>
+                 <div>
+                     <button onclick="sharelink()">share app link</button>
+                 </div>
+             </div>
+                  </form>
+             </div>
+             <div>
+                  <p>Download app form</p>
+             </div>
+             <div class="playStores">
+                  <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/appstore.png" alt="AppleStore" onclick="window.location.href=`https://apps.apple.com/us/app/grofers-local-shopping/id960335206`" /> </div>
+                  <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/playstore.png" alt="playstore" onclick="window.location.href=`https://play.google.com/store/apps/details?id=com.grofers.customerapp`" /> </div>
+             </div>
+         
+        </div>
+    </div>
+
+
+    <!-- <div id="footer">
+
+        <div class="content">
+           <h4>#1 instant delivery service in India</h4>
+           <p>Shop on the go and get anything delivered in 10 minutes (or less). Buy everything from groceries to fresh fruits & 
+               vegetables, cakes and bakery items, to meats & seafood, cosmetics, mobiles & accessories, electronics, baby care products
+                and much more. We get it delivered at your doorstep in the fastest and the safest way possible.</p>
+
+           <h4>single app for all your daily needs</h4>
+           <p>Order thousands of products at just a tap - milk, eggs, bread, cooking oil, ghee, atta, rice, fresh fruits & 
+               vegetables, spices, chocolates, chips, biscuits, Maggi, cold drinks, shampoos, soaps, body wash, pet food, diapers,
+                electronics, other organic and gourmet products from your neighbourhood stores and a lot more.</p>
+
+           <h4>order online on Blinkit to enjoy instant delivery magic</h4>
+           <p>Cities we currently serve: Agra, Ahmedabad, Bengaluru, Chandigarh, Chennai, Delhi, Faridabad, HR-NCR, Hyderabad, Jaipur,
+                Jalandhar, Kanpur, Kolkata, Lucknow, Mathura, Meerut, Mohali, Mumbai, Panchkula, Pune, UP-NCR</p>
+
+        </div>
+
+        <div class="bottomLinks">
+            <div>
+                <h2>Company</h2>
+                <ul>
+                    <li><a href="https://blinkit.com/aboutus">About</a> </li>
+                    <li><a href="https://blinkit.com/careers/">Careers</a> </li>
+                    <li><a href="https://blinkit.com/blog/">Blog</a> </li>
+                    <li><a href="https://blinkit.com/press">Press</a> </li>
+                    <li><a href="https://blinkit.com/leadership">Lead</a> </li>
+                    <li><a href="https://blinkit.com/leadership">Values</a> </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>For Consumers</h2>
+                <ul>
+                    <li><a href="https://blinkit.com/privacy">Privacy</a> </li>
+                    <li><a href="https://blinkit.com/terms">Terms</a> </li>
+                    <li><a href="https://blinkit.com/faq">FAQs</a> </li>
+                    <li><a href="https://blinkit.com/security">Security</a> </li>
+                    <li><a href="https://blinkit.com/mobile">Mobile</a> </li>
+                    <li><a href="https://blinkit.com/contact">Contact</a> </li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>For Partners</h2>
+                <ul>
+                    <li><a href="https://blinkit.com/express">Express</a> </li>
+                    <li><a href="https://blinkit.com/local/">Local</a> </li>
+                    <li><a href="https://blinkit.com/spotlight">SpotLight</a> </li>
+                    <li><a href="https://blinkit.com/warehouse-partner">Warehouse</a> </li>
+                    <li><a href="https://blinkit.com/delivery">Deliver</a> </li>
+                    <li><a href="https://blinkit.com/partner">Partner</a> </li>
+                </ul>
+            </div>
+
+            <div class="follow">
+                <h2>Follow us</h2>
+                <div class="FontAw">
+                    <div class="fontAwesome">
+                        <a href="" target="blank"  class="fa-brands fa-instagram"></a>
+                    </div>
+                    <div class="fontAwesome">
+                        <a href="" target="blank" class="fa-brands fa-facebook"></a>
+                    </div>
+                    <div class="fontAwesome">
+                        <a href="" target="blank" class="fa-brands fa-twitter"></a>
+                    </div>
+                    <div class="fontAwesome">
+                        <a href="" target="blank" class="fa-brands fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="downloadApp">
+                <h2>Download App</h2>
+                <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/appstore.png" alt="AppleStore" onclick="window.location.href=`https://apps.apple.com/us/app/grofers-local-shopping/id960335206`" /> </div>
+                <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/playstore.png" alt="playstore" onclick="window.location.href=`https://play.google.com/store/apps/details?id=com.grofers.customerapp`" /> </div>
+            </div>
+        </div>
+
+        <div class="lowest">
+            <p>By continuing past this page you agree to our Terms, Cookie policy and Privacy policy. All trademarks are properties of their 
+                respective owners. 2016-2021 © Grofers India Pvt. Ltd. All rights reserved</p>
+        </div>
+    </div> -->
+</body>
+</html>
+
+<!-- <script type="module">
+     import navbar from "./components/headER.js"
+     let header = document.querySelector("#header")
+     console.log(navbar())
+     console.log("hi")
+     console.log("hi")
+</script> -->
+
+
+
+<script>
+      let phone = document.querySelector("#radiophone")
+      let email = document.querySelector("#radioemail")
+
+     email.defaultChecked;
+     document.querySelector("#inputfield").placeholder="Email"
+  
+
+
+
+function call(){
+    if(email.checked){
+        // console.log("email")
+        document.querySelector("#inputfield").placeholder="Email"
+  }
+  else{
+    //   console.log("phone")
+      document.querySelector("#inputfield").placeholder="phone"
+  }
+ 
+}
+
+
+const sharelink = ()=>{
+    let inpt=document.querySelector("#inputfield").value
+     if(inpt==""){
+        alert('this field is required')
+     }else{
+        if(email.checked && inpt!="" ){
+      if(inpt.includes('@gmail.com')){
+          alert('App link shared to E-mail account')
+      }else{
+          alert('enter a valid email')
+      }
+  }
+  else if(phone.checked && inpt!="" ){
+      inpt=""+inpt
+      if(inpt.length==10){
+          alert('App link shared to Mobile number')
+      }else{
+          alert('enter a valid phone no.')
+      }
+  }
+     }
+
+}
+
+</script>

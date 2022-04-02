@@ -1,6 +1,5 @@
-const footer = (locationToAppend)=>{
-    return 
-`    <div class="content">
+const footer = ()=>{
+    return `           <div class="content">
     <h4>#1 instant delivery service in India</h4>
     <p>Shop on the go and get anything delivered in 10 minutes (or less). Buy everything from groceries to fresh fruits & 
         vegetables, cakes and bakery items, to meats & seafood, cosmetics, mobiles & accessories, electronics, baby care products
@@ -78,10 +77,11 @@ const footer = (locationToAppend)=>{
 
      <div class="downloadApp">
          <h2>Download App</h2>
-         <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/playstore.png" alt="playstore" onclick="window.location.href=`https://play.google.com/store/apps/details?id=com.grofers.customerapp`" /> </div>
-        ` <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/appstore.png" alt="AppleStore" onclick="window.location.href=`https://apps.apple.com/us/app/grofers-local-shopping/id960335206`" /> </div>
-         
-     `</div>
+         <div>
+             <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/playstore.png" alt="playstore" onclick="window.location.href='https://play.google.com/store/apps/details?id=com.grofers.customerapp'" /> </div>
+             <div><img src="https://blinkit.com/careers/sites/default/files/2021-12/appstore.png" alt="AppleStore" onclick="window.location.href='https://apps.apple.com/us/app/grofers-local-shopping/id960335206'" /> </div>
+         </div>
+     </div>
  </div>
 
  <div class="lowest">

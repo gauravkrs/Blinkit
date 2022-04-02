@@ -7,8 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/about.css">
     <script src="https://kit.fontawesome.com/45f2a34ad6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="components\calldropdownofNAV.js">
+    <link rel="stylesheet" href="./CSS/heaDEr.css"/>
+    <link rel="stylesheet" href="./CSS\fooTEr.css"/>
+   
+    <script type="module">
+        import navbar from "./components/headER.js"
+        let header=document.querySelector("#header")
+    </script>
+
 </head>
 <body>
+    <div id="header">
+        <!-- import  -->
+    </div>
+
+
     <div class="gradientbackground">
         <div class="imagemain">
            <div align="center"> <img src="https://blinkit.com/careers/sites/default/files/2022-03/about-masthead-desktop.png" alt="about"/></div>
@@ -43,7 +57,7 @@
                      <img src="http://blinkit.in/blog/sites/default/files/styles/banner_desktop/public/2022-03/women%20in%20tech-ekta%20garg-web%20%281%29.png?itok=L4hFlseF" alt="women">
                       <!-- <div class="XX"><a>Culture</a></div> -->
                     </div>
-                </div>
+               </div>
                
                <p style="font-size: 12px;">Tech Team | 03 March 22 | 8 mins read</p>
                <h4>Women in Tech: Ekta Garg</h4>
@@ -215,14 +229,27 @@
     </div>
 
                            <!-- footer -->
-                           <div id="footer"></div>
+                           <div id="fooTER"></div>
 
 
 </body>
 </html>
 <script type="module">
+
+import navbar from "./components/headER.js"
+    console.log(navbar())
+    let heaDER = document.querySelector("#header")
+    heaDER.innerHTML=navbar();
+
+    
+
     import footer from "./components/footER.js"
-    let footer = document.querySelector("#footer")
-    console.log()
-    footer.innerHTML=footer();
+    let foot = document.querySelector("#fooTER")
+    console.log(footer())
+    foot.innerHTML=footer();
+
+
+
+
 </script>
+
