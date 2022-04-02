@@ -133,6 +133,7 @@ i:hover {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
             grid-template-rows: auto;
+            height: 100px;
             gap: 18px;
             margin: 15px 0px;
             overflow-x: hidden;

@@ -9,8 +9,9 @@
   
     text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    position: absolute;
+    position: fixed;
     margin: 100px 27.5% 0px 27%;
+    
 }
 
 
@@ -144,9 +145,11 @@ form>div{
 }
 
 #loginpartofthiswebsite {
+    position: fixed;
     visibility: hidden;
 }
 #otpinpartofthiswebsite{
+    position: fixed;
     visibility: hidden;
 }
 

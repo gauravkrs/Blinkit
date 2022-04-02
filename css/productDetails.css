@@ -1,0 +1,54 @@
+#mainDiv{
+    display: flex;
+    width: 85%;
+    /* border: 1px solid black; */
+    height: 500px;
+    margin: auto;
+    justify-content: space-between;
+}
+#pd1{
+    width: 49%;
+    /* border: 1px solid red; */
+}
+#pd2{
+    width: 49%;
+    /* border: 1px solid blue; */
+}
+#line{
+    width: 100%;
+    border: 1px solid #efefef ;
+    height: 0px;
+}
+.title{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 12px;
+    
+}
+.content{
+    font-size: 14px;
+    text-justify: newspaper;
+    color: #666666;
+    line-height: 18px;
+}
+h3{
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+}
+.subsection{
+    display: flex;
+}
+.subsection>p{
+    margin-top: 5px;
+    margin-left: 15px;
+    line-height: 20px;
+}
+.title2{
+    font-weight: 400;
+    color: #666666;
+}

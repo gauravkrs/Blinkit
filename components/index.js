@@ -3,7 +3,7 @@
 
 // let dair = JSON.parse(localStorage.getItem("dairy")) || [];
 // console.log(dair)
-
+let pDetail = [];
 let cartDB = JSON.parse(localStorage.getItem("cartDB")) || [];
 
 const display = (data, main) => {
@@ -17,6 +17,24 @@ const display = (data, main) => {
         let img = document.createElement("img");
         img.setAttribute("class","pimg")
         img.src = el.img_url;
+        img.style.cursor='pointer'
+        img.addEventListener('click',()=>{
+            let img = el.img_url;
+            let name = el.product_name;
+            let qty = el.qty;
+            let price = el.price;
+            let sPrice = el.price;
+            window.location.href = './productDetails.html'
+            let dObj = {
+                img:img,
+                name:name,
+                qty:qty,
+                price:price,
+                sprice:sPrice
+            }
+            pDetail.push(dObj);
+            localStorage.setItem("pDetail",JSON.stringify(pDetail));
+        })
         let add = document.createElement("button");
         add.innerText="+"
         add.addEventListener("click",()=>{
