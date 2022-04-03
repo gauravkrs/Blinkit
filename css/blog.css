@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif
+}
+.gradientbackground{
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg,#F8CB46 0,#318616 100%);
+    background-repeat: no-repeat;
+    height: 638px;
+    width: 100%;
+    margin-bottom: 55px;
+    padding: 10px;
+    
+}
+.imagemain{
+    position: absolute; 
+    /* border: 2px solid red; */
+    width: 100%;
+}
+.imagemain>div{
+   
+    /* border: 2px solid black; */
+    width: 75%;
+    margin: auto;
+}
+.imagemain>div>img{
+    margin-top: 70px;
+    height: 400px;
+    width: 100%;
+}
+.Headin_gunder_image{
+    color: #ffffff;
+    line-height: 37px;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 45px;
+    font-weight:bolder
+}
+.Headin_gunder_image+p{
+    color: white;
+    font-size: 18px;
+}
+
+.heADING{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    /* border: solid red 2px; */
+}
+.heADING>p{
+    font-size: 24px;
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+.heADING>p:hover{
+    font-size: 24px;
+    cursor: pointer;
+    border-bottom: 4px solid #318616;
+    
+}
+.bloggerMainDiv{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    width: 75%;
+    margin: auto;
+    /* border: solid red 4px; */
+    font-family: sans-serif;
+}
+.bloggerMainDiv>div img{
+    top: 50;
+    width: 110%;
+    height: 140%;
+    /* left: -100px; */
+}
+
+.article-container {
+    height: 450px;
+    /* border: 1px solid #000000; */
+    overflow: hidden;
+    position: relative;
+}
+
+.article-img-holder {
+    background-position: center;
+    height: 450px;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    /* border: solid teal 5px; */
+}
+.article-img-holder:hover {
+    transform: scale(1.2);
+}
+
+.article-container+p+h2+p{
+    font-size: 20px;
+}
+
+@media(max-width:992px){
+    .bloggerMainDiv{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+        width: 95%;
+    }
+}

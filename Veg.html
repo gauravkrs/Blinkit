@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg</title>
+    <link rel="icon" href="https://blinkit.com/images/apple-touch-icon-change-60x60-1be1e81.png">
+    
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/headerForVeg.css"/>
+    <link rel="stylesheet" href="./css/loginpop.css"/>
+    <link rel="stylesheet" href="./css/profilepopup.css"/>
+    <link rel="stylesheet" href="./css/partner.css"/>
+    <link rel="stylesheet" href="/css/Vegmain.css">
+</head>
+<body id="body1">
+    <!--=============================================================Header============================================================================= -->
+    <div id="fixnavbar"></div>
+    <div id="loginpartnavbar">
+
+        <div id="loginpartofthiswebsite">
+            <div id="LOgin" align="center">
+                <div class="PHoneVErHeading">
+                    <h2>
+                        Phone Number Verification
+                    </h2>
+                </div>
+                <div class="LOginDEtails">
+                    <div align="center">
+                        <p style="width: 50%;max-width: 400px;">
+                         Enter your phone number to
+                        Login/Sign up
+                        </p>
+                    </div>
+                    <div class="LOginDEtailsF">
+                        <form align="center">
+                            <div class="LOginInput" >
+                                <input id="otpMob" type="number" placeholder="" value="" oninput="changecolor()"/>
+                            </div>
+                            <div class="NExtBUtton">
+                                <button onclick="SubmitMyMob()">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="otpinpartofthiswebsite">
+            <div id="LOgin">
+                <button class="back" onclick=""> < back</button>
+                <div class="PHoneVErHeading">
+                    <h2>
+                        Phone Number Verification
+                    </h2>
+                </div>
+                <div class="LOginDEtails1">
+                    <div align="center">
+                        <p style="width: 60%;max-width: 400px;">
+                            
+                        </p>
+                    </div>
+                    <div class="LOginDEtailsF1" >
+                        <form id="otpform" align="center">
+                            <div class="LOginInput" style="display: flex; justify-content: center; column-gap: 30px;" >
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                            </div>
+                            <div class="NExtBUtton">
+                                <!-- <button onclick="submitOTP()">Next</button> -->
+                                <button id="letsgo" type="submit">Next</button>
+                                <a class="resendCode" onclick="resendCode()"></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popupbackground">
+        <div id="ProfilePopupM">
+            <div>
+                <h3>My Account</h3>
+                <p id="profileContactNoM"></p>
+            </div>
+            <div><p id="profileCartM">My Orders</p></div>
+            <div><p id="profileAddress">Saved Address</p></div>
+            <div  style="display: flex; height: 10px; flex-direction: row; align-items: center;justify-content: space-between; padding-right: 20px;"><p id="profileWalletM" >My Wallet</p><h4 style="padding:0 ;margin: 0;">₹ 0</h4></div>
+            <div><p id="profileFaqNoM">Faq's</p></div>
+            <div><p id="profileLogoutM">Log out</p></div>
+            <div><img id="profileQrM" src="./images/Profile.png"/></div>
+        </div>
+    </div>
+    <!-- =============================================================Cart=============================================================================== -->
+    
+        <div id="cartPartAppendingM">
+            <div id="cartvalue">
+                <div>
+                     <span class="pRICE">0</span>
+                     <span class="sTRIKED" style="text-decoration: line-through;">0</span>
+                </div>
+                <div>
+                      <button class="proceeD" onclick="window.location.href='payment.html'">Proceed  ></button>
+                </div>   
+            </div>
+        </div>
+    
+
+
+
+
+
+    <!--=============================================================Body============================================================================= -->
+<!-- Ayush Anshu -->
+
+    <div id="Body">
+        <div class="sidenavbar"><div><h5>Vegetables</h5></div>
+        <div><h5>Fruits</h5></div>
+        <div><h5>Exotics & Premium</h5></div>
+        <div><h5>Freshly Cut & Sprouts</h5></div>
+        <div><h5>Frozen Veg</h5></div>
+        <div><h5>Seasonal</h5></div>
+        <div><h5>Flowers</h5></div>
+    </div>
+        <div class="sidenavbar2">
+            <div class="Top"><h3>Vegetables & Fruits</h3></div>
+            <div class="sidenavbar3"></div>
+        </div>
+    </div>
+
+    <!--=============================================================Footer============================================================================= -->
+    <div id="footer"></div>
+    
+    
+</body>
+
+
+<!-- Ayush Anshu -->
+</html>
+<script src="https://kit.fontawesome.com/cb83d10ce2.js" crossorigin="anonymous"></script>
+<script src="./script/place.js"></script>
+<script type="module">
+    
+    import navbar from "./components/header.js";
+    document.querySelector("#fixnavbar").innerHTML=navbar();
+
+    import footer from "./components/footer.js";
+    document.querySelector("#footer").innerHTML=footer();
+
+    //=====================================================================Nav Bar==================================================//
+    //random delivary time
+    var randomNumber=Math.floor(Math.random()*(45-10)+9);
+    document.querySelector("#randomDelivery").innerHTML=`delivery in ${randomNumber} minutes`;
+
+
+    // document.querySelector("#loginandprofile").innerText="Login"
+    //city search
+    let body = document.querySelector("#body1");
+    var popmap=document.querySelector("#locationPopM");
+    var mainblurpop=document.querySelector("#blurpopM");
+    document.querySelector("#mapL").addEventListener("click",()=>{
+        popmap.style.visibility="visible";
+        popmap.style.opacity=1;
+        mainblurpop.style.backgroundColor="rgb(0,0,0,0.5)"
+        mainblurpop.style.position="fixed"
+        document.querySelector("#randomDelivery").style.color="rgb(209,26,26)"
+        mainblurpop.style.zIndex="7"
+        mainblurpop.style.visibility="visible"
+    })
+
+
+    // LOCATION DETECTION
+    navigator.geolocation.getCurrentPosition(function(position) {
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+    out(lat,lng)
+    });
+
+    let addressM=document.querySelector("#mapM");
+    async function out(lat,lng){
+        let rel = await fetch(`https://us1.locationiq.com/v1/reverse.php?key=pk.456518217705258731c8c7089e3a45d0&lat=${lat}&lon=${lng}&format=json`)
+        let data = await rel.json();
+        // console.log(data.address);
+        // console.log(data.display_name);
+        console.log("location aa gayi")
+
+        //LOCATION APPEND
+        
+        addressM.innerHTML= `${data.address.suburb},${data.address.city},${data.address.state},${data.address.country},${data.address.postcode}`;
+    }
+
+    
+
+
+    //search location
+    let city=JSON.parse(localStorage.getItem("cities"))
+    let inputM = document.querySelector("#locationPopsubM31");
+    let appendM=document.querySelector("#appendCNM")
+    inputM.addEventListener("input", input_change)
+    
+    function input_change(){
+        
+        let z=city.filter(function(e){
+                let result = inputM.value;
+                appendM.innerHTML="";
+                return e.name.includes(result);                
+            })
+            console.log(z)
+            // {id: '2', name: 'Delhi', state: 'Delhi'}
+            z.forEach(({name:n,state:c})=>{
+                let cityname=document.createElement("p")
+                cityname.setAttribute("id","visibleCityM")
+                cityname.addEventListener("click",function(){
+                    addressM.innerText=`${n}, ${c}`;
+                    popmap.style.zIndex="-40"
+                    popmap.style.visibility="hidden";
+                    popmap.style.opacity=0;
+                    mainblurpop.style.visibility="hidden"
+                    mainblurpop.style.backgroundColor=""
+                    mainblurpop.style.zIndex="-10"
+                    // console.log(n,c)
+                })
+                cityname.innerText=`${n}, ${c}`;
+                appendM.append(cityname)
+            })        
+    }
+    
+    //Exiting PopUp
+
+    let cancelPopM = document.querySelector("#crossM");
+    cancelPopM.addEventListener("click", ()=>{
+        popmap.style.zIndex="-40"
+        popmap.style.visibility="hidden";
+        popmap.style.opacity=0;        
+        mainblurpop.style.visibility="hidden"
+        // mainblurpop.style.zIndex="-10"
+    })
+
+    //=========================================================================================================================================//
+
+
+
+
+    //------------------------------------------------------------Footer part------------------------------------------------------------------//
+
+
+    
+    let phone = document.querySelector("#radiophone")
+    let email = document.querySelector("#radioemail")
+
+//    email.defaultChecked;
+   document.querySelector("#inputfield").placeholder="Email"
+
+   document.querySelector("#radioemail").addEventListener("change",call)
+    function call(){
+        console.log("inside call function")
+    if(email.checked){
+        console.log("email")
+        document.querySelector("#inputfield").placeholder="Email"
+    }
+    else{
+        console.log("phone")
+        document.querySelector("#inputfield").placeholder="phone"
+    }
+
+    }
+
+    document.querySelector("#radiophone").addEventListener("change",call1)
+    function call1(){
+        console.log("inside call function")
+    if(email.checked){
+        console.log("email")
+        document.querySelector("#inputfield").placeholder="Email"
+    }
+    else{
+        console.log("phone")
+        document.querySelector("#inputfield").placeholder="phone"
+    }
+
+    }
+
+    document.querySelector("#sharelink").addEventListener("click",sharelink)
+    function sharelink(){
+    let inpt=document.querySelector("#inputfield").value
+    if(inpt==""){
+        alert('this field is required')
+    }else{
+        if(email.checked && inpt!="" ){
+        if(inpt.includes('@gmail.com')){
+            alert('App link shared to E-mail account')
+        }else{
+            alert('enter a valid email')
+        }
+    }
+    else if(phone.checked && inpt!="" ){
+        inpt=""+inpt
+        if(inpt.length==10){
+            alert('App link shared to Mobile number')
+        }else{
+            alert('enter a valid phone no.')
+        }
+    }
+    }
+
+    }
+
+
+
+
+    //login popup
+    let loogn=document.querySelector("#loginpartofthiswebsite");
+    // let otplogPart=document.querySelector("#otpinpartofthiswebsite");
+    let ProfileAppendPartMM=document.querySelector("#loginandprofile1");
+    document.querySelector("#lM4").addEventListener("click",function(){
+        
+        loogn.style.visibility="visible";
+        if(ProfileAppendPartMM.innerText=="Profile")
+        {
+            loogn.style.visibility="hidden";
+            loogn.addEventListener("click",function(){
+                document.querySelector("#popupbackground").style.zIndex="9";
+                document.querySelector("#popupbackground").style.visibility="visible";
+            document.querySelector("#ProfilePopupM").style.visibility="visible";
+            })
+            // console.log("hi appun profile k andar hai")
+        }
+        // console.log("hi in login")
+    })
+    let exitProfilepartM=document.querySelector("#popupbackground");
+    exitProfilepartM.addEventListener("click",function(){
+        document.querySelector("#popupbackground").style.zIndex="-39";
+        document.querySelector("#ProfilePopupM").style.zIndex="-30"
+        document.querySelector("#popupbackground").style.visibility="hidden";
+        document.querySelector("#ProfilePopupM").style.visibility="hidden";
+
+    })
+</script>
+
+
+
+
+<!-------------------------------------------------------------------------------------- Log in Pop Up -------------------------------------------------------------------->
+
+<script>
+    let otplogPart=document.querySelector("#otpinpartofthiswebsite");
+    
+    var mob= document.querySelector("input")
+    document.querySelector("form").addEventListener("submit",function(event){
+    event.preventDefault(event)
+    mobile = ""+mob.value;
+    if(mobile.length==10){
+    //    location.href = "loginotp.html"
+       alert('redirecting to otp page')
+    //    console.log(event)
+       localStorage.setItem('mobile',JSON.stringify(mobile))
+    //    console.log(otplogPart)
+       document.querySelector("#loginpartofthiswebsite").style.visibility="hidden"
+       document.querySelector("#loginpartofthiswebsite").style.zIndex="-10"
+       otplogPart.style.visibility="visible";
+       otplogPart.style.zIndex="22"
+    }
+})
+
+
+function SubmitMyMob(){
+    
+    mobile = ""+mob.value;
+    if(mobile.length==10){
+    //    location.href = "loginotp.html"
+    //    alert('redirecting to otp page')
+       localStorage.setItem('mobile',JSON.stringify(mobile))
+       console.log(mobile)
+    }
+}
+
+
+
+function changecolor(){
+console.log('hi')
+    mobile = ""+mob.value;
+    if(mobile.length==10){
+       document.querySelector("button").style.backgroundColor='#318616';
+       document.querySelector("button").style.cursor="pointer";
+    }else{
+        document.querySelector("button").style.backgroundColor='#ccc';
+    } 
+}
+</script>
+
+<script>
+    let mob1=JSON.parse(localStorage.getItem('mobile'))
+    // Appending para of mobile number
+
+    let loginDetails1 = document.querySelector(".LOginDEtails1>div>p")
+
+    loginDetails1.innerText=`Enter 4 digit code sent to your phone +91-${mob1}`
+
+    //    Timer to resend code (otp)
+
+    var resendTimer = document.querySelector(".resendCode")
+
+    const resendCode = ()=>{
+    resendTimer.innerText=""
+    let i=30;
+    let time = setInterval((resendTimer)=>{
+    if(i>0){
+    // console.log(i)
+    document.querySelector(".resendCode").style.color='grey';
+    document.querySelector(".resendCode").innerText = `Resend Code (in ${i} secs)`
+    }
+    else{
+    clearInterval(time);
+    document.querySelector(".resendCode").innerText = "Resend Code";
+    document.querySelector(".resendCode").style.color='#318616';
+    document.querySelector(".resendCode").style.textDecoration = "underline"
+    document.querySelector("button").style.cursor="pointer";
+    }
+    i--;
+    },1000)
+
+    }
+
+    //    call of timer
+    resendCode();
+
+    // button highlighting on complete fillup
+    const checkinput =()=>{
+        let flag =false;
+    
+    var otps = document.querySelectorAll("#otp")
+    if(otps[0].value!="" && otps[1].value!="" && otps[2].value!="" && otps[3].value!=""){
+    document.querySelector("#letsgo").style.backgroundColor="#318616"
+    }
+    }
+
+    // form submission
+
+    document.querySelector("#otpform").addEventListener('submit',function(event){
+    event.preventDefault(event)
+    let otps = document.querySelectorAll("#otp")
+
+    if(otps[0].value==1 && otps[1].value==2 && otps[2].value==3 && otps[3].value==4 ){
+        alert("Logged In Successfully")
+        alert("Redirecting to home page")
+        // flag=true;
+        // if(flag==true)
+        // {
+            const profilediv=document.createElement("p")
+            profilediv.innerText="Profile"
+            profilediv.setAttribute("id","profilediv")
+            profilediv.addEventListener("click",function(){
+                console.log("This is profile");
+                document.querySelector("#popupbackground").style.zIndex="9";
+                document.querySelector("#ProfilePopupM").style.zIndex="10"
+                document.querySelector("#popupbackground").style.visibility="visible";
+                document.querySelector("#ProfilePopupM").style.visibility="visible";
+
+                let exitProfilepartM=document.querySelector("#popupbackground");
+                exitProfilepartM.addEventListener("click",function(){
+                document.querySelector("#popupbackground").style.zIndex="-39";
+                document.querySelector("#popupbackground").style.visibility="hidden";
+                document.querySelector("#ProfilePopupM").style.visibility="hidden";
+                document.querySelector("#ProfilePopupM").style.zIndex="-30"
+            
+                })
+            })
+            document.querySelector("#loginandprofile").remove();
+            document.querySelector("#loginandprofile1").append(profilediv);
+            otplogPart.style.visibility="hidden";
+        // }
+    }else{
+
+    otps[0].style.border = "2px solid red";
+    otps[1].style.border = "2px solid red";
+    otps[2].style.border = "2px solid red";
+    otps[3].style.border = "2px solid red";
+    alert("verification failed")
+    event.preventDefault(event)
+    }
+    })
+</script>
+
+
+
+
+<!-- Ayush Anshu -->
+
+
+<script src="./script/Vegdata.js"></script>
+<script>
+
+    cartdata=[]
+    let Vegdata=JSON.parse(localStorage.getItem("vegdata"))
+    // console.log(Vegdata);
+
+    // let searchPart=document.querySelector("#searchM2");
+    // searchPart.addEventListener("input",SearchInNavbar)
+    
+    // function SearchInNavbar(event){
+    //     console.log(event)
+    //     let z=sear.filter(function(e){
+    //             let result = inputM.value;
+    //             appendM.innerHTML="";
+    //             return e.name.includes(result);                
+    //         })
+                   
+    // }
+
+
+    Vegdata.map(function (elem){
+        var div=document.createElement("div")
+        img=document.createElement("img")
+        img.src=elem.image
+
+        var name=document.createElement("p")
+        name.innerText=elem.name
+
+        var weight=document.createElement("p")
+        weight.innerText=elem.weight
+
+        var price=document.createElement("h3")
+        price.innerText=elem.price
+        var button=document.createElement("button")
+        button.style.cursor="pointer"
+        button.innerText="Add To Cart"
+        button.addEventListener("click", function(){
+
+
+            addtocart(elem)
+        } )
+
+        var div2=document.createElement("div")
+        div2.setAttribute("class","flex")
+        div2.append(price,button)
+        div.append(img,name,weight,div2)
+        document.querySelector(".sidenavbar3").append(div)
+    })
+    function addtocart(elem){
+        cartdata.push(elem)
+        localStorage.setItem("cart",JSON.stringify(cartdata))
+        
+    }
+
+    
+    // ===========================================Search Part===========================
+</script>
+
+
+<!-- Ayush Anshu -->
+<script type="module">
+    var cart=document.querySelector("#lM5");
+    cart.addEventListener("click", function(){
+        window.location.href="veg_index.html";
+    })
+
+
+
+
+    // let Vegdata=JSON.parse(localStorage.getItem("vegdata"))
+    // console.log(Vegdata);
+
+    let searchPart=document.querySelector("#searchM2");
+    searchPart.addEventListener("click",function(){
+                    document.querySelector("#searchBarHaiBhai").style.visibility="visible";
+                })
+    let appendVegetable=document.querySelector("#appendVegetable");
+    searchPart.addEventListener("input",SearchInNavbar)
+    
+    function SearchInNavbar(){
+        console.log(Vegdata)
+        let z=Vegdata.filter(function(e){
+                let result = searchPart.value;
+                appendVegetable.innerHTML="";
+                return e.name.includes(result);                
+            })
+            console.log(z)
+            z.forEach(({name:n,image:c})=>{
+                let vegetablename=document.createElement("p")
+                vegetablename.setAttribute("id","vegetablename")
+                let imageVeg=document.createElement("img")
+                imageVeg.setAttribute("id","imageVeg")
+                imageVeg.src=c
+                imageVeg.addEventListener("click",function(){
+                    document.querySelector("#searchBarHaiBhai").style.visibility="hidden";
+                })
+                vegetablename.innerText=`${n}`;
+                appendVegetable.append(imageVeg,vegetablename)
+            })             
+    }
+</script>

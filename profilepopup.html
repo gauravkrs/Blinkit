@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profilepopup</title>
+    <link rel="icon" href="https://blinkit.com/images/apple-touch-icon-change-60x60-1be1e81.png">
+    <style>
+        #popupbackground{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.371);
+    position: fixed;
+    z-index: 9;
+    top:65px;
+}
+#ProfilePopupM{
+    height: fit-content;
+    width: 16vw;
+    font-size: 14px;
+    position: fixed;
+    z-index: 10;
+    /* margin-left: 10vw; */
+    right: 9.5vw;
+    top:65px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    line-height: 1;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#ProfilePopupM p{
+    padding: 0px 20px;
+}
+#ProfilePopupM div:hover{
+    background-color: rgb(212, 231, 249);
+}
+#ProfilePopupM h3{
+    padding: 0px 20px;
+}
+#profileQrM{
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+    </style>
+</head>
+<body>
+    <div id="popupbackground">
+        <div id="ProfilePopupM">
+            <div>
+                <h3>My Account</h3>
+                <p id="profileContactNoM"></p>
+            </div>
+            <div><p id="profileCartM">My Orders</p></div>
+            <div><p id="profileAddress">Saved Address</p></div>
+            <div  style="display: flex; height: 10px; flex-direction: row; align-items: center;justify-content: space-between; padding-right: 20px;"><p id="profileWalletM" >My Wallet</p><h4 style="padding:0 ;margin: 0;">₹ 0</h4></div>
+            <div><p id="profileFaqNoM">Faq's</p></div>
+            <div><p id="profileLogoutM">Log out</p></div>
+            <div><img id="profileQrM" src="./images/Profile.png"/></div>
+        </div>
+    </div>
+</body>
+</html>

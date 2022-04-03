@@ -1,0 +1,86 @@
+#mainDiv{
+    display: flex;
+    width: 85%;
+    /* border: 1px solid black; */
+    height: 500px;
+    margin: auto;
+    justify-content: space-between;
+}
+#pd1{
+    width: 49%;
+    /* border: 1px solid red; */
+}
+#pd2{
+    width: 49%;
+    /* border: 1px solid blue; */
+}
+#line{
+    width: 100%;
+    border: 1px solid #efefef ;
+    height: 0px;
+}
+.title{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 12px;
+    
+}
+.content{
+    font-size: 14px;
+    text-justify: newspaper;
+    color: #666666;
+    line-height: 18px;
+}
+h3{
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.icon{
+    width: 60px;
+    height: 60px;
+}
+.subsection{
+    display: flex;
+}
+.subsection>p{
+    margin-top: 5px;
+    margin-left: 15px;
+    line-height: 20px;
+    font-size: 12px;
+}
+.title2{
+    font-weight: 400;
+    color: #666666;
+}
+#pMain{
+    width: 85%;
+    margin: auto;
+    margin-top: 75px;
+}
+.btnDiv{
+    width: 55%;
+    height: 35px;
+    background-color: rgb(248, 203, 70);
+    margin: 60px 30px;
+    border-radius: 8px;
+}
+.btnDiv>label{
+    font-size:15px;
+    background-color: rgb(248, 203, 70);
+}
+.btnDiv>button{
+    background-color: rgb(248, 203, 70);
+    margin: 5px 5px;
+
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    border: none;
+    text-align: center;
+}
+
+#cont{
+    display: grid;
+    grid-template-columns: 400px 600px 150px;
+}

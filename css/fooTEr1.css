@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,800&family=Open+Sans:wght@500&family=Roboto&family=Source+Serif+4:wght@200;300;400&display=swap');
+#fooTER{
+    font-family: 'Montserrat', sans-serif;
+    border-top:2px solid grey;
+    /* margin-top: 200px; */
+    /* padding-left: 250px;
+    padding-right: 250px; */
+    border-top:  1px solid #e4dfdf;
+   
+    width: 75%;
+    margin: auto;
+
+}
+.content{
+    margin-top: 80px;
+    
+}
+.content h4{
+    margin: 13.3px 0px;
+    color: #1f1443;
+}
+.content p{
+    margin: 0px 0px 35px;
+    color: #7d7c7c;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: bold
+}
+
+ .bottomLinks{
+    display: grid;
+    /* grid-template-columns: repeat(5,1fr); */
+    border-bottom: 1px solid #e4dfdf;
+    border-top:  1px solid #e4dfdf;
+    grid-template-areas: 
+    "a b c d e";
+    font-size: 16px;
+    font-weight: bold;
+    margin: auto;
+}
+.bottomLinks>div:nth-child(1){
+    grid-area:a;
+}
+.bottomLinks>div:nth-child(2){
+    grid-area:b;
+}
+.bottomLinks>div:nth-child(3){
+    grid-area:c;
+}
+.bottomLinks>div:nth-child(4){
+    grid-area:d;
+}
+.bottomLinks>div:nth-child(5){
+    grid-area:e;
+}
+.bottomLinks>div{
+    margin-top: 50px;
+}
+.bottomLinks>div>h2{
+    font-size: 20px;
+    color: #1f1f1f;
+}
+.bottomLinks li,.bottomLinks li>a{
+    list-style: none;
+    text-decoration: none;
+    margin-left: -27px;  
+}
+.bottomLinks li>a:hover{
+       text-decoration: underline;
+}
+.FontAw>div{
+    display: flex;
+}
+.lowest{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #bebdbd;
+}
+#footer a{
+    color: #7a7979;
+}
+.FontAw{
+    /* border: solid red 2px; */
+    width: 100px;
+}
+.fontAwesome>a{
+    font-size: 40px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    /* background-color: #7a7979; */
+    color: #7a7979;
+
+}
+.bottomLinks li{
+    margin-top: -20px;
+}
+.bottomLinks li:last-child{
+    margin-bottom: 70px;
+}
+img{
+    height: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+@media(max-width:1200px){
+    #footer{
+        margin-top: 200px;
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .FontAw>div{
+        flex-direction: column;
+    }
+}
+@media(max-width:992px){
+
+    .FontAw>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .bottomLinks{
+        grid-template-areas: 
+        "a b"
+        "c ."
+        "d ."
+        "e .";
+        justify-content: space-around;
+ 
+    }
+    
+    .FontAw{
+        display: flex;
+        flex-direction: row;
+    }
+    .FontAw>div{
+        flex-direction: row;
+    }
+    .downloadApp>div{
+        display: flex;
+        gap: 30px;
+    }
+    .bottomLinks li:last-child{
+        margin-bottom: -50px;
+    }
+}
+

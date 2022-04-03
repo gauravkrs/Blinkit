@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Everything delivered in 10 minutes | blinkit</title>
+        <link rel="icon" href="https://blinkit.com/images/apple-touch-icon-change-60x60-1be1e81.png">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/header.css"/>
+        <link rel="stylesheet" href="./css/index.css"/>
+        <link rel="stylesheet" href="./css/loginpop.css"/>
+        <link rel="stylesheet" href="./css/profilepopup.css"/>
+        <link rel="stylesheet" href="./css/partner.css"/>
+</head>
+<body id="body1">
+    <!--=============================================================Header============================================================================= -->
+    <div id="fixnavbar"></div>
+    <div id="loginpartnavbar">
+
+        <div id="loginpartofthiswebsite">
+            <div id="LOgin" align="center">
+                <div class="PHoneVErHeading">
+                    <h2>
+                        Phone Number Verification
+                    </h2>
+                </div>
+                <div class="LOginDEtails">
+                    <div align="center">
+                        <p style="width: 50%;max-width: 400px;">
+                         Enter your phone number to
+                        Login/Sign up
+                        </p>
+                    </div>
+                    <div class="LOginDEtailsF">
+                        <form align="center">
+                            <div class="LOginInput" >
+                                <input id="otpMob" type="number" placeholder="" value="" oninput="changecolor()"/>
+                            </div>
+                            <div class="NExtBUtton">
+                                <button onclick="SubmitMyMob()">Next</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="otpinpartofthiswebsite">
+            <div id="LOgin">
+                <button class="back" onclick=""> < back</button>
+                <div class="PHoneVErHeading">
+                    <h2>
+                        Phone Number Verification
+                    </h2>
+                </div>
+                <div class="LOginDEtails1">
+                    <div align="center">
+                        <p style="width: 60%;max-width: 400px;">
+                            
+                        </p>
+                    </div>
+                    <div class="LOginDEtailsF1" >
+                        <form id="otpform" align="center">
+                            <div class="LOginInput" style="display: flex; justify-content: center; column-gap: 30px;" >
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                                <input id="otp"  type="tel" placeholder="" value="" oninput="checkinput()" />
+                            </div>
+                            <div class="NExtBUtton">
+                                <!-- <button onclick="submitOTP()">Next</button> -->
+                                <button id="letsgo" type="submit">Next</button>
+                                <a class="resendCode" onclick="resendCode()"></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="popupbackground">
+        <div id="ProfilePopupM">
+            <div>
+                <h3>My Account</h3>
+                <p id="profileContactNoM"></p>
+            </div>
+            <div><p id="profileCartM">My Orders</p></div>
+            <div><p id="profileAddress">Saved Address</p></div>
+            <div  style="display: flex; height: 10px; flex-direction: row; align-items: center;justify-content: space-between; padding-right: 20px;"><p id="profileWalletM" >My Wallet</p><h4 style="padding:0 ;margin: 0;">₹ 0</h4></div>
+            <div><p id="profileFaqNoM">Faq's</p></div>
+            <div><p id="profileLogoutM">Log out</p></div>
+            <div><img id="profileQrM" src="./images/Profile.png"/></div>
+        </div>
+    </div>
+    <!-- =============================================================Cart=============================================================================== -->
+    
+        <div id="cartPartAppendingM">
+            <div id="cartvalue">
+                <div>
+                     <span class="pRICE">0</span>
+                     <span class="sTRIKED" style="text-decoration: line-through;">0</span>
+                </div>
+                <div>
+                      <button class="proceeD" onclick="window.location.href='payment.html'">Proceed  ></button>
+                </div>   
+            </div>
+        </div>
+    
+    <!--=============================================================Content============================================================================= -->
+    <div id="wholeHomePageData">
+        <div style="background-color: #fff;">
+            <div id="pan_corner"><img alt="" draggable="false"
+                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,h=270/layout-engine/2022-01/Group-33704-3.jpg"></div>
+            <div id="welcom"><img
+                    src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,h=270/layout-engine/2022-03/new-user.png">
+            </div>
+            <div id="explore">
+                <div><img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2022-03/Chai-evening-time_0.jpg">
+                </div>
+                <div><img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2022-03/Kids_Zone_HomePageBanner_1.jpg">
+                </div>
+                <div><img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2022-03/dry-fruits.png">
+                </div>
+                <div><img
+                        src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=450/layout-engine/2022-03/dry-fruits.png">
+                </div>
+            </div>
+            <div id="groserry">
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-1_0.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-2_0.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-5.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-4_1.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-3_0.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-13.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-6.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-7.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-11.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-12.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-14.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-8.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-10.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-9.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-19.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-20.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-16.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-17.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-15.png">
+                </div>
+                <div id="vegetablePageClick"><img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/layout-engine/2022-03/Slice-18.png">
+                </div>
+            </div>
+        </div>
+
+        <!-- bank offers and coupons -->
+        <div id="sec3">
+            <h3>bank & wallet offers</h3>
+            <div style="display: flex;">
+
+                <div style="margin: 40px 8px 0 35px;">
+                    <button id="bRight" style="width: 40px;height: 40px;border: 1px #c1c1c1;"><i class="fa-solid fa-chevron-left"></i></button></div>
+
+                <div id="bankOffers">
+                    <!-- Box 1-->
+                    <div id="mainBox" style="border: 1px solid #1b3280;">
+                        <div class="text" style="background-color: #1b3280 ">
+                            <div class="container1">
+                                <div class="h2">
+                                    <h2>flat 10% off</h2>
+                                </div>
+                                <div class="para1" style="margin-top: -5px;margin-left: 15 px;font-size: 10px;">
+                                    no min txn
+                                </div>
+                                <div class="para2" style="display: flex; font-size: 10px;margin-left: 15 px;">
+                                    <p>Code :</p>
+                                    <p style="color: #f6cb5e; font-size: 10px;">MONEYTAP</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dimg">
+                            <img src="https://notifly-coupons.grofers.com/notifly/2021-10/rblmoneytap_single_card%5B1%5D.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <!-- Box 2 -->
+
+                    <div id="mainBox" style="border: 1px solid #6d276d;">
+                        <div class="text" style="background-color: #6d276d;">
+                            <div class="container1">
+                                <div class="h2">
+                                    <h2>flat 10% off</h2>
+                                </div>
+                                <div class="para1" style="margin-top: -5px;margin-left: 15 px;font-size: 10px;">
+                                    min txn: ₹ 750
+                                </div>
+                                <div class="para2" style="display: flex; font-size: 10px;margin-left: 15 px;">
+                                    <p>Code :</p>
+                                    <p style="color: #f6cb5e; font-size: 10px;">AU300</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dimg">
+                            <img src="https://notifly-coupons.grofers.com/notifly/2021-12/au_single_card.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Box 3 -->
+
+                    <div id="mainBox" style="border: 1px solid #ae275f;">
+                        <div class="text" style="background-color: #ae275f;">
+                            <div class="container1">
+                                <div class="h2">
+                                    <h2>flat 10% off</h2>
+                                </div>
+                                <div class="para1" style="margin-top: -5px;margin-left: 15 px;font-size: 10px;">
+                                    min txn: ₹750
+                                </div>
+                                <div class="para2" style="display: flex; font-size: 10px;margin-left: 15 px;">
+                                    <p>Code :</p>
+                                    <p style="color: #f6cb5e; font-size: 10px;">AXISNEO</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dimg">
+                            <img src="https://notifly-coupons.grofers.com/notifly/2021-10/axisneo_single_card%5B1%5D.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <!-- Box 4 -->
+                    <div id="mainBox" style="border: 1px solid #333333;">
+                        <div class="text" style="background-color: #333333;">
+                            <div class="container1">
+                                <div class="h2">
+                                    <h2>flat 25% off</h2>
+                                </div>
+                                <div class="para1" style="margin-top: -5px;margin-left: 15 px;font-size: 10px;">
+                                    min txn: ₹99
+                                </div>
+                                <div class="para2" style="display: flex; font-size: 10px;margin-left: 15 px;">
+                                    <p>Code : </p>
+                                    <p style="color: #f6cb5e; font-size: 10px;"> ONECARD</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dimg">
+                            <img src="https://notifly-coupons.grofers.com/notifly/2021-10/onecard_single_card%5B1%5D.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <!-- Box 5 -->
+
+                    <div id="mainBox" style="border: 1px solid #ec6b5a;">
+                        <div class="text" style="background-color: #ec6b5a;">
+                            <div class="container1">
+                                <div class="h2">
+                                    <h2>flat 20% off</h2>
+                                </div>
+                                <div class="para1" style="margin-top: -5px;margin-left: 15 px;font-size: 10px;">
+                                    min txn: ₹600
+                                </div>
+                                <div class="para2" style="display: flex; font-size: 10px;margin-left: 15 px;">
+                                    <p>Code : </p>
+                                    <p style="color: #f6cb5e; font-size: 10px;"> JUPITER</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dimg">
+                            <img src="https://notifly-coupons.grofers.com/notifly/2021-10/jupiter_single_card%5B1%5D.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <!-- Box 6 -->
+                    <div id="mainBox" style="border: 1px solid #9700ba;">
+                        <div class="text" style="background-color: #9700ba;">
+                            <div class="container1">
+                                <div class="h2">
+                                    <h2>flat 20% off</h2>
+                                </div>
+                                <div class="para1" style="margin-top: -5px;margin-left: 15 px;font-size: 10px;">
+                                    min txn: ₹349
+                                </div>
+                                <div class="para2" style="display: flex; font-size: 10px;margin-left: 15 px;">
+                                    <p>Code : </p>
+                                    <p style="color: #f6cb5e; font-size: 10px;"> SLICE</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dimg">
+                            <img src="https://notifly-coupons.grofers.com/notifly/2022-03/slice_single_card_0.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- box 7 -->
+
+                    <div id="mainBox" style="border: 1px solid #0172af;">
+                        <div class="text" style="background-color: #0172af;">
+                            <div class="container1">
+                                <div class="h2">
+                                    <h2>flat 10% off</h2>
+                                </div>
+                                <div class="para1" style="margin-top: -5px;margin-left: 15 px;font-size: 10px;">
+                                    no min txn
+                                </div>
+                                <div class="para2" style="display: flex; font-size: 10px;margin-left: 15 px;">
+                                    <p>Code : </p>
+                                    <p style="color: #f6cb5e; font-size: 10px;"> DIGISMART</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dimg">
+                            <img src="https://notifly-coupons.grofers.com/notifly/2021-10/digismart_single-card%5B1%5D.png"
+                                alt="">
+                        </div>
+                    </div>
+
+                    <!-- Box 8 -->
+                    <div id="mainBox" style="border: 1px solid #1b3280;">
+                        <div class="text" style="background-color: #1b3280;">
+                            <div class="container1">
+                                <div class="h2">
+                                    <h2>flat 10% off</h2>
+                                </div>
+                                <div class="para1" style="margin-top: -5px;margin-left: 15 px;font-size: 10px;">
+                                    no min txn
+                                </div>
+                                <div class="para2" style="display: flex; font-size: 10px;margin-left: 15 px;">
+                                    <p>Code : </p>
+                                    <p style="color: #f6cb5e; font-size: 10px;"> COOKIES</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="dimg">
+                            <img src="https://notifly-coupons.grofers.com/notifly/2021-10/rblcookies_single_card%5B1%5D.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="margin:40px 0 0 5px; ">
+                    <button id="bLeft" style="width: 40px;height: 40px;"><i class="fa-solid fa-angle-right"></i></button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- /////////////////// SLIDER //////////////////// -->
+        <div id="sec3">
+        <div id="row">
+            
+        </div>
+        </div>
+        <!-- category section start here -->
+
+        <div id="sec3">
+
+            <div style="display: flex;justify-content: space-between;margin-top: 25px;">
+                <div id="head">
+                    <h3>fruits & vegetables</h3>
+                    <p>eat fresh, stay healthy</p>
+                </div>
+                <div id="scrol">
+                    <a href="/Veg.html">see more <p>
+                            <i class="fa-solid fa-angle-right"
+                                style="font-size: 11px;color: black;bottom: 11px;position: relative;"></i>
+                        </p></a>
+                    <div>
+                        <button id="fright" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button id="fleft" type="button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div id="frutDiv">
+                    <script type="module">
+                        import {display,showCartqty} from './components/index.js';
+                        let fruit = document.getElementById("frutDiv")
+                        var fuit = JSON.parse(localStorage.getItem("fruit")) || [];
+                        display(fuit, fruit)
+                    </script>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="sec3">
+
+            <div style="display: flex;justify-content: space-between;margin-top: 25px;">
+                <div id="head">
+                    <h3>chemist store</h3>
+                    <p>get pain relievers, dettol and more</p>
+                </div>
+                <div id="scrol">
+                    <a href="">see more <p>
+                            <i class="fa-solid fa-angle-right"
+                                style="font-size: 11px;color: black;bottom: 11px;position: relative;"></i>
+                        </p></a>
+                    <div>
+                        <button id="right" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button id="left" type="button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div id="chemDiv">
+                    <script type="module">
+                        import {display,showCartqty} from './components/index.js';
+                        let chem = document.getElementById("chemDiv")
+                        var chemit = JSON.parse(localStorage.getItem("chemist")) || [];
+                        display(chemit, chem)
+                        // console.log(chemit)
+                    </script>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="sec3">
+            <div style="display: flex;justify-content: space-between;margin-top: 25px;">
+                <div id="head">
+                    <h3>breakfast & dairy</h3>
+                    <p>butter, cheese, milk, curd and more</p>
+                </div>
+                <div id="scrol">
+                    <a href="">see more <p>
+                            <i class="fa-solid fa-angle-right"
+                                style="font-size: 10px;color: black;bottom: 11px;position: relative;"></i>
+                        </p></a>
+                    <div>
+                        <button id="righ" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button id="lef" type="button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div id="dairyDiv">
+                <script type="module">
+                    import {display,showCartqty} from './components/index.js';
+                    let dairy = document.getElementById("dairyDiv")
+                    var dair = JSON.parse(localStorage.getItem("dairy")) || [];
+                    display(dair, dairy)
+                </script>
+            </div>
+        </div>
+
+        <div id="sec3">
+            <div style="display: flex;justify-content: space-between;margin-top: 25px;">
+                <div id="head">
+                    <h3>biscuits, snacks & chocolates</h3>
+                    <p>namkeen, biscuits, chips and more</p>
+                </div>
+                <div id="scrol">
+                    <a href="">see more <p>
+                            <i class="fa-solid fa-angle-right"
+                                style="font-size: 8px;color: black;bottom: 11px;position: relative;"></i>
+                        </p></a>
+                    <div>
+                        <button id="sright" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button id="sleft" type="button"><i class="fa-solid fa-angle-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div id="snackDiv">
+                <script type="module">
+                    import {display,showCartqty} from './components/index.js';
+                    let snack = document.getElementById("snackDiv")
+                    var snak = JSON.parse(localStorage.getItem("snacks")) || [];
+                    display(snak, snack)
+                    // display(chemit,chem)
+                    // console.log(snak)
+
+                </script>
+            </div>
+        </div>
+
+        <!-- category section end here -->
+    </div> 
+    <!--=============================================================Footer============================================================================= -->
+    <div id="footer"></div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/cb83d10ce2.js" crossorigin="anonymous"></script>
+<script src="./script/place.js"></script>
+<script src="./script/cart.js"></script>
+<script type="module">
+    
+    import navbar from "./components/header.js";
+    document.querySelector("#fixnavbar").innerHTML=navbar();
+
+    import footer from "./components/footer.js";
+    document.querySelector("#footer").innerHTML=footer();
+
+    //=====================================================================Nav Bar==================================================//
+    //random delivary time
+    var randomNumber=Math.floor(Math.random()*(45-10)+9);
+    document.querySelector("#randomDelivery").innerHTML=`delivery in ${randomNumber} minutes`;
+
+
+    // document.querySelector("#loginandprofile").innerText="Login"
+    //city search
+    let body = document.querySelector("#body1");
+    var popmap=document.querySelector("#locationPopM");
+    var mainblurpop=document.querySelector("#blurpopM");
+    document.querySelector("#mapL").addEventListener("click",()=>{
+        popmap.style.visibility="visible";
+        popmap.style.opacity=1;
+        mainblurpop.style.backgroundColor="rgb(0,0,0,0.5)"
+        mainblurpop.style.position="fixed"
+        document.querySelector("#randomDelivery").style.color="rgb(209,26,26)"
+        mainblurpop.style.zIndex="7"
+        mainblurpop.style.visibility="visible"
+    })
+
+
+    // LOCATION DETECTION
+    navigator.geolocation.getCurrentPosition(function(position) {
+    const lat = position.coords.latitude;
+    const lng = position.coords.longitude;
+    out(lat,lng)
+    });
+
+    let addressM=document.querySelector("#mapM");
+    async function out(lat,lng){
+        let rel = await fetch(`https://us1.locationiq.com/v1/reverse.php?key=pk.456518217705258731c8c7089e3a45d0&lat=${lat}&lon=${lng}&format=json`)
+        let data = await rel.json();
+        // console.log(data.address);
+        // console.log(data.display_name);
+        console.log("location aa gayi")
+
+        //LOCATION APPEND
+        console.log(data)
+        addressM.innerHTML= `${data.address.suburb},${data.address.city},${data.address.state},${data.address.country},${data.address.postcode}`;
+        // addressM.innerHTML= `${data.display_name}`;
+
+    }
+
+    
+
+
+    //search location
+    let city=JSON.parse(localStorage.getItem("cities"))
+    let inputM = document.querySelector("#locationPopsubM31");
+    let appendM=document.querySelector("#appendCNM")
+    inputM.addEventListener("input", input_change)
+    
+    function input_change(){
+        
+        let z=city.filter(function(e){
+                let result = inputM.value;
+                appendM.innerHTML="";
+                return e.name.includes(result);                
+            })
+            console.log(z)
+            // {id: '2', name: 'Delhi', state: 'Delhi'}
+            z.forEach(({name:n,state:c})=>{
+                let cityname=document.createElement("p")
+                cityname.setAttribute("id","visibleCityM")
+                cityname.addEventListener("click",function(){
+                    addressM.innerText=`${n}, ${c}`;
+                    popmap.style.zIndex="-40"
+                    popmap.style.visibility="hidden";
+                    popmap.style.opacity=0;
+                    mainblurpop.style.visibility="hidden"
+                    mainblurpop.style.backgroundColor=""
+                    mainblurpop.style.zIndex="-10"
+                    // console.log(n,c)
+                })
+                cityname.innerText=`${n}, ${c}`;
+                appendM.append(cityname)
+            })        
+    }
+    
+    //Exiting PopUp
+
+    let cancelPopM = document.querySelector("#crossM");
+    cancelPopM.addEventListener("click", ()=>{
+        popmap.style.zIndex="-40"
+        popmap.style.visibility="hidden";
+        popmap.style.opacity=0;        
+        mainblurpop.style.visibility="hidden"
+        // mainblurpop.style.zIndex="-10"
+    })
+
+    //=========================================================================================================================================//
+
+
+
+
+    //------------------------------------------------------------Footer part------------------------------------------------------------------//
+
+
+    
+    let phone = document.querySelector("#radiophone")
+    let email = document.querySelector("#radioemail")
+
+//    email.defaultChecked;
+   document.querySelector("#inputfield").placeholder="Email"
+
+   document.querySelector("#radioemail").addEventListener("change",call)
+    function call(){
+        console.log("inside call function")
+    if(email.checked){
+        console.log("email")
+        document.querySelector("#inputfield").placeholder="Email"
+    }
+    else{
+        console.log("phone")
+        document.querySelector("#inputfield").placeholder="phone"
+    }
+
+    }
+
+    document.querySelector("#radiophone").addEventListener("change",call1)
+    function call1(){
+        console.log("inside call function")
+    if(email.checked){
+        console.log("email")
+        document.querySelector("#inputfield").placeholder="Email"
+    }
+    else{
+        console.log("phone")
+        document.querySelector("#inputfield").placeholder="phone"
+    }
+
+    }
+
+    document.querySelector("#sharelink").addEventListener("click",sharelink)
+    function sharelink(){
+    let inpt=document.querySelector("#inputfield").value
+    if(inpt==""){
+        alert('this field is required')
+    }else{
+        if(email.checked && inpt!="" ){
+        if(inpt.includes('@gmail.com')){
+            alert('App link shared to E-mail account')
+        }else{
+            alert('enter a valid email')
+        }
+    }
+    else if(phone.checked && inpt!="" ){
+        inpt=""+inpt
+        if(inpt.length==10){
+            alert('App link shared to Mobile number')
+        }else{
+            alert('enter a valid phone no.')
+        }
+    }
+    }
+
+    }
+
+
+
+
+    //login popup
+    let loogn=document.querySelector("#loginpartofthiswebsite");
+    // let otplogPart=document.querySelector("#otpinpartofthiswebsite");
+    let ProfileAppendPartMM=document.querySelector("#loginandprofile1");
+    document.querySelector("#lM4").addEventListener("click",function(){
+        
+        loogn.style.visibility="visible";
+        if(ProfileAppendPartMM.innerText=="Profile")
+        {
+            loogn.style.visibility="hidden";
+            loogn.addEventListener("click",function(){
+                document.querySelector("#popupbackground").style.zIndex="9";
+                document.querySelector("#popupbackground").style.visibility="visible";
+            document.querySelector("#ProfilePopupM").style.visibility="visible";
+            })
+            // console.log("hi appun profile k andar hai")
+        }
+        // console.log("hi in login")
+    })
+    let exitProfilepartM=document.querySelector("#popupbackground");
+    exitProfilepartM.addEventListener("click",function(){
+        document.querySelector("#popupbackground").style.zIndex="-39";
+        document.querySelector("#ProfilePopupM").style.zIndex="-30"
+        document.querySelector("#popupbackground").style.visibility="hidden";
+        document.querySelector("#ProfilePopupM").style.visibility="hidden";
+
+    })
+</script>
+
+<!-- ======================================================================================Body Part================================================================================= -->
+<script src="./script/data.js"></script>
+
+<script>
+    // 1st
+    const fright = document.getElementById("fright");
+    const fleft = document.getElementById("fleft");
+
+    fleft.onclick = () => {
+        document.getElementById("frutDiv").scrollLeft += 650;
+    }
+    fright.onclick = () => {
+        document.getElementById("frutDiv").scrollLeft -= 650;
+    }
+
+    // 2nd
+    const right = document.getElementById("right");
+    const left = document.getElementById("left");
+
+    left.onclick = () => {
+        document.getElementById("chemDiv").scrollLeft += 650;
+    }
+    right.onclick = () => {
+        document.getElementById("chemDiv").scrollLeft -= 650;
+    }
+
+    // 3rd
+    const righ = document.getElementById("righ");
+    const lef = document.getElementById("lef");
+    lef.onclick = () => {
+        document.getElementById("dairyDiv").scrollLeft += 650;
+    }
+    righ.onclick = () => {
+        document.getElementById("dairyDiv").scrollLeft -= 650;
+    }
+
+    // 4th
+    const sright = document.getElementById("sright");
+    const sleft = document.getElementById("sleft");
+    sleft.onclick = () => {
+        document.getElementById("snackDiv").scrollLeft += 650;
+    }
+    sright.onclick = () => {
+        document.getElementById("snackDiv").scrollLeft -= 650;
+    }
+
+    // bank
+    const bRight = document.getElementById("bRight");
+    const bLeft = document.getElementById("bLeft");
+
+    bLeft.onclick = () => {
+        document.getElementById("bankOffers").scrollLeft += 650;
+        count = 1;
+    }
+    bRight.onclick = () =>{
+        document.getElementById("bankOffers").scrollLeft -= 650;
+    }
+    
+</script>
+
+
+
+<!-------------------------------------------------------------------------------------- Log in Pop Up -------------------------------------------------------------------->
+
+<script>
+    let otplogPart=document.querySelector("#otpinpartofthiswebsite");
+    
+    var mob= document.querySelector("input")
+    document.querySelector("form").addEventListener("submit",function(event){
+    event.preventDefault(event)
+    mobile = ""+mob.value;
+    if(mobile.length==10){
+    //    location.href = "loginotp.html"
+       alert('redirecting to otp page')
+    //    console.log(event)
+       localStorage.setItem('mobile',JSON.stringify(mobile))
+    //    console.log(otplogPart)
+       document.querySelector("#loginpartofthiswebsite").style.visibility="hidden"
+       document.querySelector("#loginpartofthiswebsite").style.zIndex="-10"
+       otplogPart.style.visibility="visible";
+       otplogPart.style.zIndex="22"
+    }
+})
+
+
+function SubmitMyMob(){
+    
+    mobile = ""+mob.value;
+    if(mobile.length==10){
+    //    location.href = "loginotp.html"
+    //    alert('redirecting to otp page')
+       localStorage.setItem('mobile',JSON.stringify(mobile))
+       console.log(mobile)
+    }
+}
+
+
+
+function changecolor(){
+console.log('hi')
+    mobile = ""+mob.value;
+    if(mobile.length==10){
+       document.querySelector("button").style.backgroundColor='#318616';
+       document.querySelector("button").style.cursor="pointer";
+    }else{
+        document.querySelector("button").style.backgroundColor='#ccc';
+    } 
+}
+</script>
+
+<script>
+    let mob1=JSON.parse(localStorage.getItem('mobile'))
+    // Appending para of mobile number
+
+    let loginDetails1 = document.querySelector(".LOginDEtails1>div>p")
+
+    loginDetails1.innerText=`Enter 4 digit code sent to your phone +91-${mob1}`
+
+    //    Timer to resend code (otp)
+
+    var resendTimer = document.querySelector(".resendCode")
+
+    const resendCode = ()=>{
+    resendTimer.innerText=""
+    let i=30;
+    let time = setInterval((resendTimer)=>{
+    if(i>0){
+    // console.log(i)
+    document.querySelector(".resendCode").style.color='grey';
+    document.querySelector(".resendCode").innerText = `Resend Code (in ${i} secs)`
+    }
+    else{
+    clearInterval(time);
+    document.querySelector(".resendCode").innerText = "Resend Code";
+    document.querySelector(".resendCode").style.color='#318616';
+    document.querySelector(".resendCode").style.textDecoration = "underline"
+    document.querySelector("button").style.cursor="pointer";
+    }
+    i--;
+    },1000)
+
+    }
+
+    //    call of timer
+    resendCode();
+
+    // button highlighting on complete fillup
+    const checkinput =()=>{
+        let flag =false;
+    
+    var otps = document.querySelectorAll("#otp")
+    if(otps[0].value!="" && otps[1].value!="" && otps[2].value!="" && otps[3].value!=""){
+    document.querySelector("#letsgo").style.backgroundColor="#318616"
+    }
+    }
+
+    // form submission
+
+    document.querySelector("#otpform").addEventListener('submit',function(event){
+    event.preventDefault(event)
+    let otps = document.querySelectorAll("#otp")
+
+    if(otps[0].value==1 && otps[1].value==2 && otps[2].value==3 && otps[3].value==4 ){
+        alert("Logged In Successfully")
+        alert("Redirecting to home page")
+        // flag=true;
+        // if(flag==true)
+        // {
+            const profilediv=document.createElement("p")
+            profilediv.innerText="Profile"
+            profilediv.setAttribute("id","profilediv")
+            profilediv.addEventListener("click",function(){
+                console.log("This is profile");
+                document.querySelector("#popupbackground").style.zIndex="9";
+                document.querySelector("#ProfilePopupM").style.zIndex="10"
+                document.querySelector("#popupbackground").style.visibility="visible";
+                document.querySelector("#ProfilePopupM").style.visibility="visible";
+
+                let exitProfilepartM=document.querySelector("#popupbackground");
+                exitProfilepartM.addEventListener("click",function(){
+                document.querySelector("#popupbackground").style.zIndex="-39";
+                document.querySelector("#popupbackground").style.visibility="hidden";
+                document.querySelector("#ProfilePopupM").style.visibility="hidden";
+                document.querySelector("#ProfilePopupM").style.zIndex="-30"
+            
+                })
+            })
+            document.querySelector("#loginandprofile").remove();
+            document.querySelector("#loginandprofile1").append(profilediv);
+            otplogPart.style.visibility="hidden";
+        // }
+    }else{
+
+    otps[0].style.border = "2px solid red";
+    otps[1].style.border = "2px solid red";
+    otps[2].style.border = "2px solid red";
+    otps[3].style.border = "2px solid red";
+    alert("verification failed")
+    event.preventDefault(event)
+    }
+    })
+</script>
+
+<!-- ===================================================================================Display Cart Data================================================================= -->
+<script type="module">
+    let cartDB = JSON.parse(localStorage.getItem("cartDB")) || [];
+    console.log(cartDB)
+    import {display,showCartqty} from './components/index.js';
+    // document.querySelector(".h5c").innerHTML = "my cart"
+    var sum = 0;
+    for(var i = 0; i < cartDB.length; i++){
+        sum = sum + cartDB[i].price
+    }
+    console.log(sum)
+    var count = cartDB.length;
+    console.log(count)
+    
+    if(count == 0){
+        document.querySelector(".h5c").innerText= "mycart"
+        document.querySelector(".h5m").innerHTML = null;
+    }else{
+        document.querySelector(".h5c").innerHTML =`${count} items`;
+        document.querySelector(".h5m").innerText = `₹ ${sum}`;
+    }
+    showCartqty(cartDB)
+    
+</script>
+<script>
+    
+</script>
+<!-- ======================================================================================= Cart Part ================================================================ -->
+<script>
+    let cartDB1 = JSON.parse(localStorage.getItem("cartDB")) || [];
+    console.log(cartDB1)
+    let main = document.getElementById("cartPartAppendingM");
+    let mycarttop = document.createElement("div")
+    mycarttop.innerText="My Cart";
+    mycarttop.setAttribute("id","mycarttop")
+
+    let mycartbottom = document.createElement("div")
+    mycartbottom.setAttribute("id","mycartbottom")
+    const display = (data) => {
+    mycartbottom.innerHTML = null;
+
+    data.forEach((el) => {
+        let div = document.createElement("div");
+        div.setAttribute("id", "contentttG")
+        let imgDiv = document.createElement("div");
+
+        let img = document.createElement("img");
+        img.setAttribute("class","pimg")
+        img.src = el.img;
+        // let add = document.createElement("button");
+        // add.setAttribute("id","addcart")
+
+        imgDiv.append(img)
+
+
+        let nameDiv = document.createElement("div");
+        nameDiv.setAttribute("class", "info")
+
+        let name = document.createElement("p");
+        name.innerText = el.name
+
+        let qty = document.createElement("p");
+        qty.innerText = el.qty
+
+
+
+        let priceDiv = document.createElement("div");
+        priceDiv.setAttribute("class", "price")
+
+        let price = document.createElement("span")
+        price.innerText = `₹${el.price}`;
+
+        let strikePrice = document.createElement("span");
+        strikePrice.innerText = `₹${el.sPrice}`;
+
+        let btnDiv = document.createElement("div");
+        btnDiv.setAttribute("id","btndivvv")
+
+        let lBtn = document.createElement("button");
+        lBtn.innerText="-"
+        lBtn.addEventListener("click",()=>{
+            decreaseQty(el)
+        })
+        let qtyL = document.createElement("label");
+        qtyL.innerText="1"
+
+        let rBtn = document.createElement("button");
+        rBtn.innerText="+"
+        rBtn.addEventListener("click",()=>{
+            increaseQty(el)
+        })
+        btnDiv.append(lBtn,qtyL,rBtn)
+        imgDiv.append(img)
+
+        priceDiv.append(price, strikePrice);
+        nameDiv.append(name,priceDiv, qty,btnDiv);
+        div.append(imgDiv, nameDiv)
+        mycartbottom.append(div);
+    })
+    main.append(mycarttop,mycartbottom)
+}
+display(cartDB1)
+</script>
+<!-- ===================================================================Sliding Image============================================================================ -->
+<script>
+    let img = [
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Chocolates_Cadbury_994.jpg",
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Mars_Mars%20INTL_1133.jpg",
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Nutrichoice_Britannia_1003.jpg",
+    "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=900/layout-engine/automation/pb_Brand_Pet%20care_Mars_1044.jpg"
+    ];
+    console.log(img)
+
+    let slide = document.getElementById("row");
+    let i = 0;
+
+    setInterval(function (){
+        if(i == img.length){
+            i = 0;
+        }
+
+        let image = img[i];
+
+        slide.innerHTML=null;
+        let imgs = document.createElement("img");
+        imgs.src = image;
+
+        slide.append(imgs);
+        i++;
+    },2000)
+</script>
+<script type="module">
+    import navbar from "./components/header.js";
+    document.querySelector("#lM5M").addEventListener("click",function(){
+        var cartbodyVH=document.querySelector("#cartPartAppendingM");
+        cartbodyVH.style.visibility="visible"
+        cartbodyVH.style.zIndex="40";
+})
+document.querySelector("#mycarttop").addEventListener("click",function(){
+        var cartbodyVH=document.querySelector("#cartPartAppendingM");
+        cartbodyVH.style.visibility="hidden"
+        cartbodyVH.style.zIndex="-40";
+})
+
+</script>
+<!-------------------------------------------------------Vegetable Onclick Part-------------------------->
+
+<script>
+    document.querySelector("#vegetablePageClick").addEventListener("click",function(){
+        window.location.href="Veg.html";
+    })
+</script>

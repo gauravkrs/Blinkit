@@ -1,0 +1,122 @@
+.rbody{
+    width: 98vw;
+
+    height: 96vh;
+    background-image: url(Screenshot\ .png);
+    background-size: 100%,100%;
+background-size: cover;
+background-position-y: -110px;
+}
+.link-account{
+    background-color: #fcfcfc;
+border-bottom: 1px solid #eee;
+border-radius: 0;
+border-top: 1px solid #eee;
+font-size: 20px;
+font-weight: 300;
+margin-top: 20px;
+padding: 16px 20px;
+text-align: center;
+
+}
+.link-body{
+    box-sizing: border-box;
+padding: 0 20px;
+text-align: center
+}
+.linkbody-text{
+    box-sizing: border-box;
+padding: 0 20px;
+text-align: center
+}
+.login-fulllength{
+    display: inline-block;
+line-height: normal;
+margin: 24px auto 0;
+position: relative;
+display: flex;
+position: relative;
+border: 1px solid black;
+width: 300px;
+padding: 10px;
+}
+.login-fulllength>div{
+    position: absolute;
+left: 10%;  
+}
+.login-fulllength>input{
+    box-sizing: border-box;
+font-size: 14px;
+width: 75%;
+border: none;
+position: absolute;
+left: 25%;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+top: 2px;
+
+}
+.login-fulllength>input:hover{
+    border: hidden;
+}
+.link-body>button{
+    background-color: #ccc;
+    display: inline-block;
+width: 100%;
+margin-bottom: 32px;
+margin-top: 24px;
+height: 40px;
+
+border: none;
+}
+.link-body>button:hover{
+    background-color: #459220;
+    color: #fff;
+}
+.card-paytm{
+    width: 400px;
+    height: 400px;
+display: flex;
+flex-direction: column;
+background-color: #fff;
+margin-left: 35%;
+border-radius: 5px;
+margin-top: 3%;
+}
+.main-card{
+    background-color: rgba(0,0,0,.7);
+bottom: 0;
+left: 0;
+position: fixed;
+right: 0;
+top: 0;
+z-index: 9999;
+overflow-y: auto;
+
+}
+.card-div{
+    background: #fff;
+border-radius: 4px;
+box-shadow: 0 0 14px 0 rgb(0 0 0 / 30%);
+bottom: auto;
+display: inline-block;
+left: 50%;
+top: 55%;
+outline: none;
+position: absolute;
+right: auto;
+transform: translate(-30%);
+}
+.card-div{
+    position: relative;
+    width: 410px;
+    height: 410px;
+    margin-top: 5px;
+}
+.cut-div>button{
+    border: none;
+position: absolute;
+margin-left: 64.5%;
+}
