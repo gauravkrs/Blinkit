@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Veg</title>
+    <link rel="icon" href="https://blinkit.com/images/apple-touch-icon-change-60x60-1be1e81.png">
     
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/headerForVeg.css"/>
@@ -493,6 +494,22 @@ console.log('hi')
 
     cartdata=[]
     let Vegdata=JSON.parse(localStorage.getItem("vegdata"))
+    // console.log(Vegdata);
+
+    // let searchPart=document.querySelector("#searchM2");
+    // searchPart.addEventListener("input",SearchInNavbar)
+    
+    // function SearchInNavbar(event){
+    //     console.log(event)
+    //     let z=sear.filter(function(e){
+    //             let result = inputM.value;
+    //             appendM.innerHTML="";
+    //             return e.name.includes(result);                
+    //         })
+                   
+    // }
+
+
     Vegdata.map(function (elem){
         var div=document.createElement("div")
         img=document.createElement("img")
@@ -526,6 +543,9 @@ console.log('hi')
         localStorage.setItem("cart",JSON.stringify(cartdata))
         
     }
+
+    
+    // ===========================================Search Part===========================
 </script>
 
 
@@ -535,4 +555,39 @@ console.log('hi')
     cart.addEventListener("click", function(){
         window.location.href="veg_index.html";
     })
+
+
+
+
+    // let Vegdata=JSON.parse(localStorage.getItem("vegdata"))
+    // console.log(Vegdata);
+
+    let searchPart=document.querySelector("#searchM2");
+    searchPart.addEventListener("click",function(){
+                    document.querySelector("#searchBarHaiBhai").style.visibility="visible";
+                })
+    let appendVegetable=document.querySelector("#appendVegetable");
+    searchPart.addEventListener("input",SearchInNavbar)
+    
+    function SearchInNavbar(){
+        console.log(Vegdata)
+        let z=Vegdata.filter(function(e){
+                let result = searchPart.value;
+                appendVegetable.innerHTML="";
+                return e.name.includes(result);                
+            })
+            console.log(z)
+            z.forEach(({name:n,image:c})=>{
+                let vegetablename=document.createElement("p")
+                vegetablename.setAttribute("id","vegetablename")
+                let imageVeg=document.createElement("img")
+                imageVeg.setAttribute("id","imageVeg")
+                imageVeg.src=c
+                imageVeg.addEventListener("click",function(){
+                    document.querySelector("#searchBarHaiBhai").style.visibility="hidden";
+                })
+                vegetablename.innerText=`${n}`;
+                appendVegetable.append(imageVeg,vegetablename)
+            })             
+    }
 </script>

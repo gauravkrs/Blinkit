@@ -12,22 +12,23 @@ return `<div id="mainheaderM1">
 </ul>
 </div>
 <div id="blurpopM">
-<div id="locationPopM">
-    <div id="locup"><i id="locup1" class="fa-solid fa-sort-up"></i></div>
-    <div id="locationsubpart">
-        <i id="crossM" class="fa-solid fa-xmark"></i>
-        <h3>Change Location</h3>
-        <div id="locationPopsubM">
-            <div id="locationPopsubM1"><p id="locationPopsubM11" >Detect my Location</p></div> --
-            <div id="locationPopsubM2">OR</div>--
-            <div id="locationPopsubM3">
-                <input id="locationPopsubM31" type="text"  placeholder="Type your city Name"/>
+    <div id="locationPopM">
+        <div id="locup"><i id="locup1" class="fa-solid fa-sort-up"></i></div>
+        <div id="locationsubpart">
+            <i id="crossM" class="fa-solid fa-xmark"></i>
+            <h3>Change Location</h3>
+            <div id="locationPopsubM">
+                <div id="locationPopsubM1"><p id="locationPopsubM11" >Detect my Location</p></div> --
+                <div id="locationPopsubM2">OR</div>--
+                <div id="locationPopsubM3">
+                    <input id="locationPopsubM31" type="text"  placeholder="Type your city Name"/>
+                </div>
             </div>
+            <div id="appendCNM"></div>
         </div>
-        <div id="appendCNM"></div>
     </div>
 </div>
-</div>
+<div id="searchBarHaiBhai"><span id="appendVegetable"></span></div>
 
     `;
 }

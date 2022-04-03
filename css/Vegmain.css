@@ -259,3 +259,27 @@ html{
     text-align: center;
     font-weight: 600;
 }
+#appendVegetable{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    flex-direction: column;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.656);
+    padding: 20px;
+    width: 630px;
+    color: white;
+    height: 300px;
+    overflow: scroll;
+}
+#imageVeg{
+    height: 50px;
+    width: 50px;
+}
+#searchBarHaiBhai{
+    position: fixed;
+    z-index: 20;
+    top: 65px;
+    margin-left:29.5% ;
+    visibility: hidden;
+
+}
