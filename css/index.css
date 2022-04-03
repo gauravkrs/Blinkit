@@ -126,6 +126,7 @@ i:hover {
     border: 1px #c1c1c1;
     border-radius: 5px;
     text-align: center;
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
 
@@ -263,4 +264,10 @@ i:hover {
             -webkit-animation-duration: 1.5s;
             animation-name: fade;
             animation-duration: 1.5s;
+        }
+
+
+        /* =====================================Vegetable data================================================== */
+        #vegetablePageClick{
+            cursor: pointer;
         }

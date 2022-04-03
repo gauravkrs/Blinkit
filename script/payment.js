@@ -100,7 +100,7 @@ for(let i=0;i<data.length;i++){
 console.log(sum)
 
 let str= document.querySelector("#strikedPM")
-str.innerText=`You have recieved a discount of - ${sum}`;
+// str.innerText=`You have recieved a discount of - ${sum}`;
 }
 
 
@@ -114,5 +114,5 @@ console.log(sum)
 let striked = document.querySelector("#priceM")
 
 
-striked.innerText=`Total Price of ${data.length}items - ${sum}`;
+// striked.innerText=`Total Price of ${data.length}items - ${sum}`;
 }
