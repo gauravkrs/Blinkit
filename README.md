@@ -56,7 +56,7 @@ https://storied-dieffenbachia-43764b.netlify.app/
 - [Shubham Pawar](https://github.com/Shubh-Pawar007)
 - [Rohit Kumar Gupta](https://github.com/rg15697)
 - [Gaurav kumar](https://github.com/gauravkrs)
-
+- [Rohit sahu](https://github.com/RohitSahuvlog)
 
 ## Documentation
 
@@ -83,7 +83,7 @@ We All Contributers built this project.We all face some problems and we solved t
 
 [linkedin](linkedin.com/in/shubham-pawar-2b7a30124)
 [Linkedin](https://www.linkedin.com/in/rohit-gupta-06a445181/)
-
+[Linkedin](https://www.linkedin.com/in/rohit-sahu-3a0406179)
 
 ## FAQ
 
