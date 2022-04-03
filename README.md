@@ -55,7 +55,7 @@ https://storied-dieffenbachia-43764b.netlify.app/
 
 [Documentation](medium-link)
 
-![Logo](https://upload.wikimedia.org/wikipedia/commons/2/2f/Blinkit-yellow-app-icon.svg)
+![Logo](https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/84/6e/03/846e03c3-6020-579b-1782-f4bd346a09e2/AppIconRelease-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png)
 
 ## Lessons Learned
 
