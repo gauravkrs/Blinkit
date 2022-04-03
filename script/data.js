@@ -323,7 +323,7 @@ var chemit = [
          "strikeprice": "251"
     },
     {
-         "product_name": "Desi Tomato",
+         "product_name": "Desi Fresh Tomato ",
          "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_445675.jpg?ts=1648018233",
          "qty": "500 g",
          "price": "11",
@@ -344,21 +344,21 @@ var chemit = [
          "strikeprice": "28"
     },
     {
-         "product_name": "Cabbage",
+         "product_name": "Cabbage (Gobhi)",
          "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_339152.jpg?ts=1639904739",
          "qty": "400 g",
          "price": "19",
          "strikeprice": "20"
     },
     {
-         "product_name": "Bottle Gourd (Lauki)",
+         "product_name": "Bottle Gourd(Lauki)",
          "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_217614.jpg?ts=1639904739",
-         "qty": "1 piece (400 g)",  
+         "qty": "1piece(400g)",  
          "price": "28",
          "strikeprice": "30"
     },
     {
-         "product_name": "Broccoli",
+         "product_name": "Broccoli (Native)",
          "img_url": "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=135/app/images/products/normal/pro_369742.jpg?ts=1647242897",
          "qty": "300 g",
          "price": "36",
