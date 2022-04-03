@@ -66,7 +66,7 @@ https://storied-dieffenbachia-43764b.netlify.app/
 ![Logo](https://is3-ssl.mzstatic.com/image/thumb/Purple116/v4/84/6e/03/846e03c3-6020-579b-1782-f4bd346a09e2/AppIconRelease-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png)
 
 ## Lessons Learned
-![img1](file:///C:/Users/DEMON/Desktop/read%20me/img%207.png)
+![img1](/images/img1.png)
 
 We All Contributers built this project.We all face some problems and we solved them too. It was a great learning exerience while on this project.
 
