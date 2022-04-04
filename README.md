@@ -90,7 +90,7 @@ Click the name to visit their Github Profile
 
 ## Support
 
-For support, email - mdarshadkhan1998@gmail.com, shubhampawar242767@gmail.com 
+For support, email - mdarshadkhan1998@gmail.com, shubhampawar242767@gmail.com ,rg15697@gmail.com
 
 ## FAQ
 
