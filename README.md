@@ -1,7 +1,7 @@
 # blinkit Clone
 Blinkit (formerly Grofers) is an Indian instant delivery service. Customers of the company use a mobile application to order groceries and essentials online.
 
-Cloning Blinkit was our project for Unit-2 Construct week at Masai Shcool. Our mian objective was to complete all main functionality of this e-commerce website , such as sing up to till to the buying of a product. 
+Cloning Blinkit was our project for Unit-3 Construct week at Masai Shcool. Our mian objective was to complete all main functionality of this e-commerce website , such as sing up to till to the buying of a product. 
 We have completed this project in 5 days.
 
 - [Click here](https://blink-it-by-arshad-gaurav-ayush-rohit-shubham.netlify.app/) to preview our project.
