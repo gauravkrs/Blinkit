@@ -33,7 +33,7 @@ We have completed this project in 5 days.
 [Click here](https://drive.google.com/file/d/14Mdp1t-qx7PQNswqESkQ7xNz22mdp9GT/view?usp=sharing) to watch our brief project preview in a video format.
 
 ## Screenshots
-- Landing Page
+### Landing Page
 ![img1](/images/img1.png)
 - Map Functionality
 ![img1](/images/img2.png)
