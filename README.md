@@ -35,19 +35,19 @@ We have completed this project in 5 days.
 ## Screenshots
 ### Landing Page
 ![img1](/images/img1.png)
-- Map Functionality
+### Map Functionality
 ![img1](/images/img2.png)
-- Profile Part
+### Profile Part
 ![img1](/images/img3.png)
-- Cart Part
+### Cart Part
 ![img1](/images/img4.png)
-- Product catagory section
+### Product catagory section
 ![img1](/images/img5.png)
-- Payment Section
+### Payment Section
 ![img1](/images/img6.png)
-- Get The App Section
+### Get The App Section
 ![img1](/images/img7.png)
-- Media query Sample
+### Media query Sample
 ![img1](/images/img8.png)
 
 ## Challanges
