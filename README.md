@@ -52,9 +52,9 @@ We have completed this project in 5 days.
 
 ## Challanges
 
-- As every journey has some challenges and so was ours. In our team, All the team members we hyperactive and were alse to complete there part on time. but due to lots of functionalities all of us used to get confused while going through others code for using there local storage for some other part of project.
+- As every journey has some challenges and so was ours. In our team, All the team members we hyperactive and were also to complete there part on time. but due to lots of functionalities all of us used to get confused while going through others code for using there local storage for some other part of project.
 
-- WE faced lots of difficulty while finding the corect Api for fetching exact Geographical Location.
+- WE faced lots of difficulty while finding the correct API for fetching exact Geographical Location.
 
 - Another problem was to merge all of the files in a proper sequence which was again a difficult task for us because while merging and connecting all the pages some of the pages had the same name, and while running the site it was redirecting to some other pages so it was difficult to find the location and to rename the file.
 
