@@ -71,10 +71,10 @@ We have completed this project in 5 days.
 
 ## 🔗 Links
 
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/arshad-khan-350206154/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/md-arshad-khan-350206154)
 
 
-[MD Arshad Khan](https://www.linkedin.com/in/arshad-khan-350206154/), 
+[MD Arshad Khan](https://www.linkedin.com/in/md-arshad-khan-350206154), 
 [Shubham Pawar](linkedin.com/in/shubham-pawar-2b7a30124), 
 [Rohit Kumar Gupta](https://www.linkedin.com/in/rohit-gupta-06a445181/), 
 [Gaurav kumar](https://www.linkedin.com/in/rohit-sahu-3a0406179), 
